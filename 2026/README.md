@@ -20,19 +20,22 @@ Submissions to the [#30DayChartChallenge](https://github.com/30DayChartChallenge
         <td><img src="06_reporters-without-borders/06_reporters-without-borders.webp"></td>
     </tr>
     <tr>
+        <td><img src="07_multiscale/07_multiscale.png"></td>
         <td><img src="08_circular/08_circular.webp"></td>
+    </tr>
+    <tr>
         <td><img src="09_wealth/09_wealth.webp"></td>
-    </tr>
-    <tr>
         <td><img src="10_pop-culture/10_pop-culture.webp"></td>
+    </tr>
+    <tr>
         <td><img src="11_physical/11_physical.webp"></td>
-    </tr>
-    <tr>
         <td><img src="12_flowing-data/12_flowing-data.webp"></td>
-        <td><img src="13_ecosystems/13_ecosystems.webp"></td>
     </tr>
     <tr>
+        <td><img src="13_ecosystems/13_ecosystems.webp"></td>
         <td><img src="14_trade/14_trade.webp"></td>
+    </tr>
+    <tr>
         <td><img src="15_correlation/15_correlation.webp"></td>
     </tr>
 </table>
