@@ -17,14 +17,14 @@ Submissions to the [#30DayChartChallenge](https://github.com/30DayChartChallenge
     </tr>
     <tr>
         <td><img src="2026/09_wealth/09_wealth.webp"></td>
-        <td><img src="2021/10_pop-culture/10_pop-culture.webp"></td>
+        <td><img src="2026/10_pop-culture/10_pop-culture.webp"></td>
     </tr>
     <tr>
         <td><img src="2026/11_physical/11_physical.webp"></td>
         <td><img src="2026/12_flowing-data/12_flowing-data.webp"></td>
     </tr>
     <tr>
-        <td><img src="2026/13_ecosystem/13_ecosystems.webp"></td>
+        <td><img src="2026/13_ecosystems/13_ecosystems.webp"></td>
         <td><img src="2026/15_correlation/15_correlation.webp"></td>
     </tr>
 </table>
