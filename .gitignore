@@ -1,3 +1,5 @@
+.env
+.envrc
 # History files
 .Rhistory
 .Rapp.history
