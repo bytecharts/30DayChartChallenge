@@ -1,0 +1,46 @@
+{pkgs ? import <nixpkgs> {}}:
+pkgs.mkShell {
+  buildInputs = [
+    pkgs.R
+    pkgs.rPackages.FAOSTAT
+    pkgs.rPackages.MetBrewer
+    pkgs.rPackages.camcorder
+    pkgs.rPackages.comtradr
+    pkgs.rPackages.corrplot
+    pkgs.rPackages.cowplot
+    pkgs.rPackages.dplyr
+    pkgs.rPackages.effectsize
+    pkgs.rPackages.emojifont
+    pkgs.rPackages.ggalluvial
+    pkgs.rPackages.ggdist
+    pkgs.rPackages.ggimage
+    pkgs.rPackages.ggnewscale
+    pkgs.rPackages.ggplot2
+    pkgs.rPackages.ggrepel
+    pkgs.rPackages.ggstream
+    pkgs.rPackages.ggtext
+    pkgs.rPackages.glue
+    pkgs.rPackages.here
+    pkgs.rPackages.htmltools
+    pkgs.rPackages.htmlwidgets
+    pkgs.rPackages.igraph
+    pkgs.rPackages.jsonlite
+    pkgs.rPackages.maps
+    pkgs.rPackages.networkD3
+    pkgs.rPackages.patchwork
+    pkgs.rPackages.png
+    pkgs.rPackages.quantmod
+    pkgs.rPackages.rvest
+    pkgs.rPackages.scales
+    pkgs.rPackages.sf
+    pkgs.rPackages.showtext
+    pkgs.rPackages.styler
+    pkgs.rPackages.sysfonts
+    pkgs.rPackages.tidyquant
+    pkgs.rPackages.tidyverse
+    pkgs.rPackages.tigris
+    pkgs.rPackages.viridis
+    pkgs.rPackages.waffle
+    pkgs.radian
+  ];
+}
