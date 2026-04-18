@@ -11,7 +11,6 @@ suppressPackageStartupMessages({
 # ---- Fonts ----
 # Get the current working directory (where your R script is)
 
-
 #font_add_google("Space Grotesk", "SpaceGrotesk")
 #font_add_google("Fira Code", "FiraCode")
 
@@ -23,14 +22,12 @@ showtext_opts(dpi = 300)
 
 # ---- Base colors ----
 night_owlish_light <- list(
-  bg        = "#FBFBFB",  # clean light background
-  bg_alt    = "#F2F4F8",
-  bg_soft   = "#E8ECF2",
-
-  fg        = "#2A2F3A",  # primary text (cool dark gray)
-  fg_soft   = "#5A6270",
-
-  gray      = "#8A93A6"
+  bg = "#FBFBFB",
+  bg_alt = "#F2F4F8",
+  bg_soft = "#E8ECF2",
+  fg = "#2A2F3A",
+  fg_soft = "#5A6270",
+  gray = "#8A93A6"
 )
 
 
@@ -45,77 +42,69 @@ night_owlish_cat <- c(
 
 base_colors <- list(
   primary   = "#2A2F3A",
-  secondary = "#2E86AB",  # main accent
+  secondary = "#2E86AB",
   light     = "#F2F4F8",
   canvas    = "#FBFBFB",
   bg        = "#FBFBFB",
   neutral   = "#8A93A6"
 )
+
+theme_bg <- night_owlish_light$bg_soft
+theme_fg <- base_colors$primary
+theme_muted <- "gray20"
+theme_title_family <- "SpaceGrotesk"
+theme_caption_family <- "FiraCode"
+
 # ---- Plot Theme ----
 theme_base <- function(base_size = 12, base_family = "FiraCode") {
   theme_minimal(base_size = base_size, base_family = base_family) +
     theme(
-     plot.background  = element_rect(fill = "#FBFBFB", color = NA),
-      panel.background = element_rect(fill = "#FBFBFB", color = NA),
-          # Titles
-          plot.title = element_text(
-                                    family = "SpaceGrotesk",
-                                    face   = "bold",
-                                    size   = 24,
-                                    color  = base_colors$primary,
-                                    hjust  = 0,
-                                    margin = margin(b = 6)
-                                    ),
-          plot.subtitle = element_text(
-                                       size   = 14,
-                                       hjust  = 0,
-                                       color  = "gray20",
-                                       margin = margin(b = 25)
-                                       ),
-
-          # Axis - Titles
-
-          axis.title.x = element_text(
-                                      size = 12,
- color = "#2A2F3A",
-                                      margin = margin(t = 10)   # space ABOVE x-axis title
-                                      ),
-
-          axis.title.y = element_blank(),
-
-          # Axis - Text
-          axis.text.x = element_text(size = 10,
- color = "#2A2F3A"
-                                     ),
-          axis.text.y = element_text(size = 10,
- color = "#2A2F3A"
-                                     ),
-
-          # Grid
-          panel.grid.minor = element_blank(),
-          panel.grid.major.y = element_blank(),
-
-          # Caption
-          plot.caption = element_markdown(
-                                          size = 8,
-                                          color = "gray20",
-                                          hjust = 0,
-                                          family  = "FiraCode",
-                                          lineheight = 1.5,
-                                          margin = margin(t=15)
-                                          ),
-          # Margins
-          plot.margin = margin(30, 10, 30, 10),
-          legend.title = element_text(
-                                     size = 10,
-                                     color = "gray20",
-                                     margin = margin(r = 10)   # space to the RIGHT of y-axis title
-          ),
-           legend.text = element_text(
-                                     size = 8,
-                                     color = "gray20",
-                                     margin = margin(r = 10)   # space to the RIGHT of y-axis title
-          )
+      plot.background = element_rect(fill = theme_bg, color = NA),
+      panel.background = element_rect(fill = theme_bg, color = NA),
+      plot.title = element_markdown(
+        family = theme_title_family,
+        face = "bold",
+        size = 24,
+        color = theme_fg,
+        hjust = 0,
+        margin = margin(b = 6)
+      ),
+      plot.subtitle = element_markdown(
+        size = 14,
+        hjust = 0,
+        color = theme_muted,
+        margin = margin(b = 25),
+        lineheight = 1.5
+      ),
+      axis.title.x = element_text(
+        size = 12,
+        color = theme_fg,
+        margin = margin(t = 10)
+      ),
+      axis.title.y = element_blank(),
+      axis.text.x = element_text(size = 10, color = theme_fg),
+      axis.text.y = element_text(size = 10, color = theme_fg),
+      panel.grid.minor = element_blank(),
+      panel.grid.major.y = element_blank(),
+      plot.caption = element_markdown(
+        size = 8,
+        color = theme_muted,
+        hjust = 0,
+        family = theme_caption_family,
+        lineheight = 1.5,
+        margin = margin(t = 15)
+      ),
+      plot.margin = margin(30, 10, 30, 10),
+      legend.title = element_text(
+        size = 10,
+        color = theme_muted,
+        margin = margin(r = 10)
+      ),
+      legend.text = element_text(
+        size = 8,
+        color = theme_muted,
+        margin = margin(r = 10)
+      )
     )
 
 }
