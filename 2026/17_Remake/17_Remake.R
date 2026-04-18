@@ -11,17 +11,30 @@ suppressPackageStartupMessages({
 source("../utils/theme.R")
 
 # ---- Data ----
-df <- data.frame(
+ df <- data.frame(
   Year = rep(2018:2024, each = 6),
-  Party = rep(c("BJP", "INC", "TMC", "BRS", "DMK", "Others"), times = 7),
+  Party = rep(c("BJP", "INC", "TMC", "YSRCP", "BRS", "Others"), times = 7),
   Amount = c(
-    550,120,100,90,50,146,
-    3000,600,600,500,200,900,
-    1800,350,300,250,150,550,
-    950,200,180,150,120,200,
-    1500,300,280,250,150,320,
-    1700,350,320,300,180,350,
-    550,120,100,90,60,80
+    # FY2017-18
+    215, 5, 0, 0, 0, 2,
+
+    # FY2018-19 (Lok Sabha)
+    2555, 383, 100, 99, 20, 971,
+
+    # FY2019-20
+    22, 45, 43, 952, 80, 258,
+
+    # FY2020-21
+    1034, 236, 434, 74, 100, 122,
+
+    # FY2021-22
+    1034, 236, 529, 100, 529, 372,
+
+    # FY2022-23
+    1294, 171, 325, 45, 529, 836,
+
+    # FY2023-24 (partial)
+    1686, 0, 0, 0, 0, 0
   )
 )
 
@@ -114,7 +127,7 @@ funding_plot <- ggplot(df, aes(x = Year, y = Amount, fill = Party)) +
   ) +
 
   geom_text(
-    data = df %>% filter(Party %in% top_parties),
+    data = df %>% filter(Party == "BJP"),
     aes(label = scales::number(Amount, accuracy = 0.1)),
     position = position_stack(vjust = 0.5),
     size = 3,
@@ -246,7 +259,7 @@ results_plot <- ggplot(elections_df, aes(x = Year, y = Pct)) +
 plot <- funding_plot + results_plot + plot_layout(widths = c(1.6, 1))
 
 # ---- Save ----
-ggsave("16_causation_electoral_bonds.png",
+ggsave("17_remake.png",
   plot,
   width = 16,
   height = 9,
