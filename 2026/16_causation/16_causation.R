@@ -17,7 +17,7 @@ scale_factor <- max(hb_data$population_billions) / max(hb_data$nitrogen_fertiliz
 # ---- Adoption Milestones ----
 milestones <- tibble::tribble(
   ~year, ~label,
-  1913, "1913\nInvention of Haber-Bosch process",
+  1913, "1913\nInvention of the Haber-Bosch process",
   1960, "1960s\nIndia's Green Revolution",
   1972, "1970s\nChina scales up fertilizer use",
   2005, "2000s\nIndia and China dominate demand"
@@ -50,7 +50,7 @@ plot <- ggplot(hb_data, aes(x = year)) +
     label.size = 0.15,
     fill = scales::alpha("white", 0.85),
     color = "gray20",
-    family = "FiraCode",
+    family = "FiraCodeMedium",
     segment.color = "gray70",
     min.segment.length = 0,
     seed = 1,
