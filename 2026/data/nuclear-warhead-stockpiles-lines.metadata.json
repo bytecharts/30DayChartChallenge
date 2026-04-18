@@ -1,0 +1,48 @@
+{
+  "chart": {
+    "title": "Estimated nuclear warhead stockpiles",
+    "subtitle": "Stockpiles include warheads assigned to military forces, but exclude retired warheads queued for dismantlement. The latter are only included in the global total.",
+    "note": "The exact number of countries' warheads is secret, and the estimates are based on publicly available information, historical records, and occasional leaks. Warheads vary substantially in their power.",
+    "citation": "Federation of American Scientists (2024)",
+    "originalChartUrl": "https://ourworldindata.org/grapher/nuclear-warhead-stockpiles-lines?v=1&csvType=full&useColumnShortNames=false",
+    "selection": [
+      "United Kingdom",
+      "France",
+      "Russia",
+      "United States",
+      "South Africa",
+      "Pakistan",
+      "North Korea",
+      "Israel",
+      "India",
+      "China",
+      "World"
+    ]
+  },
+  "columns": {
+    "Number of nuclear warheads": {
+      "titleShort": "Number of nuclear warheads",
+      "titleLong": "Number of nuclear warheads",
+      "descriptionShort": "Estimated number of nuclear warheads in the stockpiles of nuclear powers.",
+      "descriptionKey": [
+        "Stockpiles include warheads assigned to military forces, but exclude retired warheads queued for dismantlement.",
+        "Retired warheads are only included in the global total.",
+        "The exact number of countries' warheads is secret, and the estimates are based on publicly available information, historical records, and occasional leaks.",
+        "Warheads vary substantially in their destructing power."
+      ],
+      "shortUnit": "",
+      "unit": "warheads",
+      "timespan": "1945-2024",
+      "type": "Integer",
+      "owidVariableId": 1033214,
+      "shortName": "number_of_warheads",
+      "lastUpdated": "2025-05-15",
+      "nextUpdate": "2026-05-15",
+      "citationShort": "Federation of American Scientists (2024) – with minor processing by Our World in Data",
+      "citationLong": "Federation of American Scientists (2024) – with minor processing by Our World in Data. “Number of nuclear warheads” [dataset]. Federation of American Scientists, “Estimated Global Nuclear Warhead Inventories” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/1033214.metadata.json"
+    }
+  },
+  "dateDownloaded": "2026-04-17",
+  "activeFilters": {}
+}
