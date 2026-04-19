@@ -17,6 +17,7 @@ suppressPackageStartupMessages({
 font_add("SpaceGrotesk", "../utils/fonts/SpaceGrotesk.ttf")
 font_add("FiraCode", "../utils/fonts/FiraCode-Regular.ttf")
 font_add("FiraCodeMedium", "../utils/fonts/FiraCode-Medium.ttf")
+font_add("NotoEmoji",  "../utils/fonts/NotoEmoji.ttf")
 showtext_auto()
 showtext_opts(dpi = 300)
 
@@ -114,6 +115,17 @@ caption_global <- function(source, day, topic) {
         "<span style='font-family: FiraCodeMedium;'>Viz</span>: Byte Charts | ", source,
         paste0("<br>#30DayChartChallenge 2026 \u2022 ", day, " \u2022 ", topic, "<br>",
                "<img src='", "../utils/bluesky.png", "' width='7' style='vertical-align:bottom;'/>  byte-charts&nbsp;&nbsp;",
+               "   <img src='", "../utils/github.png", "' width='7'  style='vertical-align:bottom;'/>  byte-charts&nbsp;&nbsp;"
+               ),
+        sep = "\n"
+  )
+}
+
+
+caption_general <- function(source) {
+  paste(
+        "<span style='font-family: FiraCodeMedium;'>Viz</span>: Byte Charts | ", source,
+        paste0( "<img src='", "../utils/bluesky.png", "' width='7' style='vertical-align:bottom;'/>  byte-charts&nbsp;&nbsp;",
                "   <img src='", "../utils/github.png", "' width='7'  style='vertical-align:bottom;'/>  byte-charts&nbsp;&nbsp;"
                ),
         sep = "\n"

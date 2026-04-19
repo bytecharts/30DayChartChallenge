@@ -1,0 +1,38 @@
+Species,Year,Population,Data Source
+Tiger,2000,3000 (est),Historical estimates (pre-2006 all-India assessment)
+Tiger,2006,1411,All India Tiger Estimation 2006 (NTCA/WII)
+Tiger,2010,1706,All India Tiger Estimation 2010 (NTCA/WII)
+Tiger,2014,2226,All India Tiger Estimation 2014 (NTCA/WII)
+Tiger,2018,2967,All India Tiger Estimation 2018 (NTCA/WII)
+Tiger,2022,3682,All India Tiger Estimation 2022 (NTCA/WII)
+Tiger,2025,3650 (est),Projection based on 2022 estimate (NTCA trend)
+
+Asiatic Lion,2001,327,Gujarat Lion Census 2001 (Forest Dept. of Gujarat)
+Asiatic Lion,2005,359,Gujarat Lion Census 2005 (Forest Dept. of Gujarat)
+Asiatic Lion,2010,411,Gujarat Lion Census 2010 (Forest Dept. of Gujarat)
+Asiatic Lion,2015,523,Gujarat Lion Census 2015 (Forest Dept. of Gujarat)
+Asiatic Lion,2020,674,Gujarat Lion Census 2020 (Forest Dept. of Gujarat)
+Asiatic Lion,2025,891,Government of India/Gujarat report 2025
+
+Leopard,2001,9500 (est),Early 2000s extrapolation (WII/NTCA landscape models)
+Leopard,2006,10000 (est),WII/NTCA inferred baseline
+Leopard,2010,11000 (est),WII/NTCA landscape estimates
+Leopard,2014,13000 (est),Status of Leopards in India 2014 (MoEFCC/WII)
+Leopard,2018,12852,Status of Leopards in India 2018 (MoEFCC/WII)
+Leopard,2022,13500 (est),Projected from 2018 baseline (NTCA/WII trend)
+Leopard,2025,13500 (est),Stability assumption based on recent reports
+
+Snow Leopard,2000,450 (est),Early range-wide estimates (WWF/GSLEP)
+Snow Leopard,2005,500 (est),Modeled population range (WWF/GSLEP)
+Snow Leopard,2010,550 (est),Pre-survey extrapolation
+Snow Leopard,2015,650 (est),Landscape modeling (GSLEP India)
+Snow Leopard,2020,718,Status of Snow Leopard in India 2020 (MoEFCC/WII)
+Snow Leopard,2025,700 (est),Stable projection from 2020 assessment
+
+Cheetah,2000,0,Extinct in India (declared 1952)
+Cheetah,2005,0,Extinct in India
+Cheetah,2010,0,Extinct in India
+Cheetah,2015,0,Extinct in India
+Cheetah,2020,0,Extinct in India
+Cheetah,2022,8,Project Cheetah translocation (MoEFCC)
+Cheetah,2025,30 (est),Project Cheetah updates (MoEFCC reports)
