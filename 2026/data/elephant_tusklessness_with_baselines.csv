@@ -1,0 +1,21 @@
+Country,Location,Period,Year,Tusklessness_Percentage,Age_Group,Status,Notes
+Baseline,All Africa,Natural,Pre-hunting,2-4,All females,Natural baseline,Normal tusklessness under no poaching pressure
+South Africa,Addo NP,Baseline,Pre-1700s,3,All females,Before hunting,Before ivory hunters decimated population (1700s-1900s)
+South Africa,Addo NP,After massacre,1931,50,Adult females,Post-hunting,Only 8 females survived from 11 total elephants after 1919-1920 hunting
+South Africa,Addo NP,Current,2000,98,Adult females,Recovery period,174 female elephants surveyed
+Mozambique,Gorongosa NP,Baseline,Pre-1977,18.5,All females,Pre-civil war,Before Mozambican Civil War (1977-1992)
+Mozambique,Gorongosa NP,Post-war peak,1992,50.9,War survivors,Post-war,Adult females that survived the war
+Mozambique,Gorongosa NP,War survivors,1992,51,25+ years,Post-war,Older females that survived poaching
+Mozambique,Gorongosa NP,New generation,2021,32,Born after 1992,Current,Females born after civil war ended
+Tanzania,Ruaha NP,Baseline,Pre-1970s,3,All females,Before poaching,Natural baseline before ivory wars
+Tanzania,Ruaha NP,Current older,2015,35,25+ years,Recent survey,Older female elephants
+Tanzania,Ruaha NP,Current younger,2015,13,5-25 years,Recent survey,Younger female elephants
+Tanzania,Selous GR,Baseline,Pre-1970s,3,All females,Before poaching,Natural baseline before ivory wars
+Tanzania,Selous GR,Ivory wars,1989,High (estimated 30-40),All females,Peak poaching,Exact percentage not specified - experienced heavy poaching
+Zambia,South Luangwa NP,Baseline,1969,10.5,Adult females,Pre-ivory wars,Before intensive poaching period
+Zambia,South Luangwa NP,Ivory wars peak,1989,38.2,Adult females,Peak poaching,Peak of ivory poaching period (1970s-1980s)
+Uganda,Queen Elizabeth NP,Baseline,Pre-1970s,3.5,All females,Before poaching,Normal baseline before ivory wars
+Uganda,Queen Elizabeth NP,Ivory wars,1989,9-25,Adult females,Peak poaching,Range reflects survey uncertainty during poaching period
+Kenya,Southern Kenya,Baseline,1966-1968,3,Adult females,Pre-poaching,Before major poaching (1970s-1980s)
+Kenya,Southern Kenya,Post-poaching,2005-2013,Not measured,Adult females,After poaching,Tusk size reduced 20% (males) 33% (females) but tusklessness % not measured
+Africa,Continental average,Current,2021,6,All females,Current estimate,Average across all African populations
