@@ -110,7 +110,8 @@ annotation_theme <- theme(
     hjust = 0,
     color = theme_muted,
     margin = margin(b = 25),
-    lineheight = 1.5
+    lineheight = 1.5,
+    family = "FiraCode"
   ),
   plot.caption = element_markdown(
     size = 8,
@@ -222,7 +223,7 @@ dumbbell_plot <- ggplot(dumbbell_data, aes(y = Country)) +
     hjust = 0,
     vjust = -0.7,
     size = 2.7,
-    family = "FiraCode",
+    family = "FiraCodeMedium",
     linewidth = 0.15,
     fill = scales::alpha(night_owlish_light$bg, 0.9),
     color = night_owlish_light$fg_soft
@@ -281,7 +282,7 @@ dumbbell_plot <- ggplot(dumbbell_data, aes(y = Country)) +
     panel.grid.major.y = element_blank(),
     panel.grid.major.x = element_line(color = scales::alpha(night_owlish_light$gray, 0.2), linewidth = 0.35),
     axis.title.y = element_blank(),
-    axis.text.y = element_text(size = 10, color = night_owlish_light$fg),
+    axis.text.y = element_text(size = 10, family="FiraCodeMedium", color = night_owlish_light$fg),
     legend.position = c(0.83, 0.18),
     legend.background = element_rect(fill = scales::alpha(night_owlish_light$bg, 0.85), color = NA),
     legend.key = element_rect(fill = NA, color = NA),
