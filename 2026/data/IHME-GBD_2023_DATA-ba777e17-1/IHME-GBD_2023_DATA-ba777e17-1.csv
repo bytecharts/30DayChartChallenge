@@ -1,0 +1,235 @@
+population_group_id,population_group_name,measure_id,measure_name,location_id,location_name,sex_id,sex_name,age_id,age_name,cause_id,cause_name,metric_id,metric_name,year,val,upper,lower
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,1980,39793.584358334425,49442.86072404312,31889.700219036975
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,1980,0.0008654453455159772,0.001073317757646322,0.0006952336509482842
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,1980,0.890385846153016,1.1062894708247752,0.7135355653667407
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,1981,41338.398402628685,51274.05165557149,33666.84383344693
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,1981,0.0009018828257876408,0.0011205955215825118,0.0007355774951123946
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,1981,0.908167933021565,1.1264454190058866,0.7396306861670064
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,1982,42983.39047269307,53604.38788756292,35025.85225157443
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,1982,0.000935848113367945,0.0011615772282950612,0.0007587669480443303
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,1982,0.9273762495639306,1.156526640934002,0.7556905851687304
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,1983,44488.13714738043,55323.31104697225,35762.23747063601
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,1983,0.0009578640487191628,0.0011952826086485087,0.000768166885954458
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,1983,0.9425116725702826,1.1720622568274501,0.7576475081804926
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,1984,46511.55405991439,57951.155846747584,37202.57843209374
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,1984,0.0009937755698855722,0.0012414216154104497,0.0007959930687328727
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,1984,0.9675497227153341,1.2055203465858346,0.773901134326752
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,1985,48492.414608035455,59426.16223422616,38928.20827228005
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,1985,0.0010336327596714157,0.0012699038816722718,0.0008315895166779211
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,1985,0.990438714099994,1.2137562582295396,0.7950935183381208
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,1986,50738.66763181026,61724.911066819564,41218.55641871739
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,1986,0.0010821368031616852,0.0013069409121506063,0.0008749088615718632
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,1986,1.0177601856759788,1.2381317815451311,0.8267975410475491
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,1987,53506.53527059263,65666.98590184093,42367.785592005785
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,1987,0.001138503474382622,0.0013971126827105472,0.0009034861497299778
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,1987,1.0544656434003927,1.2941144514211458,0.8349517319294261
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,1988,57266.61540571472,70167.18798846482,45789.05684131166
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,1988,0.0012084207321945335,0.0014847793714500358,0.0009638702155383809
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,1988,1.1092280254698457,1.3591061883753202,0.886912990201726
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,1989,61260.959928389384,75263.53726611764,49385.238059850664
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,1989,0.0012880584523855293,0.0015833617524771742,0.0010383599618116349
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,1989,1.1668380521084487,1.4335452679985001,0.9406410713777268
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,1990,65319.59373133553,80376.71066209248,52471.16650287849
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,1990,0.0013625558958034391,0.0016605854655695525,0.0010978761386932021
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,1990,1.224108080511273,1.5062828071324001,0.9833248377846692
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,1991,70131.88733794459,84790.22695187698,56812.34955857624
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,1991,0.0014493873267941919,0.001750762155904343,0.00117834534742641
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,1991,1.2941534882719465,1.5646458714618348,1.0483662018657347
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,1992,73626.19227586211,87648.90595815364,61277.45053647227
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,1992,0.0015185457156721058,0.001813877505912545,0.0012632818873051302
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,1992,1.338645155186304,1.5936011314920129,1.1141247394062186
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,1993,76436.4009977832,92230.90892528645,65030.65166777274
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,1993,0.0015541213913796907,0.0018891694534343532,0.0013153584700953751
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,1993,1.36980465495314,1.6528555338454585,1.165404024866827
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,1994,79106.38769975897,96626.31891698144,67021.62627331231
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,1994,0.0015729363332294313,0.0019189695127995396,0.00133557069430232
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,1994,1.3982860224769629,1.7079686618711352,1.1846755482924545
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,1995,81021.76084956272,97777.99192328757,68620.88906922651
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,1995,0.0016244401246569573,0.001962890559952567,0.0013820890506263254
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,1995,1.4134346304524927,1.705749152219576,1.1970998897811191
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,1996,82218.13779545756,96965.17953777015,70024.61671222773
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,1996,0.0016432789633853543,0.0019411144403626475,0.0014055031596127874
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,1996,1.4158416765115218,1.6697938683741647,1.205862518676442
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,1997,82134.17351567188,96927.95163347309,69672.26797616783
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,1997,0.001638905376348341,0.0019363354847450327,0.001395617445558176
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,1997,1.3963438819202176,1.6478494450867511,1.184481939292477
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,1998,83059.48579669048,97746.17742803699,71066.81067236184
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,1998,0.0016471788782386843,0.0019360289130861896,0.0014094456016563242
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,1998,1.394279627831607,1.6408180544233022,1.1929643602415372
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,1999,83760.03153216095,97321.7222261072,72105.48035701715
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,1999,0.0016508821716339052,0.0019148093952131916,0.0014172863432474012
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,1999,1.3885218048880124,1.6133390941754537,1.1953198905996094
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,2000,84349.38166612317,96710.20501138146,73229.65794153736
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,2000,0.0016621804896878515,0.0019084745193224519,0.0014438157049150321
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,2000,1.380892245922322,1.5832525332596517,1.1988501258169404
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,2001,83218.07944470335,93956.29503628923,72819.69305196925
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,2001,0.001637228956894674,0.0018559326441712157,0.0014313240012240075
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,2001,1.3452978896690508,1.518891162555994,1.1771982728135097
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,2002,82382.64328384912,93361.83234944327,71939.57998106047
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,2002,0.0016105192803350106,0.0018268814146046122,0.0014121224633385219
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,2002,1.3150129360122986,1.4902655750716658,1.148318074238487
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,2003,80472.18998984227,91307.26512732582,71206.1088415475
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,2003,0.0015659433725370901,0.0017761958702672347,0.0013847444354972034
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,2003,1.26817930840847,1.4389316900218216,1.1221530553167554
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,2004,80777.94409494846,91470.40835643762,71489.88623565361
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,2004,0.001576893036181377,0.0017801337588441862,0.001402099231116881
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,2004,1.256718061853953,1.4230680861544802,1.1122173543637959
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,2005,83913.7264444659,94299.27404888478,74679.1731380834
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,2005,0.0016410812914774693,0.0018398624894068447,0.0014586979161574562
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,2005,1.288521621787128,1.4479949667261054,1.1467221557522795
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,2006,85865.59270373039,96882.15365238092,76836.97397278922
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,2006,0.0016842813324559718,0.001893083948561746,0.0015020472653265661
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,2006,1.3012876555141257,1.4682429436254152,1.1644595066483119
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,2007,86998.92229430609,97537.99979667923,77803.77066695923
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,2007,0.0016985069753092405,0.0019056651268556583,0.0015181691284771245
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,2007,1.3009362960121849,1.4585321384404542,1.163436816893535
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,2008,87834.59851089859,98057.42807937013,78802.33379146004
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,2008,0.0017001692219652483,0.00190678133614783,0.001522234211177736
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,2008,1.2959547067300508,1.4467873435265393,1.1626882471112272
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,2009,87263.5938869538,97921.67120160745,78255.89763796359
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,2009,0.0016997502763006396,0.0019160576275733593,0.0015249645049956063
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,2009,1.270045407114656,1.425164415388419,1.1389462540757125
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,2010,87695.40399020736,98300.14649928207,78499.47748039314
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,2010,0.0016913391048042432,0.0018973516025445258,0.0015147279977228366
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,2010,1.2594101441967926,1.4117068403157242,1.1273457188702205
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,2011,89080.58470912224,100782.00344347788,80175.72641099914
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,2011,0.0017199685236617892,0.0019451479158013605,0.0015501289136037035
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,2011,1.2633518792629084,1.4293028482238999,1.13706207658325
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,2012,91104.38260605805,103506.55200315271,81473.38641446122
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,2012,0.0017506283663820666,0.0019853383454050883,0.001571235435421988
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,2012,1.2760301235972453,1.4497379222338855,1.141136050346473
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,2013,94037.65855768695,106445.0965748731,83415.23156040191
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,2013,0.001796716376305576,0.002032587359295151,0.0015958077988330202
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,2013,1.300583919555763,1.4721844742222536,1.1536708854456146
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,2014,98046.67271178751,110471.3041389822,87271.30513270812
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,2014,0.0018582983363961006,0.0020920524160010574,0.0016583866730003208
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,2014,1.3391709092420232,1.508872792081674,1.1919955039051124
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,2015,103684.11416700413,117008.62935097805,92205.9783107141
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,2015,0.001928185971489327,0.0021835180610186126,0.0017144602581184412
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,2015,1.3985913175556708,1.5783252275828934,1.2437631524186783
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,2016,111187.71718630368,125196.70315350645,97525.28996531386
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,2016,0.002035691285266261,0.0022899568034429555,0.0017876097265806998
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,2016,1.4816563518440053,1.6683361719397825,1.2995946764552806
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,2017,118129.42859685973,132909.43843461244,103085.98751010791
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,2017,0.0021326291023635365,0.0023952846591324163,0.001862461291457887
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,2017,1.5553547565656956,1.7499562108882099,1.3572848265972266
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,2018,123138.55990031171,138102.08885320244,107500.42976485023
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,2018,0.002220545264313314,0.002493504297246737,0.0019332524734010648
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,2018,1.6027052015473537,1.7974624384820497,1.3991677188054006
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,2019,131278.42155123642,149528.07929342892,114713.22110012607
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,2019,0.002379975978860118,0.0027180418611537746,0.002072742912570834
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,2019,1.6897473608849416,1.9246474354176593,1.4765287419067312
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,2020,146587.7196375655,167492.3538222731,127632.70450502317
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,2020,0.002437082077671653,0.0027835063273907398,0.0021212206888788295
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,2020,1.8674029806207004,2.133710255758259,1.6259321954571317
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,2021,161517.29487130643,185448.893208703,139857.24543251807
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,2021,0.0024497972172914397,0.0028146389281088874,0.0021269218729431695
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,2021,2.038648522588556,2.340709782545823,1.7652584325504304
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,2022,170855.5749211165,196723.8263450553,147066.0134343128
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,2022,0.0028113918776555965,0.003243573162230648,0.0024178101350523264
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,2022,2.137078065277538,2.4606406574300475,1.8395159280192575
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,2023,172507.9466470534,198782.42754582077,149198.92256803543
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,2023,0.0028733377448131384,0.003321974941683102,0.002495184167803942
+1,All Population,1,Deaths,1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,2023,2.138750820406264,2.4645014230318907,1.849765904981669
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,1991,9533240.688255342,11470970.294662608,7583240.486628668
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,1991,0.00346467471971893,0.004068212682811457,0.0028014835288688515
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,1991,175.9182186526807,211.67541305664463,139.93459324551475
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,1992,9872540.930953419,11816250.821620774,7969305.87100698
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,1992,0.003606463076705979,0.004233773438287228,0.0029199952432208778
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,1992,179.49901628869114,214.83885592728922,144.89507557922053
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,1993,10147617.253713552,12048097.229312507,8162223.537114304
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,1993,0.0036921111506117796,0.004298261815634797,0.0029914997871450712
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,1993,181.85384410266443,215.91204521153395,146.27391726922775
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,1994,10397813.968940217,12315805.742597386,8379629.460523172
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,1994,0.0037011553316912784,0.004300799018508887,0.002976318927855618
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,1994,183.7919586502507,217.6944179372245,148.11849066673324
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,1995,10586642.282427797,12506310.407701047,8485436.655612988
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,1995,0.0038314257642445867,0.004431890094116042,0.003079305305541825
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,1995,184.68528288319519,218.17413055555068,148.02949106257438
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,1996,10725518.775152097,12701524.628319105,8618361.974751022
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,1996,0.0038850685057028036,0.0044992755624275365,0.0031252225047037085
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,1996,184.69934848008842,218.72725904776283,148.4129462707047
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,1990,9118475.58582852,10975926.853641797,7217658.607446324
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,1990,0.0033231712215469433,0.003910947699783172,0.0026874683453837617
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,1990,170.88287003847,205.69204407341755,135.26101004373382
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,1997,10796788.354085702,12778800.67548419,8660389.20263679
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,1997,0.003926225991490138,0.004570317675170197,0.003150731483961753
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,1997,183.55367464358073,217.2494027481214,147.23325213520738
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,1998,10927103.147112787,12982540.043998325,8799914.653936487
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,1998,0.003975444003869673,0.0046400822950963105,0.003197293894295255
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,1998,183.4280234593152,217.93165376875183,147.71993362291377
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,1999,11039311.931246625,13094393.634403907,8876418.002791176
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,1999,0.004022265470718076,0.00468148445317546,0.0032635444626868187
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,1999,183.0028600408391,217.07072873027025,147.14774720976104
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,2000,11141986.124268036,13125850.544079943,8967289.850567326
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,2000,0.0040787569327847915,0.0047313781611286595,0.0033359515178842487
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,2000,182.40658009891723,214.8846248713509,146.8044077738583
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,2001,11133239.609991912,13103939.219165087,8936116.386888986
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,2001,0.00409453803396404,0.004751530761770579,0.0033299130470055877
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,2001,179.97920466855103,211.83740234726505,144.46065803653832
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,2002,11120674.335984848,13073587.557034858,8903879.654848473
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,2002,0.0040973464141563195,0.004734086513061156,0.003318760709811456
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,2002,177.51106332694005,208.68396633445582,142.1260165989104
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,2003,11060651.420813108,12942326.668082401,8842451.48826701
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,2003,0.004086053230691083,0.00469543752780383,0.00333678106687783
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,2003,174.30728890520444,203.96103157124244,139.35017817262562
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,2004,11123338.20491275,12974858.317738954,8876705.076116508
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,2004,0.0041192844638087865,0.004718166431189141,0.0033648307535282043
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,2004,173.05342673481294,201.85879921296774,138.1010091788645
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,2005,11323345.268036982,13227833.52766102,9023425.47262956
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,2005,0.004231692393280521,0.004839449980074506,0.0034676501116049905
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,2005,173.873522569428,203.11753788066935,138.5575318450742
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,2006,11440973.205259608,13430890.309615532,9106149.697076127
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,2006,0.0043057394930665,0.0049261286859501935,0.0035414013561524916
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,2006,173.38722915989842,203.54429768826006,138.00312578001987
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,2007,11468360.933489,13476441.653768776,9140745.647265615
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,2007,0.0043285015914857165,0.004944897921448864,0.0035710237996881603
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,2007,171.49185990687243,201.51964675113814,136.6859206015879
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,2008,11468360.5141715,13473189.549185716,9176134.987180024
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,2008,0.004322062951590224,0.004937337825342075,0.003568090728042307
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,2008,169.2098106986106,198.79004067818235,135.38919204771784
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,2009,11427961.17098306,13410020.5442031,9152950.357836138
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,2009,0.004345659310270444,0.004969772839567321,0.0035834893850920668
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,2009,166.32399551059,195.1711388777051,133.21319975174842
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,2010,11484987.422588624,13474821.024197372,9269969.005320787
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,2010,0.004349093635814958,0.004976812696690845,0.0035913683088980718
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,2010,164.9380584140517,193.51443196504792,133.12776349139708
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,2011,11647216.110832645,13699762.325880088,9445248.072882423
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,2011,0.004439827527834248,0.005093525071481963,0.003659178596511911
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,2011,165.1822606446679,194.2917251427004,133.95367735791731
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,2012,11862177.60354122,13936934.444831349,9690347.573783277
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,2012,0.004533421008829326,0.005221088275961069,0.0037604180079831894
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,2012,166.14454234359363,195.20409088445197,135.72536313365785
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,2013,12147260.03948096,14258058.746045446,9970605.407465048
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,2013,0.004642279793235749,0.005352357665456215,0.003865073596256017
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,2013,168.0021739835187,197.19548756961558,137.89804276368557
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,2014,12500382.542975685,14675257.476019956,10316372.232551718
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,2014,0.004764883315515461,0.0054741403217636615,0.003990353161728417
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,2014,170.7365297867708,200.4420685982109,140.9062153833244
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,2015,12929557.390445324,15126426.73264514,10675433.77668894
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,2015,0.004898278266113201,0.005589204987265016,0.004120012758372451
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,2015,174.40633843857714,204.03983063253054,144.00054541787387
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,2016,13509527.958241748,15832409.766895315,11183426.77009211
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,2016,0.005093962728489304,0.005785183033566177,0.00430866651595117
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,2016,180.02418267301837,210.97825452078902,149.02721027651756
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,2017,14092524.044888109,16495824.868162483,11675605.002280293
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,2017,0.005301576703737397,0.006013258921094244,0.004483105495857418
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,2017,185.54965147622727,217.19278571752315,153.7272125310325
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,2018,14585833.04457601,17015676.478485383,12164546.322544854
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,2018,0.005503125296425328,0.006235049044132696,0.004630492518121265
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,2018,189.8413503322451,221.4668843130301,158.3271859065895
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,2019,15209002.724822871,17619653.79160117,12745975.114907324
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,2019,0.005765451229686223,0.006546166984607974,0.0048356128893235276
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,2019,195.76234930529807,226.79099232195168,164.059542747579
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,2020,16096224.510721942,18536394.624651622,13649287.325428382
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,2020,0.00577345674447174,0.006572465945100041,0.0049480008687327465
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,2020,205.05222198953732,236.1379156290889,173.8803216113433
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,2021,16969081.715931762,19513583.2502457,14444064.456158113
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,2021,0.005713969814957157,0.006477614370943156,0.004929216304316003
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,2021,214.1813568474666,246.29769644928194,182.31094501169582
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,2022,17522529.60441298,20216774.77574684,14798776.024017345
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,2022,0.006236238330974767,0.007036254126454071,0.0053505320053365436
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,2022,219.17349599541276,252.8733753279769,185.10452262669375
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,1,Number,2023,17576073.04869001,20346868.635009557,14901992.556263082
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,2,Percent,2023,0.006280073821968767,0.007093827995241417,0.005366446206782342
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,561,Drug use disorders,3,Rate,2023,217.9078783501842,252.26015862828342,184.75467029124297
