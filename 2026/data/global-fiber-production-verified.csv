@@ -1,0 +1,14 @@
+Year,Total,Polyester,Other_Synthetics,Cotton,Cellulosics,Wool,Notes
+1975,24.0,3.4,1.6,13.8,3.7,1.5,Statista/Textile Exchange historical baseline
+1980,30.0,5.2,3.3,14.0,5.0,2.5,Polyester 5.2 Mt per PCI Fibres/Textile World
+1990,40.0,9.0,8.0,18.0,3.0,2.0,MMCF ~3 Mt per Textile Exchange MMR
+1995,47.0,16.0,6.0,20.0,3.5,1.5,Synthetics surpass cotton mid-1990s (Statista)
+2000,58.0,19.2,10.8,21.0,4.0,3.0,Polyester 19.2 Mt per PCI Fibres; Textile Exchange MMR 2025 anchor
+2005,70.0,28.0,12.0,23.0,4.5,2.5,Interpolated between 2000 and 2010 anchors
+2010,82.0,38.0,12.0,25.0,5.5,1.5,Interpolated; cotton near peak; cellulosic doubling underway
+2015,98.0,49.0,14.0,26.0,6.0,3.0,Textile Exchange MMR; Paris Agreement baseline ~98 Mt
+2020,109.0,57.0,18.0,25.0,7.0,2.0,Textile Exchange; polyester 57 Mt; COVID dip in cotton
+2021,113.0,61.0,18.5,25.1,7.5,2.0,Textile Exchange MMR 2023; polyester 61 Mt
+2022,116.0,63.0,19.0,25.1,8.0,1.9,Textile Exchange MMR 2023; polyester 63 Mt; MMCF 8 Mt
+2023,125.0,71.0,19.0,24.4,7.9,2.0,Textile Exchange MMR 2024; polyester 71 Mt; cotton 24.4 Mt
+2024,132.0,78.0,19.1,24.5,8.4,2.0,Textile Exchange MMR 2025; polyamide 7 Mt + others ~12 Mt

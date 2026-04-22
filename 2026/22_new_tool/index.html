@@ -1,0 +1,644 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Global Fabric Production Over the Years</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Fira+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <style>
+    :root {
+      --bg: #FBFBFB;
+      --bg-alt: #F2F4F8;
+      --bg-soft: #E8ECF2;
+      --fg: #2A2F3A;
+      --fg2: #3A3F4A;
+      --fg-soft: #5A6270;
+      --gray: #8A93A6;
+
+      --cat-1: #2E86AB;
+      --cat-2: #F07178;
+      --cat-3: #FFB454;
+      --cat-4: #7FDBCA;
+      --cat-5: #6C5CE7;
+      --cat-6: #8A93A6;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Fira Sans", sans-serif;
+      font-weight: 400;
+      color: var(--fg);
+      background:
+        radial-gradient(circle at 10% 15%, rgba(46, 134, 171, 0.14) 0, rgba(46, 134, 171, 0) 38%),
+        radial-gradient(circle at 90% 10%, rgba(125, 219, 202, 0.18) 0, rgba(125, 219, 202, 0) 36%),
+        linear-gradient(180deg, var(--bg) 0%, var(--bg-alt) 100%);
+      display: grid;
+      place-items: center;
+      padding: 20px;
+    }
+
+    .card {
+      width: min(1200px, 100%);
+      background: color-mix(in srgb, var(--bg) 92%, white 8%);
+      border: 1px solid rgba(138, 147, 166, 0.35);
+      border-radius: 20px;
+      box-shadow: 0 16px 48px rgba(42, 47, 58, 0.08);
+      backdrop-filter: blur(2px);
+      padding: 3em;
+    }
+
+    h1 {
+      margin: 0;
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 2.6rem;
+      line-height: 1.1;
+      letter-spacing: 0.2px;
+      color: var(--fg2);
+    }
+
+    .subtitle {
+      margin: 10px 0 14px;
+      color: var(--fg2);
+      font-family: "Fira Sans", sans-serif;
+      font-size: 1.4rem;
+      font-weight: 500;
+      line-height: 1.35;
+      max-width: 80ch;
+    }
+
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .legend-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 5px 9px;
+      border-radius: 999px;
+      background: rgba(242, 244, 248, 0.82);
+      border: 1px solid rgba(138, 147, 166, 0.22);
+      font-size: 1.3rem;
+      font-weight: 500;
+      color: var(--fg-soft);
+    }
+
+    .legend-swatch {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      flex: 0 0 auto;
+    }
+
+    .chart-wrap {
+      height: 920px;
+      position: relative;
+      width: 100%;
+      border-radius: 14px;
+      overflow-x: auto;
+      overflow-y: hidden;
+      background:
+        linear-gradient(180deg, rgba(232, 236, 242, 0.7) 0%, rgba(251, 251, 251, 0.9) 100%);
+      border: 1px solid rgba(138, 147, 166, 0.2);
+    }
+
+    svg {
+      height: auto;
+      display: block;
+    }
+
+    #chart {
+      width: auto;
+      min-width: 100%;
+      max-width: none;
+    }
+
+    .axis text {
+      font-family: "Fira Sans", sans-serif;
+      font-weight: 500;
+      fill: var(--fg-soft);
+      font-size: 11px;
+    }
+
+    .axis path,
+    .axis line {
+      stroke: rgba(138, 147, 166, 0.4);
+    }
+
+    .cloth-stitch {
+      transition: opacity 160ms ease, transform 160ms ease;
+      cursor: crosshair;
+    }
+
+    .end-label {
+      font-family: "Fira Sans", sans-serif;
+      font-size: 12px;
+      font-weight: 500;
+      fill: var(--fg);
+      dominant-baseline: middle;
+    }
+
+    .annotation {
+      font-family: "Fira Sans", sans-serif;
+      fill: var(--fg-soft);
+      font-weight: 500;
+      font-size: 1.1rem;
+    }
+
+    /* ── Tooltip ── */
+    .tooltip {
+      position: fixed;          /* fixed so it escapes any overflow:hidden parent */
+      pointer-events: none;
+      min-width: 190px;
+      max-width: 260px;
+      border-radius: 12px;
+      background: rgba(28, 32, 42, 0.97);
+      color: #f7f8fb;
+      border: 1px solid rgba(125, 219, 202, 0.38);
+      box-shadow: 0 12px 32px rgba(10, 14, 24, 0.38);
+      padding: 11px 14px;
+      opacity: 0;
+      transition: opacity 120ms ease;
+      z-index: 9999;
+      top: 0;
+      left: 0;
+      /* start off-screen instead of transform trick */
+      visibility: hidden;
+    }
+
+    .tooltip.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .tooltip .tt-year {
+      font-family: "Fira Sans", sans-serif;
+      font-weight: 500;
+      font-size: 0.75rem;
+      color: #8fa3bb;
+      margin-bottom: 5px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .tooltip .tt-fiber {
+      font-family: "Space Grotesk", sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      margin-bottom: 4px;
+      line-height: 1.1;
+    }
+
+    .tooltip .tt-row {
+      font-size: 0.85rem;
+      font-weight: 400;
+      color: #c8d0e0;
+      line-height: 1.6;
+    }
+
+    .tooltip .tt-divider {
+      border: none;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      margin: 6px 0;
+    }
+
+    .tooltip .tt-total {
+      font-size: 0.8rem;
+      color: #8fa3bb;
+    }
+
+    .footer {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: var(--fg-soft);
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <h1>Global Composition of Fabric Production (1975–2024)</h1>
+    <p class="subtitle">
+      A woven cloth swatch every five years, using average fabric composition in each five-year window.
+    </p>
+
+    <div class="legend" id="legend"></div>
+
+    <div class="chart-wrap" id="chart-wrap">
+      <svg id="chart" aria-label="Growing cloth afghan of global fiber composition"></svg>
+      <div class="tooltip" id="tooltip"></div>
+    </div>
+
+    <div class="footer">
+      <p style="margin-bottom:0;">
+        <b>Note:</b> Data for 1985 is unavailable; no primary source exists in the PCI Fibres or Textile Exchange historical series for this year.
+        <br>
+        <br>
+        <b>Viz:</b> Byte Charts | <b>Sources:</b> Textile Exchange Materials Market Reports (2023–2025); Statista / Textile Exchange, Global Textile Fiber Production 1975–2020; PCI Fibres / Textile World (2015); ICAC.
+        <br>
+        #30DayChartChallenge 2026 • Day 22 • New Tool<br>
+      </p>
+      <img src="../utils/bluesky.png" width="19" style="vertical-align:middle;"/> byte-charts&nbsp;&nbsp;
+      <img src="../utils/github.png" width="19"  style="vertical-align:middle;"/> byte-charts&nbsp;&nbsp;
+    </div>
+  </main>
+
+  <script>
+    /* ── Inline data (replaces CSV load) ─────────────────────────────────── */
+    const RAW_DATA = [
+      { Year:1975, Total:24.0,  Polyester:3.4,  Other_Synthetics:1.6,  Cotton:13.8, Cellulosics:3.7, Wool:1.5 },
+      { Year:1980, Total:30.0,  Polyester:5.2,  Other_Synthetics:3.3,  Cotton:14.0, Cellulosics:5.0, Wool:2.5 },
+      // 1985 intentionally omitted — no primary source
+      { Year:1990, Total:40.0,  Polyester:9.0,  Other_Synthetics:8.0,  Cotton:18.0, Cellulosics:3.0, Wool:2.0 },
+      { Year:1995, Total:47.0,  Polyester:16.0, Other_Synthetics:6.0,  Cotton:20.0, Cellulosics:3.5, Wool:1.5 },
+      { Year:2000, Total:58.0,  Polyester:19.2, Other_Synthetics:10.8, Cotton:21.0, Cellulosics:4.0, Wool:3.0 },
+      { Year:2005, Total:70.0,  Polyester:28.0, Other_Synthetics:12.0, Cotton:23.0, Cellulosics:4.5, Wool:2.5 },
+      { Year:2010, Total:82.0,  Polyester:38.0, Other_Synthetics:12.0, Cotton:25.0, Cellulosics:5.5, Wool:1.5 },
+      { Year:2015, Total:98.0,  Polyester:49.0, Other_Synthetics:14.0, Cotton:26.0, Cellulosics:6.0, Wool:3.0 },
+      { Year:2020, Total:109.0, Polyester:57.0, Other_Synthetics:18.0, Cotton:25.0, Cellulosics:7.0, Wool:2.0 },
+      { Year:2021, Total:113.0, Polyester:61.0, Other_Synthetics:18.5, Cotton:25.1, Cellulosics:7.5, Wool:2.0 },
+      { Year:2022, Total:116.0, Polyester:63.0, Other_Synthetics:19.0, Cotton:25.1, Cellulosics:8.0, Wool:1.9 },
+      { Year:2023, Total:125.0, Polyester:71.0, Other_Synthetics:19.0, Cotton:24.4, Cellulosics:7.9, Wool:2.0 },
+      { Year:2024, Total:132.0, Polyester:78.0, Other_Synthetics:19.1, Cotton:24.5, Cellulosics:8.4, Wool:2.0 },
+    ];
+
+    const KEYS   = ["Cotton", "Polyester", "Other_Synthetics", "Cellulosics", "Wool"];
+    const LABELS = {
+      Cotton:           "Cotton",
+      Polyester:        "Polyester",
+      Other_Synthetics: "Other synthetics",
+      Cellulosics:      "Cellulosics",
+      Wool:             "Wool"
+    };
+    const FABRIC_COLORS = {
+      Cotton:           "#E6D5BF",
+      Polyester:        "#6FA7D8",
+      Other_Synthetics: "#6C5CE7",
+      Cellulosics:      "#7DBE8B",
+      Wool:             "#B07A4A"
+    };
+
+    const svg      = d3.select("#chart");
+    const tooltipEl = document.getElementById("tooltip");
+    const legend   = d3.select("#legend");
+    const chartWrap = document.getElementById("chart-wrap");
+
+    const margin    = { top: 50, right: 40, bottom: 40, left: 40 };
+    const INCH_PX   = 96;
+    const YEAR_GAP  = 14;
+    const TOTAL_GAP = 18;
+    const INNER_PAD = 28;
+
+    function makeCrossStitchPattern(defs, id, baseColor) {
+      const base      = d3.color(baseColor);
+      const highlight = base ? base.brighter(1.12).formatHex() : baseColor;
+      const shadow    = base ? base.darker(0.52).formatHex()   : baseColor;
+      const stitchPath = "M1 1 L3 3 M3 1 L1 3 M5 1 L7 3 M7 1 L5 3 M1 5 L3 7 M3 5 L1 7 M5 5 L7 7 M7 5 L5 7";
+
+      const pattern = defs
+        .append("pattern")
+        .attr("id", id)
+        .attr("patternUnits", "userSpaceOnUse")
+        .attr("width", 8).attr("height", 8);
+
+      pattern.append("rect")
+        .attr("width", 8).attr("height", 8)
+        .attr("fill", baseColor);
+
+      pattern.append("path").attr("d", stitchPath)
+        .attr("stroke", highlight).attr("stroke-width", 0.78)
+        .attr("stroke-linecap", "round").attr("opacity", 0.56);
+
+      pattern.append("path").attr("d", stitchPath)
+        .attr("stroke", shadow).attr("stroke-width", 0.78)
+        .attr("stroke-linecap", "round").attr("opacity", 0.28)
+        .attr("transform", "translate(0.5 0.5)");
+    }
+
+    function allocateCells(totalCells, sharesByKey) {
+      const raw = KEYS.map(key => ({ key, value: totalCells * (sharesByKey[key] || 0) }));
+      const allocated = new Map(raw.map(d => [d.key, Math.floor(d.value)]));
+      let remainder = totalCells - d3.sum(raw, d => Math.floor(d.value));
+      raw.slice().sort((a, b) => d3.descending(
+        a.value - Math.floor(a.value), b.value - Math.floor(b.value)
+      )).slice(0, remainder).forEach(d => {
+        allocated.set(d.key, allocated.get(d.key) + 1);
+      });
+      return allocated;
+    }
+
+    function expandKeySequence(countMap, totalCount) {
+      const sequence = [];
+      KEYS.forEach(key => {
+        const count = countMap.get(key) || 0;
+        for (let i = 0; i < count; i++) sequence.push(key);
+      });
+      while (sequence.length < totalCount) sequence.push(KEYS[sequence.length % KEYS.length]);
+      return sequence;
+    }
+
+    /* ── Build periods ─────────────────────────────────────────────────────
+       Use explicit period windows so that 2020–2024 (5 data points) is
+       always treated as its own complete swatch, regardless of step math.
+    ─────────────────────────────────────────────────────────────────────── */
+    (function render(data) {
+      const minYear = d3.min(data, d => d.Year);   // 1975
+      const maxYear = d3.max(data, d => d.Year);   // 2024
+
+      // Generate period starts at every 5-year boundary from minYear up to maxYear
+      const periodStarts = d3.range(minYear, maxYear + 1, 5);
+      // Ensure the final window is always included even if it doesn't start on a 5-yr mark
+      // (here maxYear=2024, and 2020 IS in range, so 2020-2024 is covered)
+
+      const periods = periodStarts.map(start => {
+        // Window: [start, start+4] but capped at maxYear so the last window gets all tail rows
+        const windowEnd = Math.min(start + 4, maxYear);
+        const rows = data.filter(d => d.Year >= start && d.Year <= windowEnd);
+        if (!rows.length) return null;
+
+        const avgByKey = {};
+        KEYS.forEach(key => { avgByKey[key] = d3.mean(rows, d => d[key]); });
+
+        const compositionTotal = d3.sum(KEYS, key => avgByKey[key]);
+        const sharesByKey = {};
+        KEYS.forEach(key => {
+          sharesByKey[key] = compositionTotal > 0 ? avgByKey[key] / compositionTotal : 0;
+        });
+
+        // Label: show range if window spans multiple years
+        const endYear = d3.max(rows, d => d.Year);
+        const label = start === endYear ? `${start}` : `${start}–${endYear}`;
+
+        return {
+          start,
+          end: endYear,
+          label,
+          avgByKey,
+          sharesByKey,
+          avgTotal: d3.mean(rows, d => d.Total)
+        };
+      }).filter(Boolean);
+
+      /* ── Layout ─────────────────────────────────────────────────────── */
+      const totalsExtent = d3.extent(periods, d => d.avgTotal);
+      const minTotal = totalsExtent[0] || 1;
+
+      periods.forEach((period, index) => {
+        period.swatchSize = INCH_PX * Math.sqrt(period.avgTotal / minTotal);
+        period.index = index;
+      });
+
+      const columns         = 4;
+      const columnGap       = 26;
+      const rowGap          = 46;
+      const topLabelHeight  = 16;
+      const bottomLabelHeight = 16;
+      const columnWidth     = (d3.max(periods, d => d.swatchSize) || INCH_PX) + 32;
+      const rowCount        = Math.ceil(periods.length / columns);
+      const rowMaxSizes     = d3.range(rowCount).map(row =>
+        d3.max(periods.slice(row * columns, row * columns + columns), d => d.swatchSize) || INCH_PX
+      );
+      const rowHeights = rowMaxSizes.map(maxSize =>
+        topLabelHeight + YEAR_GAP + maxSize + TOTAL_GAP + bottomLabelHeight + 8
+      );
+
+      const rowStarts = [];
+      let yCursor = 0;
+      for (let row = 0; row < rowCount; row++) {
+        rowStarts.push(yCursor);
+        yCursor += rowHeights[row] + (row < rowCount - 1 ? rowGap : 0);
+      }
+
+      const periodCardData = periods.map((period, index) => {
+        const colIndex  = index % columns;
+        const rowIndex  = Math.floor(index / columns);
+        const slotX     = colIndex * (columnWidth + columnGap);
+        const slotY     = rowStarts[rowIndex];
+        const swatchWidth  = period.swatchSize;
+        const swatchHeight = period.swatchSize;
+        const swatchX   = slotX + (columnWidth - swatchWidth) / 2;
+        const yearY     = slotY + topLabelHeight;
+        const swatchY   = yearY + YEAR_GAP;
+        const totalY    = swatchY + swatchHeight + TOTAL_GAP;
+
+        return { ...period, swatchX, swatchY, swatchWidth, swatchHeight,
+                 labelX: slotX + columnWidth / 2, yearY, totalY };
+      });
+
+      const innerWidth  = columns * columnWidth + (columns - 1) * columnGap + INNER_PAD * 2;
+      const innerHeight = yCursor + INNER_PAD * 2;
+      const width  = margin.left + innerWidth  + margin.right;
+      const height = margin.top  + innerHeight + margin.bottom;
+
+      svg.attr("viewBox", `0 0 ${width} ${height}`)
+         .attr("width", width).attr("height", height);
+
+      const root  = svg.append("g").attr("transform", `translate(${margin.left},${margin.top})`);
+      const color = d3.scaleOrdinal().domain(KEYS).range(KEYS.map(k => FABRIC_COLORS[k]));
+
+      /* ── Legend ─────────────────────────────────────────────────────── */
+      legend.selectAll("div").data(KEYS).join("div")
+        .attr("class", "legend-item")
+        .html(key => `<span class="legend-swatch" style="background:${color(key)}"></span><span>${LABELS[key]}</span>`);
+
+      /* ── Defs / patterns ────────────────────────────────────────────── */
+      const defs = svg.append("defs");
+      const textureIdByKey = new Map();
+
+      const plotPattern = defs.append("pattern")
+        .attr("id", "plot-stitch").attr("patternUnits", "userSpaceOnUse")
+        .attr("width", 12).attr("height", 12);
+      plotPattern.append("path")
+        .attr("d", "M2 2 L4 4 M4 2 L2 4 M8 2 L10 4 M10 2 L8 4 M2 8 L4 10 M4 8 L2 10 M8 8 L10 10 M10 8 L8 10")
+        .attr("stroke", "rgba(138,147,166,0.3)").attr("stroke-width", 0.82).attr("stroke-linecap", "round");
+      plotPattern.append("path")
+        .attr("d", "M3 3 L5 5 M5 3 L3 5 M9 3 L11 5 M11 3 L9 5 M3 9 L5 11 M5 9 L3 11 M9 9 L11 11 M11 9 L9 11")
+        .attr("stroke", "rgba(255,255,255,0.38)").attr("stroke-width", 0.66).attr("stroke-linecap", "round");
+
+      KEYS.forEach(key => {
+        const id = `fabric-stitch-${key.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`;
+        textureIdByKey.set(key, id);
+        makeCrossStitchPattern(defs, id, color(key));
+      });
+
+      root.append("rect")
+        .attr("width", innerWidth).attr("height", innerHeight)
+        .attr("fill", "url(#plot-stitch)").attr("opacity", 0.72);
+
+      /* ── Build thread arrays ─────────────────────────────────────────── */
+      const weftUnderThreads = [];
+      const warpThreads      = [];
+      const weftTopSegments  = [];
+
+      periodCardData.forEach(period => {
+        const threadCount = Math.max(8, Math.min(30, Math.round(period.swatchWidth / 11)));
+        const warpCount   = allocateCells(threadCount, period.sharesByKey);
+        const weftCount   = allocateCells(threadCount, period.sharesByKey);
+        const warpKeys    = expandKeySequence(warpCount, threadCount);
+        const weftKeys    = expandKeySequence(weftCount, threadCount);
+        const step        = period.swatchWidth / threadCount;
+        const thickness   = step * 0.78;
+        const inset       = (step - thickness) / 2;
+
+        // Common metadata attached to each datum for tooltip use
+        const meta = {
+          periodStart: period.start,
+          periodEnd:   period.end,
+          periodLabel: period.label,
+          periodIndex: period.index,
+          avgTotal:    period.avgTotal,
+          avgByKey:    period.avgByKey,
+          sharesByKey: period.sharesByKey
+        };
+
+        for (let i = 0; i < threadCount; i++) {
+          const key = warpKeys[i];
+          warpThreads.push({
+            ...meta, key,
+            label: LABELS[key], color: color(key),
+            avgValue: period.avgByKey[key], share: period.sharesByKey[key],
+            x: period.swatchX + i * step + inset,
+            y: period.swatchY, width: thickness, height: period.swatchHeight, rx: thickness / 2
+          });
+        }
+
+        for (let j = 0; j < threadCount; j++) {
+          const key = weftKeys[j];
+          weftUnderThreads.push({
+            key,
+            x: period.swatchX, y: period.swatchY + j * step + inset,
+            width: period.swatchWidth, height: thickness, rx: thickness / 2
+          });
+
+          for (let i = 0; i < threadCount; i++) {
+            if ((i + j) % 2 === 0) {
+              weftTopSegments.push({
+                ...meta, key,
+                label: LABELS[key], color: color(key),
+                avgValue: period.avgByKey[key], share: period.sharesByKey[key],
+                x: period.swatchX + i * step + step * 0.1,
+                y: period.swatchY + j * step + inset,
+                width: step * 0.8, height: thickness, rx: thickness / 2
+              });
+            }
+          }
+        }
+      });
+
+      /* ── Render under-threads (no pointer events) ───────────────────── */
+      root.append("g").attr("opacity", 0.5).attr("pointer-events", "none")
+        .selectAll("rect").data(weftUnderThreads).join("rect")
+        .attr("x", d => d.x).attr("y", d => d.y)
+        .attr("width", d => d.width).attr("height", d => d.height).attr("rx", d => d.rx)
+        .attr("fill", d => `url(#${textureIdByKey.get(d.key)})`);
+
+      /* ── Render interactive top threads ─────────────────────────────── */
+      const yarnPieces = warpThreads.concat(weftTopSegments);
+
+      const yarn = root.append("g")
+        .selectAll("rect").data(yarnPieces).join("rect")
+        .attr("class", "cloth-stitch")
+        .attr("x", d => d.x).attr("y", d => d.y)
+        .attr("width", d => d.width).attr("height", d => d.height).attr("rx", d => d.rx)
+        .attr("fill", d => `url(#${textureIdByKey.get(d.key)})`)
+        .attr("stroke", "rgba(255,255,255,0.42)").attr("stroke-width", 0.35)
+        .attr("opacity", 0);
+
+      /* ── Tooltip helpers ─────────────────────────────────────────────── */
+      function showTooltip(event, d) {
+        // Dim unrelated threads; highlight same period+fiber
+        yarn.attr("opacity", c =>
+          (c.periodStart === d.periodStart && c.key === d.key) ? 1 : 0.18
+        );
+
+        // Build per-fiber breakdown for this period
+        const breakdown = KEYS.map(key => ({
+          key,
+          label: LABELS[key],
+          color: color(key),
+          value: d.avgByKey[key],
+          share: d.sharesByKey[key]
+        })).sort((a, b) => b.value - a.value);
+
+        const rows = breakdown.map(f =>
+          `<div class="tt-row" style="display:flex;justify-content:space-between;gap:12px;">
+            <span style="color:${f.color};font-weight:600;">${f.label}</span>
+            <span>${d3.format(".1f")(f.value)} Mt &nbsp;(${d3.format(".1f")(f.share * 100)}%)</span>
+          </div>`
+        ).join("");
+
+        tooltipEl.innerHTML = `
+          <div class="tt-year">${d.periodLabel} window average</div>
+          <div class="tt-fiber" style="color:${d.color};">${d.label}</div>
+          <div class="tt-row" style="margin-bottom:2px;">
+            <strong>${d3.format(".2f")(d.avgValue)} Mt</strong>
+            &nbsp;— ${d3.format(".1f")(d.share * 100)}% of total
+          </div>
+          <hr class="tt-divider"/>
+          <div style="margin-bottom:4px;font-size:0.72rem;color:#8fa3bb;text-transform:uppercase;letter-spacing:.05em;">All fibers this window</div>
+          ${rows}
+          <hr class="tt-divider"/>
+          <div class="tt-total">Window total: <strong>${d3.format(".1f")(d.avgTotal)} Mt</strong></div>
+        `;
+
+        // Position using clientX/Y (works correctly regardless of scroll / overflow)
+        const TW = 220;
+        const TH = tooltipEl.offsetHeight || 180;
+        let tx = event.clientX + 16;
+        let ty = event.clientY + 16;
+        // Flip if too close to right/bottom edge
+        if (tx + TW > window.innerWidth  - 8) tx = event.clientX - TW - 8;
+        if (ty + TH > window.innerHeight - 8) ty = event.clientY - TH - 8;
+
+        tooltipEl.style.transform = `translate(${tx}px, ${ty}px)`;
+        tooltipEl.classList.add("visible");
+      }
+
+      function hideTooltip() {
+        yarn.attr("opacity", 0.95);
+        tooltipEl.classList.remove("visible");
+      }
+
+      yarn
+        .on("mousemove", showTooltip)
+        .on("mouseleave", hideTooltip);
+
+      /* ── Animate in ─────────────────────────────────────────────────── */
+      yarn.transition()
+        .duration(420)
+        .delay(d => d.periodIndex * 120)
+        .attr("opacity", 0.95);
+
+      /* ── Year / total labels ─────────────────────────────────────────── */
+      root.append("g").selectAll("text").data(periodCardData).join("text")
+        .attr("class", "annotation")
+        .attr("x", d => d.labelX).attr("y", d => d.yearY)
+        .attr("text-anchor", "middle")
+        .text(d => d.label);
+
+      root.append("g").selectAll("text").data(periodCardData).join("text")
+        .attr("class", "annotation")
+        .attr("x", d => d.labelX).attr("y", d => d.totalY)
+        .attr("text-anchor", "middle")
+        .style("font-size", "14px").style("fill", "#6C7384")
+        .text(d => `${d3.format(".1f")(d.avgTotal)} Metric Tonnes`);
+
+      root.append("text")
+        .attr("class", "annotation")
+        .attr("x", 0).attr("y", -14)
+        .text("One woven swatch per 5-year average window");
+
+    })(RAW_DATA);
+  </script>
+</body>
+</html>
