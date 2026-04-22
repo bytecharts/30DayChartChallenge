@@ -16,6 +16,7 @@ suppressPackageStartupMessages({
 
 font_add("SpaceGrotesk", "../utils/fonts/SpaceGrotesk.ttf")
 font_add("FiraSans", "../utils/fonts/FiraSans-Medium.ttf")
+font_add("FiraSansRegular", "../utils/fonts/FiraSans-Regular.ttf")
 font_add("FiraCode", "../utils/fonts/FiraCode-Medium.ttf")
 font_add("FiraCodeMedium", "../utils/fonts/FiraCode-Medium.ttf")
 font_add("NotoEmoji",  "../utils/fonts/NotoEmoji.ttf")
@@ -61,8 +62,8 @@ theme_caption_family <- "FiraSans"
 theme_base <- function(base_size = 12, base_family = "FiraSans") {
   theme_minimal(base_size = base_size, base_family = base_family) +
     theme(
-      plot.background = element_rect(fill = theme_bg, color = NA),
-      panel.background = element_rect(fill = theme_bg, color = NA),
+      plot.background = element_rect(fill = NA, color = NA),
+      panel.background = element_rect(fill = NA, color = NA),
       plot.title = element_markdown(
         family = theme_title_family,
         face = "bold",
@@ -113,7 +114,7 @@ theme_base <- function(base_size = 12, base_family = "FiraSans") {
 # ---- Plot Caption ----
 caption_global <- function(source, day, topic) {
   paste(
-        "<span style='font-family: FiraCodeMedium;'>Viz</span>: Byte Charts | ", source,
+        "<span style='font-family: FiraSans;'><b>Viz</b></span> : Byte Charts | <span style='font-family: FiraSans;'>Source</span> : ", source,
         paste0("<br>#30DayChartChallenge 2026 \u2022 ", day, " \u2022 ", topic, "<br>",
                "<img src='", "../utils/bluesky.png", "' width='7' style='vertical-align:bottom;'/>  byte-charts&nbsp;&nbsp;",
                "   <img src='", "../utils/github.png", "' width='7'  style='vertical-align:bottom;'/>  byte-charts&nbsp;&nbsp;"
