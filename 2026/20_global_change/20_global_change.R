@@ -101,8 +101,7 @@ if (!dir.exists(frames_dir)) {
 }
 
 frame_paths <- file.path(frames_dir, paste0("electricity_access_", years, ".png"))
-plot_caption <- caption_global_dark("Source: World Bank WDI, indicator EG.ELC.ACCS.ZS (Access to electricity, % of population).", "Day 20", "Global Change")
-large_drop_threshold_pp <- 3
+plot_caption <- caption_global("Source: World Bank WDI, indicator EG.ELC.ACCS.ZS (Access to electricity, % of population).", "Day 20", "Global Change")
 
 # ---- Build Yearly Annotation Data ----
 yearly_change <- electricity_long %>%
@@ -120,6 +119,7 @@ yearly_change <- electricity_long %>%
     crossed_75 = !is.na(prev_access) & prev_access < 75 & Electricity_Access_Pct >= 75,
     crossed_80 = !is.na(prev_access) & prev_access < 80 & Electricity_Access_Pct >= 80,
     crossed_90 = !is.na(prev_access) & prev_access < 90 & Electricity_Access_Pct >= 90,
+    crossed_95 = !is.na(prev_access) & prev_access < 95 & Electricity_Access_Pct >= 95,
     crossed_99 = !is.na(prev_access) & prev_access < 99 & Electricity_Access_Pct >= 99,
     fell_below_50 = !is.na(prev_access) & prev_access >= 50 & Electricity_Access_Pct < 50,
     fell_below_70 = !is.na(prev_access) & prev_access >= 70 & Electricity_Access_Pct < 70,
@@ -135,28 +135,50 @@ yearly_change <- electricity_long %>%
   ) %>%
   ungroup()
 
-primary_candidates <- yearly_change %>%
+conflict_events <- tibble(
+  ISO3 = c("AFG", "SYR", "YEM", "UKR", "SDN", "SSD", "LBY", "IRQ", "SOM", "MLI", "CAF", "ETH", "PSE"),
+  start_year = c(1990, 2011, 2014, 2014, 2003, 2013, 2011, 2003, 1990, 2012, 2012, 2020, 2000),
+  end_year = c(2025, 2025, 2025, 2025, 2025, 2025, 2025, 2019, 2025, 2025, 2025, 2023, 2025),
+  conflict_context = c(
+    "conflict and instability",
+    "civil war",
+    "civil war",
+    "war",
+    "civil conflict",
+    "civil war",
+    "civil conflict",
+    "conflict and instability",
+    "prolonged conflict",
+    "conflict and instability",
+    "civil conflict",
+    "armed conflict",
+    "conflict and instability"
+  )
+)
+
+conflict_decline_candidates <- yearly_change %>%
+  inner_join(conflict_events, by = "ISO3") %>%
+  filter(Year >= start_year, Year <= end_year, delta_pp <= -1) %>%
+  group_by(Year) %>%
+  arrange(delta_pp, Country, .by_group = TRUE) %>%
+  mutate(candidate_rank = row_number()) %>%
+  ungroup()
+
+positive_candidates <- yearly_change %>%
+  filter(delta_pp > 0, crossed_95) %>%
   mutate(
-    is_large_drop = delta_pp <= -large_drop_threshold_pp
+    positive_threshold_note = "crossed 95% household electricity access"
   ) %>%
   group_by(Year) %>%
-  arrange(
-    desc(is_large_drop),
-    if_else(is_large_drop, delta_pp, Inf),
-    desc(crossed_75),
-    desc(delta_pp),
-    rank_delta,
-    Country,
-    .by_group = TRUE
-  ) %>%
+  arrange(desc(delta_pp), Country, .by_group = TRUE) %>%
   mutate(candidate_rank = row_number()) %>%
   ungroup()
 
 selected_primary_rows <- list()
 used_primary_iso3 <- character(0)
 
-for (yr in sort(unique(primary_candidates$Year), decreasing = TRUE)) {
-  candidate_pool <- primary_candidates %>%
+for (yr in sort(unique(conflict_decline_candidates$Year), decreasing = TRUE)) {
+  candidate_pool <- conflict_decline_candidates %>%
     filter(Year == yr, !(ISO3 %in% used_primary_iso3))
 
   if (nrow(candidate_pool) == 0) {
@@ -168,100 +190,24 @@ for (yr in sort(unique(primary_candidates$Year), decreasing = TRUE)) {
   used_primary_iso3 <- c(used_primary_iso3, chosen$ISO3)
 }
 
-selected_country_by_year <- bind_rows(selected_primary_rows) %>%
+selected_country_by_year <- if (length(selected_primary_rows) == 0) {
+  conflict_decline_candidates %>% slice(0)
+} else {
+  bind_rows(selected_primary_rows)
+} %>%
   arrange(Year) %>%
   mutate(
-    event_type = case_when(
-      is_large_drop ~ "largest_yearly_decline",
-      crossed_75 ~ "moved_above_75",
-      TRUE ~ "largest_yearly_improvement"
-    ),
-    threshold_note = case_when(
-      event_type == "largest_yearly_decline" & fell_below_50 & fell_below_70 & fell_below_80 & fell_below_99 ~ "fell below 50%, 70%, 80%, and 99%",
-      event_type == "largest_yearly_decline" & fell_below_50 & fell_below_70 & fell_below_99 ~ "fell below 50%, 70%, and 99%",
-      event_type == "largest_yearly_decline" & fell_below_50 & fell_below_80 & fell_below_99 ~ "fell below 50%, 80%, and 99%",
-      event_type == "largest_yearly_decline" & fell_below_70 & fell_below_80 & fell_below_99 ~ "fell below 70%, 80%, and 99%",
-      event_type == "largest_yearly_decline" & fell_below_50 & fell_below_70 & fell_below_80 ~ "fell below 50%, 70%, and 80%",
-      event_type == "largest_yearly_decline" & fell_below_50 & fell_below_70 ~ "fell below 50% and 70%",
-      event_type == "largest_yearly_decline" & fell_below_70 & fell_below_80 ~ "fell below 70% and 80%",
-      event_type == "largest_yearly_decline" & fell_below_50 & fell_below_80 ~ "fell below 50% and 80%",
-      event_type == "largest_yearly_decline" & fell_below_50 & fell_below_99 ~ "fell below 50% and 99%",
-      event_type == "largest_yearly_decline" & fell_below_70 & fell_below_99 ~ "fell below 70% and 99%",
-      event_type == "largest_yearly_decline" & fell_below_80 & fell_below_99 ~ "fell below 80% and 99%",
-      event_type == "largest_yearly_decline" & fell_below_50 ~ "fell below 50%",
-      event_type == "largest_yearly_decline" & fell_below_70 ~ "fell below 70%",
-      event_type == "largest_yearly_decline" & fell_below_80 ~ "fell below 80%",
-      event_type == "largest_yearly_decline" & fell_below_99 ~ "fell below 99%",
-      crossed_50 & crossed_70 & crossed_80 & crossed_99 ~ "crossed 50%, 70%, 80%, and 99%",
-      crossed_50 & crossed_70 & crossed_99 ~ "crossed 50%, 70%, and 99%",
-      crossed_50 & crossed_80 & crossed_99 ~ "crossed 50%, 80%, and 99%",
-      crossed_70 & crossed_80 & crossed_99 ~ "crossed 70%, 80%, and 99%",
-      crossed_50 & crossed_70 & crossed_80 ~ "crossed 50%, 70%, and 80%",
-      crossed_50 & crossed_70 ~ "crossed 50% and 70%",
-      crossed_70 & crossed_80 ~ "crossed 70% and 80%",
-      crossed_50 & crossed_80 ~ "crossed 50% and 80%",
-      crossed_50 & crossed_99 ~ "crossed 50% and 99%",
-      crossed_70 & crossed_99 ~ "crossed 70% and 99%",
-      crossed_80 & crossed_99 ~ "crossed 80% and 99%",
-      crossed_50 ~ "crossed 50%",
-      crossed_70 ~ "crossed 70%",
-      crossed_80 ~ "crossed 80%",
-      crossed_99 ~ "crossed 99%",
-      TRUE ~ ""
+    event_type = "conflict_related_decline",
+    threshold_note = "",
+    annotation = paste0(
+      Country,
+      " declined by ",
+      scales::number(abs(delta_pp), accuracy = 0.1),
+      " pp amid ",
+      conflict_context,
+      "."
     )
-  ) %>%
-  rowwise() %>%
-  mutate(
-    annotation = if (event_type == "largest_yearly_decline") {
-      paste0(
-        Country,
-        " recorded a sharp yearly decline (",
-        scales::number(delta_pp, accuracy = 0.1),
-        " pp).",
-        ifelse(threshold_note == "", "", paste0(" It ", threshold_note, "."))
-      )
-    } else if (event_type == "moved_above_75") {
-      paste0(
-        Country,
-        " moved above 75% access (+",
-        scales::number(delta_pp, accuracy = 0.1),
-        " pp).",
-        ifelse(threshold_note == "", "", paste0(" Also ", threshold_note, "."))
-      )
-    } else {
-      paste0(
-        Country,
-        " posted the largest yearly gain (+",
-        scales::number(delta_pp, accuracy = 0.1),
-        " pp).",
-        ifelse(threshold_note == "", "", paste0(" It ", threshold_note, "."))
-      )
-    }
-  ) %>%
-  ungroup()
-
-positive_candidates <- yearly_change %>%
-  filter(delta_pp > 0, crossed_60 | crossed_70 | crossed_90) %>%
-  mutate(
-    positive_threshold_note = case_when(
-      crossed_60 & crossed_70 & crossed_90 ~ "crossed 60%, 70%, and 90%",
-      crossed_70 & crossed_90 ~ "crossed 70% and 90%",
-      crossed_60 & crossed_90 ~ "crossed 60% and 90%",
-      crossed_60 & crossed_70 ~ "crossed 60% and 70%",
-      crossed_90 ~ "crossed 90%",
-      crossed_70 ~ "crossed 70%",
-      TRUE ~ "crossed 60%"
-    ),
-    positive_level = case_when(
-      crossed_90 ~ 90,
-      crossed_70 ~ 70,
-      TRUE ~ 60
-    )
-  ) %>%
-  group_by(Year) %>%
-  arrange(desc(positive_level), desc(delta_pp), Country, .by_group = TRUE) %>%
-  mutate(candidate_rank = row_number()) %>%
-  ungroup()
+  )
 
 selected_positive_rows <- list()
 used_positive_iso3 <- character(0)
@@ -279,7 +225,11 @@ for (yr in sort(unique(positive_candidates$Year), decreasing = TRUE)) {
   used_positive_iso3 <- c(used_positive_iso3, chosen$ISO3)
 }
 
-positive_milestone_by_year <- bind_rows(selected_positive_rows) %>%
+positive_milestone_by_year <- if (length(selected_positive_rows) == 0) {
+  positive_candidates %>% slice(0)
+} else {
+  bind_rows(selected_positive_rows)
+} %>%
   transmute(
     Year,
     positive_country = Country,
@@ -292,13 +242,15 @@ annotation_data <- tibble(Year = years) %>%
   left_join(selected_country_by_year, by = "Year") %>%
   left_join(positive_milestone_by_year, by = "Year") %>%
   mutate(
+    annotation_green = "#2D8F7C",
+    is_large_drop = if_else(event_type == "conflict_related_decline", TRUE, FALSE, missing = FALSE),
     annotation = if_else(is.na(annotation), "", annotation),
     delta_label = if_else(
       is.na(delta_pp),
       "",
       paste0(if_else(delta_pp >= 0, "+", ""), scales::number(delta_pp, accuracy = 0.1), " pp")
     ),
-    highlight_color = if_else(delta_pp < 0, "#F07178", "#7FDBCA"),
+    highlight_color = if_else(delta_pp < 0, "#F07178", annotation_green),
     country_span = if_else(
       is.na(Country),
       "",
@@ -311,23 +263,18 @@ annotation_data <- tibble(Year = years) %>%
     ),
     map_annotation = case_when(
       is.na(Country) ~ "",
-      event_type == "largest_yearly_decline" ~ paste0(
+      event_type == "conflict_related_decline" ~ paste0(
         Country,
-        " sharp decline (",
-        scales::number(delta_pp, accuracy = 0.1),
-        " pp",
-        ")"
-      ),
-      event_type == "moved_above_75" ~ paste0(
-        Country,
-        " moved above 75% (+",
+        " decline amid ",
+        conflict_context,
+        " (",
         scales::number(delta_pp, accuracy = 0.1),
         " pp",
         ")"
       ),
       TRUE ~ paste0(
         Country,
-        " posted top gain (+",
+        " change (",
         scales::number(delta_pp, accuracy = 0.1),
         " pp",
         ")"
@@ -335,21 +282,17 @@ annotation_data <- tibble(Year = years) %>%
     ),
     map_annotation_rich = case_when(
       is.na(Country) ~ "",
-      event_type == "largest_yearly_decline" ~ paste0(
+      event_type == "conflict_related_decline" ~ paste0(
         country_span,
-        " sharp decline (",
-        delta_span,
-        ")"
-      ),
-      event_type == "moved_above_75" ~ paste0(
-        country_span,
-        " moved above 75% (",
+        " decline amid ",
+        conflict_context,
+        " (",
         delta_span,
         ")"
       ),
       TRUE ~ paste0(
         country_span,
-        " posted top gain (",
+        " change (",
         delta_span,
         ")"
       )
@@ -364,7 +307,7 @@ annotation_data <- tibble(Year = years) %>%
       map_annotation_rich,
       paste0(map_annotation_rich, "; ", threshold_note)
     ),
-    primary_line_color = if_else(delta_pp < 0, "#F07178", "#7FDBCA"),
+    primary_line_color = if_else(delta_pp < 0, "#F07178", annotation_green),
     positive_delta_label = if_else(
       is.na(positive_delta_pp),
       "",
@@ -373,12 +316,12 @@ annotation_data <- tibble(Year = years) %>%
     positive_country_span = if_else(
       is.na(positive_country),
       "",
-      paste0("<span style='color:#7FDBCA;font-family:FiraCodeMedium;'>", positive_country, "</span>")
+      paste0("<span style='color:", annotation_green, ";font-family:FiraCodeMedium;'>", positive_country, "</span>")
     ),
     positive_delta_span = if_else(
       positive_delta_label == "",
       "",
-      paste0("<span style='color:#7FDBCA;font-family:FiraCodeMedium;'>", positive_delta_label, "</span>")
+      paste0("<span style='color:", annotation_green, ";font-family:FiraCodeMedium;'>", positive_delta_label, "</span>")
     ),
     positive_map_annotation = if_else(
       is.na(positive_country),
@@ -404,7 +347,7 @@ annotation_data <- tibble(Year = years) %>%
         ")"
       )
     ),
-    positive_line_color = if_else(is.na(positive_delta_pp), "", "#7FDBCA")
+    positive_line_color = if_else(is.na(positive_delta_pp), "", annotation_green)
   )
 
 annotations_path <- "../data/electricity_access_yearly_annotations.csv"
@@ -446,19 +389,21 @@ write_csv(
   na = ""
 )
 
-dark_bg <- night_owlish_light$fg
+dark_bg <- night_owlish_light$bg
 dark_panel <- dark_bg
-dark_fg <- night_owlish_light$bg
-dark_muted <- night_owlish_light$bg_alt
-gray_band_colors <- c(
-  "#2B2B2B", "#3A3A3A", "#494949", "#585858", "#686868",
-  "#797979", "#8A8A8A", "#9C9C9C", "#AEAEAE", "#C1C1C1",
-  "#D5D5D5", "#E9E9E9", "#F2E8D5"
+dark_fg <- night_owlish_light$fg
+dark_muted <- night_owlish_light$fg_soft
+band_breaks <- seq(0, 100, by = 5)
+band_labels <- ifelse(band_breaks %% 10 == 0, paste0(band_breaks, "%"), "")
+viridis_theme_anchors <- c(
+  night_owlish_cat[5],
+  night_owlish_cat[1],
+  night_owlish_cat[4],
+  night_owlish_cat[3]
 )
-no_data_fill <- gray_band_colors[1]
+band_colors <- grDevices::colorRampPalette(viridis_theme_anchors)(length(band_breaks) - 1)
+no_data_fill <- scales::alpha(night_owlish_light$gray, 0.5)
 no_data_legend_df <- tibble(long = 0, lat = 0, data_status = "No data")
-legend_breaks <- seq(0, 100, by = 10)
-legend_labels <- ifelse(legend_breaks %% 20 == 0, paste0(legend_breaks, "%"), "")
 
 # ---- Build Frame Per Year ----
 for (i in seq_along(years)) {
@@ -483,14 +428,14 @@ for (i in seq_along(years)) {
     geom_polygon(
       data = map_without_data,
       aes(x = long, y = lat, group = group),
-      fill = dark_bg,
+      fill = no_data_fill,
       color = scales::alpha(dark_muted, 0.2),
       linewidth = 0.1
     ) +
     geom_polygon(
       data = map_with_data,
       aes(x = long, y = lat, group = group, fill = access_pct),
-      color = scales::alpha(dark_bg, 0.45),
+      color = scales::alpha(dark_fg, 0.22),
       linewidth = 0.1
     ) +
     geom_point(
@@ -503,10 +448,10 @@ for (i in seq_along(years)) {
     ) +
     scale_fill_stepsn(
       name = "Electricity access",
-      colours = gray_band_colors,
+      colours = band_colors,
       limits = c(0, 100),
-      breaks = legend_breaks,
-      labels = legend_labels,
+      breaks = band_breaks,
+      labels = band_labels,
       oob = scales::squish,
       show.limits = TRUE,
       guide = guide_colorbar(
@@ -533,7 +478,7 @@ for (i in seq_along(years)) {
       )
     ) +
     scale_color_manual(
-      values = c("No data" = scales::alpha(dark_bg, 0)),
+      values = c("No data" = no_data_fill),
       breaks = "No data",
       guide = guide_legend(
         title = NULL,
@@ -542,7 +487,7 @@ for (i in seq_along(years)) {
           alpha = 1,
           shape = 22,
           size = 4.4,
-          fill = dark_bg,
+          fill = no_data_fill,
           color = scales::alpha(dark_muted, 0.8),
           stroke = 0.25
         )
@@ -575,8 +520,14 @@ for (i in seq_along(years)) {
       plot.subtitle = element_markdown(color = dark_muted),
       plot.caption = element_markdown(color = dark_muted),
       axis.title = element_blank(),
+      axis.title.x = element_blank(),
+      axis.title.y = element_blank(),
       axis.text = element_blank(),
+      axis.text.x = element_blank(),
+      axis.text.y = element_blank(),
       axis.ticks = element_blank(),
+      axis.ticks.x = element_blank(),
+      axis.ticks.y = element_blank(),
       panel.grid = element_blank(),
       legend.position = "right",
       legend.direction = "vertical",
@@ -634,9 +585,10 @@ for (i in seq_along(years)) {
           family = "FiraCode",
           size = 2.6,
           lineheight = 1.12,
-          color = dark_muted,
-          fill = scales::alpha("#1F242F", 0.94),
-          label.color = NA,
+          color = dark_fg,
+          fill = scales::alpha("#FFFFFF", 0.92),
+          label.color = scales::alpha(year_primary_line_color, 0.95),
+          label.size = 0.25,
           label.padding = grid::unit(0.36, "lines")
         )
     }
@@ -685,9 +637,10 @@ for (i in seq_along(years)) {
           family = "FiraCode",
           size = 2.45,
           lineheight = 1.1,
-          color = dark_muted,
-          fill = scales::alpha("#1F242F", 0.9),
-          label.color = NA,
+          color = dark_fg,
+          fill = scales::alpha("#FFFFFF", 0.9),
+          label.color = scales::alpha(year_positive_line_color, 0.95),
+          label.size = 0.23,
           label.padding = grid::unit(0.32, "lines")
         )
     }
@@ -781,6 +734,6 @@ gifski(
   gif_file = gif_path_5x,
   width = 3450,
   height = 2250,
-  delay = 0.37,
+  delay = 0.22,
   loop = TRUE
 )
