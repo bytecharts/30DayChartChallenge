@@ -74,10 +74,22 @@ highlight_chars <- character_totals |>
   filter(character %in% roy_chars) |>
   arrange(total_fucks) |>
   pull(character)
-character_levels <- c("Others", highlight_chars)
+extra_chars <- c("CONNOR", "LUKAS")
+featured_chars <- c(highlight_chars, extra_chars)
+character_levels <- c("Others", featured_chars)
+legend_labels <- c(
+  LOGAN = "Logan",
+  KENDALL = "Kendall",
+  ROMAN = "Roman",
+  SHIV = "Shiv",
+  TOM = "Tom",
+  CONNOR = "Connor",
+  LUKAS = "Lukas",
+  Others = "Others"
+)
 
 stacked_stats <- character_stats |>
-  mutate(character_stack = if_else(character %in% highlight_chars, character, "Others")) |>
+  mutate(character_stack = if_else(character %in% featured_chars, character, "Others")) |>
   summarise(
     fucks = sum(fucks),
     .by = c(season_num, season_label, episode_num, episode_code, episode, character_stack)
@@ -124,15 +136,6 @@ season_spans <- episode_totals |>
   ) |>
   arrange(season_label)
 
-top_episode_labels <- episode_totals |>
-  group_by(season_label) |>
-  slice_max(total_fucks, n = 2, with_ties = FALSE) |>
-  ungroup() |>
-  mutate(plot_label = if_else(
-    episode_code %in% names(label_map),
-    unname(label_map[episode_code]),
-    paste0(episode_label, "\n", total_fucks)
-  ))
 
 max_total <- max(episode_totals$total_fucks)
 label_pad <- max(6, max_total * 0.1)
@@ -147,40 +150,39 @@ ring_paths <- bind_rows(lapply(ring_breaks, function(break_value) {
   )
 }))
 
-top_episode_labels <- top_episode_labels |>
-  mutate(
-    plot_label = str_wrap(plot_label, width = 28),
-    label_y = max_total + label_pad * -0.08
-  )
+
 
 season_label_y <- max_total + label_pad * 1.00
 
 season_line_labels <- season_spans |>
   mutate(
     label = season_label,
-    label_y = max_total + label_pad * 1.24
+    label_x = center,
+    label_y = max_total + label_pad * 0.82
   )
 
 plot_title <- "Who uses the \"f-word\" most in Succession?"
 plot_subtitle <- paste0(
-  "<span style='color:", night_owlish_cat[5], ";'><b>Roman</b></span> leads with 445, ",
-  "<span style='color:", night_owlish_cat[4], ";'><b>Kendall</b></span> follows with 396, and ",
-  "<span style='color:", night_owlish_cat[3], ";'><b>Shiv</b></span> is close at 386.<br> ",
+  "<span style='color:", "#FFB454", ";'><b>Roman</b></span> leads with 445, ",
+  "<span style='color:","#F07178" , ";'><b>Kendall</b></span> follows with 396, and ",
+  "<span style='color:", "#7FDBCA" , ";'><b>Shiv</b></span> is close at 386.<br> ",
   "2,993 total uses across 39 episodes."
 )
 
 plot_caption <- caption_global(
-  source = "springfieldspringfield.co.uk ; Curse words counted from cleaned speaker-attributed subtitle across all episodes.",
+  source <- "springfieldspringfield.co.uk; Curse words counted from cleaned, speaker-attributed subtitle text across all seasons (excluding S1E07, S2E05, S3E02, S4E01, S4E06).",
   day = "Day 23",
   topic = "Seasons"
 )
 
 palette_values <- c(
-  LOGAN = night_owlish_cat[2],
-  KENDALL = night_owlish_cat[4],
-  ROMAN = night_owlish_cat[5],
-  SHIV = night_owlish_cat[3],
-  TOM = night_owlish_cat[1],
+  LOGAN = "#2E86AB",
+  KENDALL = "#F07178",
+  ROMAN = "#FFB454",
+  SHIV = "#7FDBCA",
+  TOM = "#6C5CE7",
+  CONNOR = "#A3BE8C",
+  LUKAS = "#4A6984",
   Others = night_owlish_light$gray
 )
 
@@ -216,32 +218,6 @@ polar_plot <- ggplot() +
     gap = TRUE,
     text_only = TRUE
   ) +
-#  geom_segment(
-    #data = top_episode_labels,
-    #aes(
-      #x = episode_index,
-      #xend = episode_index,
-      #y = total_fucks,
-      #yend = label_y
-    #),
-    #inherit.aes = FALSE,
-    #linewidth = 0.35,
-    #color = alpha(theme_fg, 0.45)
-  #) +
-#  geom_text(
-    #data = top_episode_labels,
-    #aes(
-      #x = episode_index,
-      #y = label_y,
-      #label = plot_label
-    #),
-    #inherit.aes = FALSE,
-    #family = "FiraSans",
-    #size = 3.5,
-    #color = theme_fg,
-    #fontface = "bold",
-    #vjust = 0
-  #) +
   geom_vline(
     xintercept = season_spans$start,
     linewidth = 1.15,
@@ -249,16 +225,23 @@ polar_plot <- ggplot() +
   ) +
   geom_text(
     data = season_line_labels,
-    aes(x = start, y = label_y, label = label),
+    aes(x = label_x, y = label_y, label = label),
     inherit.aes = FALSE,
     family = "SpaceGrotesk",
     fontface = "bold",
     size = 5,
     color = alpha(theme_fg, 0.46),
-    hjust = -0.15,
-    vjust = -0.35
+    hjust = 0.5,
+    vjust = 0.5
   ) +
-  scale_fill_manual(values = palette_values, breaks = names(palette_values), name = "Character") +
+  scale_fill_manual(
+    values = palette_values,
+    breaks = names(palette_values),
+    limits = names(palette_values),
+    drop = FALSE,
+    labels = function(x) unname(legend_labels[x]),
+    name = "Character"
+  ) +
   scale_x_continuous(
     breaks = episode_totals$episode_index,
     labels = rep("", nrow(episode_totals))
@@ -276,7 +259,7 @@ polar_plot <- ggplot() +
     fill = NULL,
     caption = plot_caption
   ) +
-  guides(fill = guide_legend(nrow = 2, byrow = TRUE, reverse = TRUE)) +
+  guides(fill = guide_legend(nrow = 2, byrow = TRUE)) +
   theme_base() +
   theme(
     plot.background = element_rect(fill = night_owlish_light$bg, color = NA),

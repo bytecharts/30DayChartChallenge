@@ -1,0 +1,3585 @@
+{
+  "source_root": "data",
+  "episode_count": 39,
+  "total_fuck_off": 125,
+  "count_definition": "Counts phrase-level matches of 'fuck off' and 'fucking off' variants (case-insensitive).",
+  "target_inference": {
+    "explicit_name_rules": [
+      "NAME, fuck off",
+      "fuck off, NAME",
+      "tell NAME to fuck off",
+      "NAME can/should/could/needs to fuck off"
+    ],
+    "fallback_labels": [
+      "_GROUP_",
+      "_YOU_",
+      "_UNSPECIFIED_"
+    ],
+    "note": "Targets are heuristic and may include unresolved placeholders."
+  },
+  "top_speaker": {
+    "character": "LOGAN",
+    "count": 29
+  },
+  "top_receiver_explicit": {
+    "target": "FRANK",
+    "count": 2
+  },
+  "said_by_character": [
+    {
+      "character": "LOGAN",
+      "count": 29
+    },
+    {
+      "character": "SHIV",
+      "count": 16
+    },
+    {
+      "character": "KENDALL",
+      "count": 15
+    },
+    {
+      "character": "ROMAN",
+      "count": 11
+    },
+    {
+      "character": "CONNOR",
+      "count": 7
+    },
+    {
+      "character": "TOM",
+      "count": 6
+    },
+    {
+      "character": "GREG",
+      "count": 5
+    },
+    {
+      "character": "COMFREY PELLITS",
+      "count": 4
+    },
+    {
+      "character": "GERRI",
+      "count": 3
+    },
+    {
+      "character": "HUGO",
+      "count": 3
+    },
+    {
+      "character": "FRANK",
+      "count": 2
+    },
+    {
+      "character": "RHEA JERRELL",
+      "count": 2
+    },
+    {
+      "character": "KARL",
+      "count": 2
+    },
+    {
+      "character": "KERRY",
+      "count": 2
+    },
+    {
+      "character": "LUKAS",
+      "count": 2
+    },
+    {
+      "character": "COLIN",
+      "count": 1
+    },
+    {
+      "character": "ALESSANDRO",
+      "count": 1
+    },
+    {
+      "character": "BILL",
+      "count": 1
+    },
+    {
+      "character": "EMCEE",
+      "count": 1
+    },
+    {
+      "character": "ILONA",
+      "count": 1
+    },
+    {
+      "character": "GIL",
+      "count": 1
+    },
+    {
+      "character": "MARCIA",
+      "count": 1
+    },
+    {
+      "character": "STEWY",
+      "count": 1
+    },
+    {
+      "character": "BOTH",
+      "count": 1
+    },
+    {
+      "character": "DOCTOR",
+      "count": 1
+    },
+    {
+      "character": "RHEA",
+      "count": 1
+    },
+    {
+      "character": "ORGANIZER",
+      "count": 1
+    },
+    {
+      "character": "SIMMONS",
+      "count": 1
+    },
+    {
+      "character": "SOPHIE",
+      "count": 1
+    },
+    {
+      "character": "JOSH",
+      "count": 1
+    },
+    {
+      "character": "KAROLINA",
+      "count": 1
+    }
+  ],
+  "strict": {
+    "received_by_target": [
+      {
+        "target": "_UNSPECIFIED_",
+        "count": 107
+      },
+      {
+        "target": "_YOU_",
+        "count": 12
+      },
+      {
+        "target": "FRANK",
+        "count": 2
+      },
+      {
+        "target": "LOGAN",
+        "count": 2
+      },
+      {
+        "target": "TOM",
+        "count": 1
+      },
+      {
+        "target": "_GROUP_",
+        "count": 1
+      }
+    ],
+    "edges": [
+      {
+        "source": "LOGAN",
+        "target": "_UNSPECIFIED_",
+        "count": 28
+      },
+      {
+        "source": "SHIV",
+        "target": "_UNSPECIFIED_",
+        "count": 13
+      },
+      {
+        "source": "KENDALL",
+        "target": "_UNSPECIFIED_",
+        "count": 10
+      },
+      {
+        "source": "ROMAN",
+        "target": "_UNSPECIFIED_",
+        "count": 7
+      },
+      {
+        "source": "CONNOR",
+        "target": "_UNSPECIFIED_",
+        "count": 6
+      },
+      {
+        "source": "TOM",
+        "target": "_UNSPECIFIED_",
+        "count": 6
+      },
+      {
+        "source": "COMFREY PELLITS",
+        "target": "_UNSPECIFIED_",
+        "count": 4
+      },
+      {
+        "source": "GREG",
+        "target": "_UNSPECIFIED_",
+        "count": 4
+      },
+      {
+        "source": "GERRI",
+        "target": "_UNSPECIFIED_",
+        "count": 3
+      },
+      {
+        "source": "KENDALL",
+        "target": "_YOU_",
+        "count": 3
+      },
+      {
+        "source": "ROMAN",
+        "target": "_YOU_",
+        "count": 3
+      },
+      {
+        "source": "FRANK",
+        "target": "_UNSPECIFIED_",
+        "count": 2
+      },
+      {
+        "source": "HUGO",
+        "target": "_UNSPECIFIED_",
+        "count": 2
+      },
+      {
+        "source": "KERRY",
+        "target": "_UNSPECIFIED_",
+        "count": 2
+      },
+      {
+        "source": "RHEA JERRELL",
+        "target": "_UNSPECIFIED_",
+        "count": 2
+      },
+      {
+        "source": "SHIV",
+        "target": "_YOU_",
+        "count": 2
+      },
+      {
+        "source": "ALESSANDRO",
+        "target": "_UNSPECIFIED_",
+        "count": 1
+      },
+      {
+        "source": "BILL",
+        "target": "_UNSPECIFIED_",
+        "count": 1
+      },
+      {
+        "source": "BOTH",
+        "target": "_UNSPECIFIED_",
+        "count": 1
+      },
+      {
+        "source": "COLIN",
+        "target": "_UNSPECIFIED_",
+        "count": 1
+      },
+      {
+        "source": "CONNOR",
+        "target": "TOM",
+        "count": 1
+      },
+      {
+        "source": "DOCTOR",
+        "target": "_UNSPECIFIED_",
+        "count": 1
+      },
+      {
+        "source": "EMCEE",
+        "target": "_UNSPECIFIED_",
+        "count": 1
+      },
+      {
+        "source": "GIL",
+        "target": "_UNSPECIFIED_",
+        "count": 1
+      },
+      {
+        "source": "GREG",
+        "target": "_YOU_",
+        "count": 1
+      },
+      {
+        "source": "HUGO",
+        "target": "_YOU_",
+        "count": 1
+      },
+      {
+        "source": "ILONA",
+        "target": "_UNSPECIFIED_",
+        "count": 1
+      },
+      {
+        "source": "JOSH",
+        "target": "_UNSPECIFIED_",
+        "count": 1
+      },
+      {
+        "source": "KARL",
+        "target": "FRANK",
+        "count": 1
+      },
+      {
+        "source": "KARL",
+        "target": "_UNSPECIFIED_",
+        "count": 1
+      },
+      {
+        "source": "KAROLINA",
+        "target": "_UNSPECIFIED_",
+        "count": 1
+      },
+      {
+        "source": "KENDALL",
+        "target": "FRANK",
+        "count": 1
+      },
+      {
+        "source": "KENDALL",
+        "target": "LOGAN",
+        "count": 1
+      },
+      {
+        "source": "LOGAN",
+        "target": "_YOU_",
+        "count": 1
+      },
+      {
+        "source": "LUKAS",
+        "target": "_UNSPECIFIED_",
+        "count": 1
+      },
+      {
+        "source": "LUKAS",
+        "target": "_YOU_",
+        "count": 1
+      },
+      {
+        "source": "MARCIA",
+        "target": "_UNSPECIFIED_",
+        "count": 1
+      },
+      {
+        "source": "ORGANIZER",
+        "target": "_UNSPECIFIED_",
+        "count": 1
+      },
+      {
+        "source": "RHEA",
+        "target": "_UNSPECIFIED_",
+        "count": 1
+      },
+      {
+        "source": "ROMAN",
+        "target": "_GROUP_",
+        "count": 1
+      },
+      {
+        "source": "SHIV",
+        "target": "LOGAN",
+        "count": 1
+      },
+      {
+        "source": "SIMMONS",
+        "target": "_UNSPECIFIED_",
+        "count": 1
+      },
+      {
+        "source": "SOPHIE",
+        "target": "_UNSPECIFIED_",
+        "count": 1
+      },
+      {
+        "source": "STEWY",
+        "target": "_UNSPECIFIED_",
+        "count": 1
+      }
+    ]
+  },
+  "inferred": {
+    "received_by_target": [
+      {
+        "target": "ROMAN",
+        "count": 22
+      },
+      {
+        "target": "_UNSPECIFIED_",
+        "count": 22
+      },
+      {
+        "target": "KENDALL",
+        "count": 17
+      },
+      {
+        "target": "SHIV",
+        "count": 13
+      },
+      {
+        "target": "LOGAN",
+        "count": 10
+      },
+      {
+        "target": "TOM",
+        "count": 10
+      },
+      {
+        "target": "FRANK",
+        "count": 5
+      },
+      {
+        "target": "GREG",
+        "count": 3
+      },
+      {
+        "target": "KARL",
+        "count": 3
+      },
+      {
+        "target": "CAROLINE",
+        "count": 2
+      },
+      {
+        "target": "CONNOR",
+        "count": 2
+      },
+      {
+        "target": "HUGO",
+        "count": 2
+      },
+      {
+        "target": "STEWY",
+        "count": 2
+      },
+      {
+        "target": "_YOU_",
+        "count": 2
+      },
+      {
+        "target": "BOTH",
+        "count": 1
+      },
+      {
+        "target": "COMFRY PELLITS",
+        "count": 1
+      },
+      {
+        "target": "GERRI",
+        "count": 1
+      },
+      {
+        "target": "JESS",
+        "count": 1
+      },
+      {
+        "target": "MARCIA",
+        "count": 1
+      },
+      {
+        "target": "MENCKEN",
+        "count": 1
+      },
+      {
+        "target": "PETER",
+        "count": 1
+      },
+      {
+        "target": "POLK",
+        "count": 1
+      },
+      {
+        "target": "RHEA",
+        "count": 1
+      },
+      {
+        "target": "SOPHIE",
+        "count": 1
+      }
+    ],
+    "edges": [
+      {
+        "source": "LOGAN",
+        "target": "KENDALL",
+        "count": 7
+      },
+      {
+        "source": "LOGAN",
+        "target": "_UNSPECIFIED_",
+        "count": 7
+      },
+      {
+        "source": "LOGAN",
+        "target": "ROMAN",
+        "count": 5
+      },
+      {
+        "source": "SHIV",
+        "target": "ROMAN",
+        "count": 5
+      },
+      {
+        "source": "COMFREY PELLITS",
+        "target": "SHIV",
+        "count": 4
+      },
+      {
+        "source": "GREG",
+        "target": "ROMAN",
+        "count": 3
+      },
+      {
+        "source": "KENDALL",
+        "target": "ROMAN",
+        "count": 3
+      },
+      {
+        "source": "ROMAN",
+        "target": "KENDALL",
+        "count": 3
+      },
+      {
+        "source": "ROMAN",
+        "target": "LOGAN",
+        "count": 3
+      },
+      {
+        "source": "SHIV",
+        "target": "KENDALL",
+        "count": 3
+      },
+      {
+        "source": "SHIV",
+        "target": "TOM",
+        "count": 3
+      },
+      {
+        "source": "CONNOR",
+        "target": "SHIV",
+        "count": 2
+      },
+      {
+        "source": "CONNOR",
+        "target": "TOM",
+        "count": 2
+      },
+      {
+        "source": "KENDALL",
+        "target": "LOGAN",
+        "count": 2
+      },
+      {
+        "source": "KENDALL",
+        "target": "TOM",
+        "count": 2
+      },
+      {
+        "source": "KENDALL",
+        "target": "_UNSPECIFIED_",
+        "count": 2
+      },
+      {
+        "source": "LOGAN",
+        "target": "CAROLINE",
+        "count": 2
+      },
+      {
+        "source": "LOGAN",
+        "target": "KARL",
+        "count": 2
+      },
+      {
+        "source": "LOGAN",
+        "target": "SHIV",
+        "count": 2
+      },
+      {
+        "source": "RHEA JERRELL",
+        "target": "ROMAN",
+        "count": 2
+      },
+      {
+        "source": "ROMAN",
+        "target": "_UNSPECIFIED_",
+        "count": 2
+      },
+      {
+        "source": "SHIV",
+        "target": "_UNSPECIFIED_",
+        "count": 2
+      },
+      {
+        "source": "TOM",
+        "target": "GREG",
+        "count": 2
+      },
+      {
+        "source": "TOM",
+        "target": "_UNSPECIFIED_",
+        "count": 2
+      },
+      {
+        "source": "ALESSANDRO",
+        "target": "LOGAN",
+        "count": 1
+      },
+      {
+        "source": "BILL",
+        "target": "_UNSPECIFIED_",
+        "count": 1
+      },
+      {
+        "source": "BOTH",
+        "target": "_UNSPECIFIED_",
+        "count": 1
+      },
+      {
+        "source": "COLIN",
+        "target": "FRANK",
+        "count": 1
+      },
+      {
+        "source": "CONNOR",
+        "target": "BOTH",
+        "count": 1
+      },
+      {
+        "source": "CONNOR",
+        "target": "KENDALL",
+        "count": 1
+      },
+      {
+        "source": "CONNOR",
+        "target": "ROMAN",
+        "count": 1
+      },
+      {
+        "source": "DOCTOR",
+        "target": "SHIV",
+        "count": 1
+      },
+      {
+        "source": "EMCEE",
+        "target": "STEWY",
+        "count": 1
+      },
+      {
+        "source": "FRANK",
+        "target": "GERRI",
+        "count": 1
+      },
+      {
+        "source": "FRANK",
+        "target": "_UNSPECIFIED_",
+        "count": 1
+      },
+      {
+        "source": "GERRI",
+        "target": "KARL",
+        "count": 1
+      },
+      {
+        "source": "GERRI",
+        "target": "KENDALL",
+        "count": 1
+      },
+      {
+        "source": "GERRI",
+        "target": "SOPHIE",
+        "count": 1
+      },
+      {
+        "source": "GIL",
+        "target": "_UNSPECIFIED_",
+        "count": 1
+      },
+      {
+        "source": "GREG",
+        "target": "MENCKEN",
+        "count": 1
+      },
+      {
+        "source": "GREG",
+        "target": "TOM",
+        "count": 1
+      },
+      {
+        "source": "HUGO",
+        "target": "KENDALL",
+        "count": 1
+      },
+      {
+        "source": "HUGO",
+        "target": "RHEA",
+        "count": 1
+      },
+      {
+        "source": "HUGO",
+        "target": "ROMAN",
+        "count": 1
+      },
+      {
+        "source": "ILONA",
+        "target": "FRANK",
+        "count": 1
+      },
+      {
+        "source": "JOSH",
+        "target": "KENDALL",
+        "count": 1
+      },
+      {
+        "source": "KARL",
+        "target": "FRANK",
+        "count": 1
+      },
+      {
+        "source": "KARL",
+        "target": "SHIV",
+        "count": 1
+      },
+      {
+        "source": "KAROLINA",
+        "target": "LOGAN",
+        "count": 1
+      },
+      {
+        "source": "KENDALL",
+        "target": "COMFRY PELLITS",
+        "count": 1
+      },
+      {
+        "source": "KENDALL",
+        "target": "FRANK",
+        "count": 1
+      },
+      {
+        "source": "KENDALL",
+        "target": "PETER",
+        "count": 1
+      },
+      {
+        "source": "KENDALL",
+        "target": "POLK",
+        "count": 1
+      },
+      {
+        "source": "KENDALL",
+        "target": "STEWY",
+        "count": 1
+      },
+      {
+        "source": "KENDALL",
+        "target": "_YOU_",
+        "count": 1
+      },
+      {
+        "source": "KERRY",
+        "target": "HUGO",
+        "count": 1
+      },
+      {
+        "source": "KERRY",
+        "target": "LOGAN",
+        "count": 1
+      },
+      {
+        "source": "LOGAN",
+        "target": "CONNOR",
+        "count": 1
+      },
+      {
+        "source": "LOGAN",
+        "target": "GREG",
+        "count": 1
+      },
+      {
+        "source": "LOGAN",
+        "target": "HUGO",
+        "count": 1
+      },
+      {
+        "source": "LOGAN",
+        "target": "TOM",
+        "count": 1
+      },
+      {
+        "source": "LUKAS",
+        "target": "_UNSPECIFIED_",
+        "count": 1
+      },
+      {
+        "source": "LUKAS",
+        "target": "_YOU_",
+        "count": 1
+      },
+      {
+        "source": "MARCIA",
+        "target": "SHIV",
+        "count": 1
+      },
+      {
+        "source": "ORGANIZER",
+        "target": "ROMAN",
+        "count": 1
+      },
+      {
+        "source": "RHEA",
+        "target": "LOGAN",
+        "count": 1
+      },
+      {
+        "source": "ROMAN",
+        "target": "FRANK",
+        "count": 1
+      },
+      {
+        "source": "ROMAN",
+        "target": "SHIV",
+        "count": 1
+      },
+      {
+        "source": "ROMAN",
+        "target": "TOM",
+        "count": 1
+      },
+      {
+        "source": "SHIV",
+        "target": "CONNOR",
+        "count": 1
+      },
+      {
+        "source": "SHIV",
+        "target": "LOGAN",
+        "count": 1
+      },
+      {
+        "source": "SHIV",
+        "target": "MARCIA",
+        "count": 1
+      },
+      {
+        "source": "SIMMONS",
+        "target": "_UNSPECIFIED_",
+        "count": 1
+      },
+      {
+        "source": "SOPHIE",
+        "target": "_UNSPECIFIED_",
+        "count": 1
+      },
+      {
+        "source": "STEWY",
+        "target": "SHIV",
+        "count": 1
+      },
+      {
+        "source": "TOM",
+        "target": "JESS",
+        "count": 1
+      },
+      {
+        "source": "TOM",
+        "target": "ROMAN",
+        "count": 1
+      }
+    ]
+  },
+  "episodes_without_speaker_cues": [
+    "Season1/S1_E07.html",
+    "Season2/S2_E05.html",
+    "Season3/S3_E02.html",
+    "Season4/S4_E01.html",
+    "Season4/S4_E06.html"
+  ],
+  "episodes": [
+    {
+      "episode": "Season1/S1_E01.html",
+      "season": "Season1",
+      "episode_code": "S1_E01",
+      "speaker_cue_count": 79,
+      "total_fuck_off": 3,
+      "said_by_character": [
+        {
+          "character": "FRANK",
+          "count": 1
+        },
+        {
+          "character": "COLIN",
+          "count": 1
+        },
+        {
+          "character": "ALESSANDRO",
+          "count": 1
+        }
+      ],
+      "received_by_target_strict": [
+        {
+          "target": "_UNSPECIFIED_",
+          "count": 3
+        }
+      ],
+      "received_by_target_inferred": [
+        {
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "target": "FRANK",
+          "count": 1
+        },
+        {
+          "target": "LOGAN",
+          "count": 1
+        }
+      ],
+      "edges_strict": [
+        {
+          "source": "ALESSANDRO",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "source": "COLIN",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "source": "FRANK",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        }
+      ],
+      "edges_inferred": [
+        {
+          "source": "ALESSANDRO",
+          "target": "LOGAN",
+          "count": 1
+        },
+        {
+          "source": "COLIN",
+          "target": "FRANK",
+          "count": 1
+        },
+        {
+          "source": "FRANK",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season1/S1_E02.html",
+      "season": "Season1",
+      "episode_code": "S1_E02",
+      "speaker_cue_count": 67,
+      "total_fuck_off": 4,
+      "said_by_character": [
+        {
+          "character": "CONNOR",
+          "count": 2
+        },
+        {
+          "character": "KENDALL",
+          "count": 1
+        },
+        {
+          "character": "GERRI",
+          "count": 1
+        }
+      ],
+      "received_by_target_strict": [
+        {
+          "target": "_UNSPECIFIED_",
+          "count": 3
+        },
+        {
+          "target": "TOM",
+          "count": 1
+        }
+      ],
+      "received_by_target_inferred": [
+        {
+          "target": "SHIV",
+          "count": 1
+        },
+        {
+          "target": "TOM",
+          "count": 1
+        },
+        {
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "target": "KARL",
+          "count": 1
+        }
+      ],
+      "edges_strict": [
+        {
+          "source": "CONNOR",
+          "target": "TOM",
+          "count": 1
+        },
+        {
+          "source": "CONNOR",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "source": "GERRI",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "source": "KENDALL",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        }
+      ],
+      "edges_inferred": [
+        {
+          "source": "CONNOR",
+          "target": "SHIV",
+          "count": 1
+        },
+        {
+          "source": "CONNOR",
+          "target": "TOM",
+          "count": 1
+        },
+        {
+          "source": "GERRI",
+          "target": "KARL",
+          "count": 1
+        },
+        {
+          "source": "KENDALL",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season1/S1_E03.html",
+      "season": "Season1",
+      "episode_code": "S1_E03",
+      "speaker_cue_count": 44,
+      "total_fuck_off": 2,
+      "said_by_character": [
+        {
+          "character": "KENDALL",
+          "count": 1
+        },
+        {
+          "character": "GERRI",
+          "count": 1
+        }
+      ],
+      "received_by_target_strict": [
+        {
+          "target": "_UNSPECIFIED_",
+          "count": 2
+        }
+      ],
+      "received_by_target_inferred": [
+        {
+          "target": "POLK",
+          "count": 1
+        },
+        {
+          "target": "KENDALL",
+          "count": 1
+        }
+      ],
+      "edges_strict": [
+        {
+          "source": "GERRI",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "source": "KENDALL",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        }
+      ],
+      "edges_inferred": [
+        {
+          "source": "GERRI",
+          "target": "KENDALL",
+          "count": 1
+        },
+        {
+          "source": "KENDALL",
+          "target": "POLK",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season1/S1_E04.html",
+      "season": "Season1",
+      "episode_code": "S1_E04",
+      "speaker_cue_count": 54,
+      "total_fuck_off": 5,
+      "said_by_character": [
+        {
+          "character": "SHIV",
+          "count": 1
+        },
+        {
+          "character": "BILL",
+          "count": 1
+        },
+        {
+          "character": "TOM",
+          "count": 1
+        },
+        {
+          "character": "CONNOR",
+          "count": 1
+        },
+        {
+          "character": "EMCEE",
+          "count": 1
+        }
+      ],
+      "received_by_target_strict": [
+        {
+          "target": "_UNSPECIFIED_",
+          "count": 5
+        }
+      ],
+      "received_by_target_inferred": [
+        {
+          "target": "ROMAN",
+          "count": 1
+        },
+        {
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "target": "JESS",
+          "count": 1
+        },
+        {
+          "target": "BOTH",
+          "count": 1
+        },
+        {
+          "target": "STEWY",
+          "count": 1
+        }
+      ],
+      "edges_strict": [
+        {
+          "source": "BILL",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "source": "CONNOR",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "source": "EMCEE",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "source": "SHIV",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "source": "TOM",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        }
+      ],
+      "edges_inferred": [
+        {
+          "source": "BILL",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "source": "CONNOR",
+          "target": "BOTH",
+          "count": 1
+        },
+        {
+          "source": "EMCEE",
+          "target": "STEWY",
+          "count": 1
+        },
+        {
+          "source": "SHIV",
+          "target": "ROMAN",
+          "count": 1
+        },
+        {
+          "source": "TOM",
+          "target": "JESS",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season1/S1_E05.html",
+      "season": "Season1",
+      "episode_code": "S1_E05",
+      "speaker_cue_count": 110,
+      "total_fuck_off": 3,
+      "said_by_character": [
+        {
+          "character": "LOGAN",
+          "count": 2
+        },
+        {
+          "character": "ROMAN",
+          "count": 1
+        }
+      ],
+      "received_by_target_strict": [
+        {
+          "target": "_UNSPECIFIED_",
+          "count": 3
+        }
+      ],
+      "received_by_target_inferred": [
+        {
+          "target": "KENDALL",
+          "count": 2
+        },
+        {
+          "target": "ROMAN",
+          "count": 1
+        }
+      ],
+      "edges_strict": [
+        {
+          "source": "LOGAN",
+          "target": "_UNSPECIFIED_",
+          "count": 2
+        },
+        {
+          "source": "ROMAN",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        }
+      ],
+      "edges_inferred": [
+        {
+          "source": "LOGAN",
+          "target": "KENDALL",
+          "count": 1
+        },
+        {
+          "source": "LOGAN",
+          "target": "ROMAN",
+          "count": 1
+        },
+        {
+          "source": "ROMAN",
+          "target": "KENDALL",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season1/S1_E06.html",
+      "season": "Season1",
+      "episode_code": "S1_E06",
+      "speaker_cue_count": 66,
+      "total_fuck_off": 2,
+      "said_by_character": [
+        {
+          "character": "ILONA",
+          "count": 1
+        },
+        {
+          "character": "LOGAN",
+          "count": 1
+        }
+      ],
+      "received_by_target_strict": [
+        {
+          "target": "_UNSPECIFIED_",
+          "count": 2
+        }
+      ],
+      "received_by_target_inferred": [
+        {
+          "target": "FRANK",
+          "count": 1
+        },
+        {
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        }
+      ],
+      "edges_strict": [
+        {
+          "source": "ILONA",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "source": "LOGAN",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        }
+      ],
+      "edges_inferred": [
+        {
+          "source": "ILONA",
+          "target": "FRANK",
+          "count": 1
+        },
+        {
+          "source": "LOGAN",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season1/S1_E07.html",
+      "season": "Season1",
+      "episode_code": "S1_E07",
+      "speaker_cue_count": 0,
+      "total_fuck_off": 0,
+      "said_by_character": [],
+      "received_by_target_strict": [],
+      "received_by_target_inferred": [],
+      "edges_strict": [],
+      "edges_inferred": []
+    },
+    {
+      "episode": "Season1/S1_E08.html",
+      "season": "Season1",
+      "episode_code": "S1_E08",
+      "speaker_cue_count": 70,
+      "total_fuck_off": 7,
+      "said_by_character": [
+        {
+          "character": "ROMAN",
+          "count": 2
+        },
+        {
+          "character": "KENDALL",
+          "count": 2
+        },
+        {
+          "character": "GREG",
+          "count": 1
+        },
+        {
+          "character": "GIL",
+          "count": 1
+        },
+        {
+          "character": "SHIV",
+          "count": 1
+        }
+      ],
+      "received_by_target_strict": [
+        {
+          "target": "_YOU_",
+          "count": 3
+        },
+        {
+          "target": "_UNSPECIFIED_",
+          "count": 3
+        },
+        {
+          "target": "LOGAN",
+          "count": 1
+        }
+      ],
+      "received_by_target_inferred": [
+        {
+          "target": "LOGAN",
+          "count": 3
+        },
+        {
+          "target": "TOM",
+          "count": 2
+        },
+        {
+          "target": "ROMAN",
+          "count": 1
+        },
+        {
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        }
+      ],
+      "edges_strict": [
+        {
+          "source": "ROMAN",
+          "target": "_YOU_",
+          "count": 2
+        },
+        {
+          "source": "GIL",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "source": "GREG",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "source": "KENDALL",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "source": "KENDALL",
+          "target": "_YOU_",
+          "count": 1
+        },
+        {
+          "source": "SHIV",
+          "target": "LOGAN",
+          "count": 1
+        }
+      ],
+      "edges_inferred": [
+        {
+          "source": "KENDALL",
+          "target": "TOM",
+          "count": 2
+        },
+        {
+          "source": "ROMAN",
+          "target": "LOGAN",
+          "count": 2
+        },
+        {
+          "source": "GIL",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "source": "GREG",
+          "target": "ROMAN",
+          "count": 1
+        },
+        {
+          "source": "SHIV",
+          "target": "LOGAN",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season1/S1_E09.html",
+      "season": "Season1",
+      "episode_code": "S1_E09",
+      "speaker_cue_count": 67,
+      "total_fuck_off": 6,
+      "said_by_character": [
+        {
+          "character": "KENDALL",
+          "count": 2
+        },
+        {
+          "character": "LOGAN",
+          "count": 1
+        },
+        {
+          "character": "MARCIA",
+          "count": 1
+        },
+        {
+          "character": "SHIV",
+          "count": 1
+        },
+        {
+          "character": "STEWY",
+          "count": 1
+        }
+      ],
+      "received_by_target_strict": [
+        {
+          "target": "_UNSPECIFIED_",
+          "count": 5
+        },
+        {
+          "target": "_YOU_",
+          "count": 1
+        }
+      ],
+      "received_by_target_inferred": [
+        {
+          "target": "SHIV",
+          "count": 2
+        },
+        {
+          "target": "TOM",
+          "count": 1
+        },
+        {
+          "target": "MARCIA",
+          "count": 1
+        },
+        {
+          "target": "_YOU_",
+          "count": 1
+        },
+        {
+          "target": "STEWY",
+          "count": 1
+        }
+      ],
+      "edges_strict": [
+        {
+          "source": "KENDALL",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "source": "KENDALL",
+          "target": "_YOU_",
+          "count": 1
+        },
+        {
+          "source": "LOGAN",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "source": "MARCIA",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "source": "SHIV",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "source": "STEWY",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        }
+      ],
+      "edges_inferred": [
+        {
+          "source": "KENDALL",
+          "target": "STEWY",
+          "count": 1
+        },
+        {
+          "source": "KENDALL",
+          "target": "_YOU_",
+          "count": 1
+        },
+        {
+          "source": "LOGAN",
+          "target": "TOM",
+          "count": 1
+        },
+        {
+          "source": "MARCIA",
+          "target": "SHIV",
+          "count": 1
+        },
+        {
+          "source": "SHIV",
+          "target": "MARCIA",
+          "count": 1
+        },
+        {
+          "source": "STEWY",
+          "target": "SHIV",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season1/S1_E10.html",
+      "season": "Season1",
+      "episode_code": "S1_E10",
+      "speaker_cue_count": 51,
+      "total_fuck_off": 4,
+      "said_by_character": [
+        {
+          "character": "LOGAN",
+          "count": 3
+        },
+        {
+          "character": "SHIV",
+          "count": 1
+        }
+      ],
+      "received_by_target_strict": [
+        {
+          "target": "_UNSPECIFIED_",
+          "count": 4
+        }
+      ],
+      "received_by_target_inferred": [
+        {
+          "target": "CAROLINE",
+          "count": 2
+        },
+        {
+          "target": "SHIV",
+          "count": 1
+        },
+        {
+          "target": "CONNOR",
+          "count": 1
+        }
+      ],
+      "edges_strict": [
+        {
+          "source": "LOGAN",
+          "target": "_UNSPECIFIED_",
+          "count": 3
+        },
+        {
+          "source": "SHIV",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        }
+      ],
+      "edges_inferred": [
+        {
+          "source": "LOGAN",
+          "target": "CAROLINE",
+          "count": 2
+        },
+        {
+          "source": "LOGAN",
+          "target": "SHIV",
+          "count": 1
+        },
+        {
+          "source": "SHIV",
+          "target": "CONNOR",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season2/S2_E01.html",
+      "season": "Season2",
+      "episode_code": "S2_E01",
+      "speaker_cue_count": 87,
+      "total_fuck_off": 5,
+      "said_by_character": [
+        {
+          "character": "BOTH",
+          "count": 1
+        },
+        {
+          "character": "KENDALL",
+          "count": 1
+        },
+        {
+          "character": "LOGAN",
+          "count": 1
+        },
+        {
+          "character": "SHIV",
+          "count": 1
+        },
+        {
+          "character": "CONNOR",
+          "count": 1
+        }
+      ],
+      "received_by_target_strict": [
+        {
+          "target": "_UNSPECIFIED_",
+          "count": 5
+        }
+      ],
+      "received_by_target_inferred": [
+        {
+          "target": "_UNSPECIFIED_",
+          "count": 3
+        },
+        {
+          "target": "ROMAN",
+          "count": 1
+        },
+        {
+          "target": "TOM",
+          "count": 1
+        }
+      ],
+      "edges_strict": [
+        {
+          "source": "BOTH",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "source": "CONNOR",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "source": "KENDALL",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "source": "LOGAN",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "source": "SHIV",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        }
+      ],
+      "edges_inferred": [
+        {
+          "source": "BOTH",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "source": "CONNOR",
+          "target": "TOM",
+          "count": 1
+        },
+        {
+          "source": "KENDALL",
+          "target": "ROMAN",
+          "count": 1
+        },
+        {
+          "source": "LOGAN",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "source": "SHIV",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season2/S2_E02.html",
+      "season": "Season2",
+      "episode_code": "S2_E02",
+      "speaker_cue_count": 144,
+      "total_fuck_off": 4,
+      "said_by_character": [
+        {
+          "character": "GREG",
+          "count": 2
+        },
+        {
+          "character": "ROMAN",
+          "count": 1
+        },
+        {
+          "character": "LOGAN",
+          "count": 1
+        }
+      ],
+      "received_by_target_strict": [
+        {
+          "target": "_UNSPECIFIED_",
+          "count": 3
+        },
+        {
+          "target": "_YOU_",
+          "count": 1
+        }
+      ],
+      "received_by_target_inferred": [
+        {
+          "target": "ROMAN",
+          "count": 2
+        },
+        {
+          "target": "_UNSPECIFIED_",
+          "count": 2
+        }
+      ],
+      "edges_strict": [
+        {
+          "source": "GREG",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "source": "GREG",
+          "target": "_YOU_",
+          "count": 1
+        },
+        {
+          "source": "LOGAN",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "source": "ROMAN",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        }
+      ],
+      "edges_inferred": [
+        {
+          "source": "GREG",
+          "target": "ROMAN",
+          "count": 2
+        },
+        {
+          "source": "LOGAN",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "source": "ROMAN",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season2/S2_E03.html",
+      "season": "Season2",
+      "episode_code": "S2_E03",
+      "speaker_cue_count": 117,
+      "total_fuck_off": 3,
+      "said_by_character": [
+        {
+          "character": "DOCTOR",
+          "count": 1
+        },
+        {
+          "character": "ROMAN",
+          "count": 1
+        },
+        {
+          "character": "LOGAN",
+          "count": 1
+        }
+      ],
+      "received_by_target_strict": [
+        {
+          "target": "_UNSPECIFIED_",
+          "count": 3
+        }
+      ],
+      "received_by_target_inferred": [
+        {
+          "target": "SHIV",
+          "count": 1
+        },
+        {
+          "target": "LOGAN",
+          "count": 1
+        },
+        {
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        }
+      ],
+      "edges_strict": [
+        {
+          "source": "DOCTOR",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "source": "LOGAN",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "source": "ROMAN",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        }
+      ],
+      "edges_inferred": [
+        {
+          "source": "DOCTOR",
+          "target": "SHIV",
+          "count": 1
+        },
+        {
+          "source": "LOGAN",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "source": "ROMAN",
+          "target": "LOGAN",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season2/S2_E04.html",
+      "season": "Season2",
+      "episode_code": "S2_E04",
+      "speaker_cue_count": 86,
+      "total_fuck_off": 2,
+      "said_by_character": [
+        {
+          "character": "TOM",
+          "count": 1
+        },
+        {
+          "character": "RHEA",
+          "count": 1
+        }
+      ],
+      "received_by_target_strict": [
+        {
+          "target": "_UNSPECIFIED_",
+          "count": 2
+        }
+      ],
+      "received_by_target_inferred": [
+        {
+          "target": "GREG",
+          "count": 1
+        },
+        {
+          "target": "LOGAN",
+          "count": 1
+        }
+      ],
+      "edges_strict": [
+        {
+          "source": "RHEA",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "source": "TOM",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        }
+      ],
+      "edges_inferred": [
+        {
+          "source": "RHEA",
+          "target": "LOGAN",
+          "count": 1
+        },
+        {
+          "source": "TOM",
+          "target": "GREG",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season2/S2_E05.html",
+      "season": "Season2",
+      "episode_code": "S2_E05",
+      "speaker_cue_count": 0,
+      "total_fuck_off": 0,
+      "said_by_character": [],
+      "received_by_target_strict": [],
+      "received_by_target_inferred": [],
+      "edges_strict": [],
+      "edges_inferred": []
+    },
+    {
+      "episode": "Season2/S2_E06.html",
+      "season": "Season2",
+      "episode_code": "S2_E06",
+      "speaker_cue_count": 153,
+      "total_fuck_off": 4,
+      "said_by_character": [
+        {
+          "character": "LOGAN",
+          "count": 2
+        },
+        {
+          "character": "ORGANIZER",
+          "count": 1
+        },
+        {
+          "character": "SIMMONS",
+          "count": 1
+        }
+      ],
+      "received_by_target_strict": [
+        {
+          "target": "_UNSPECIFIED_",
+          "count": 4
+        }
+      ],
+      "received_by_target_inferred": [
+        {
+          "target": "ROMAN",
+          "count": 1
+        },
+        {
+          "target": "SHIV",
+          "count": 1
+        },
+        {
+          "target": "HUGO",
+          "count": 1
+        },
+        {
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        }
+      ],
+      "edges_strict": [
+        {
+          "source": "LOGAN",
+          "target": "_UNSPECIFIED_",
+          "count": 2
+        },
+        {
+          "source": "ORGANIZER",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "source": "SIMMONS",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        }
+      ],
+      "edges_inferred": [
+        {
+          "source": "LOGAN",
+          "target": "HUGO",
+          "count": 1
+        },
+        {
+          "source": "LOGAN",
+          "target": "SHIV",
+          "count": 1
+        },
+        {
+          "source": "ORGANIZER",
+          "target": "ROMAN",
+          "count": 1
+        },
+        {
+          "source": "SIMMONS",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season2/S2_E07.html",
+      "season": "Season2",
+      "episode_code": "S2_E07",
+      "speaker_cue_count": 175,
+      "total_fuck_off": 3,
+      "said_by_character": [
+        {
+          "character": "RHEA JERRELL",
+          "count": 2
+        },
+        {
+          "character": "LOGAN",
+          "count": 1
+        }
+      ],
+      "received_by_target_strict": [
+        {
+          "target": "_UNSPECIFIED_",
+          "count": 3
+        }
+      ],
+      "received_by_target_inferred": [
+        {
+          "target": "ROMAN",
+          "count": 2
+        },
+        {
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        }
+      ],
+      "edges_strict": [
+        {
+          "source": "RHEA JERRELL",
+          "target": "_UNSPECIFIED_",
+          "count": 2
+        },
+        {
+          "source": "LOGAN",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        }
+      ],
+      "edges_inferred": [
+        {
+          "source": "RHEA JERRELL",
+          "target": "ROMAN",
+          "count": 2
+        },
+        {
+          "source": "LOGAN",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season2/S2_E08.html",
+      "season": "Season2",
+      "episode_code": "S2_E08",
+      "speaker_cue_count": 186,
+      "total_fuck_off": 2,
+      "said_by_character": [
+        {
+          "character": "ROMAN",
+          "count": 1
+        },
+        {
+          "character": "KENDALL",
+          "count": 1
+        }
+      ],
+      "received_by_target_strict": [
+        {
+          "target": "_UNSPECIFIED_",
+          "count": 2
+        }
+      ],
+      "received_by_target_inferred": [
+        {
+          "target": "TOM",
+          "count": 1
+        },
+        {
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        }
+      ],
+      "edges_strict": [
+        {
+          "source": "KENDALL",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "source": "ROMAN",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        }
+      ],
+      "edges_inferred": [
+        {
+          "source": "KENDALL",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "source": "ROMAN",
+          "target": "TOM",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season2/S2_E09.html",
+      "season": "Season2",
+      "episode_code": "S2_E09",
+      "speaker_cue_count": 192,
+      "total_fuck_off": 2,
+      "said_by_character": [
+        {
+          "character": "HUGO",
+          "count": 1
+        },
+        {
+          "character": "KENDALL",
+          "count": 1
+        }
+      ],
+      "received_by_target_strict": [
+        {
+          "target": "_YOU_",
+          "count": 1
+        },
+        {
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        }
+      ],
+      "received_by_target_inferred": [
+        {
+          "target": "RHEA",
+          "count": 1
+        },
+        {
+          "target": "LOGAN",
+          "count": 1
+        }
+      ],
+      "edges_strict": [
+        {
+          "source": "HUGO",
+          "target": "_YOU_",
+          "count": 1
+        },
+        {
+          "source": "KENDALL",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        }
+      ],
+      "edges_inferred": [
+        {
+          "source": "HUGO",
+          "target": "RHEA",
+          "count": 1
+        },
+        {
+          "source": "KENDALL",
+          "target": "LOGAN",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season2/S2_E10.html",
+      "season": "Season2",
+      "episode_code": "S2_E10",
+      "speaker_cue_count": 158,
+      "total_fuck_off": 1,
+      "said_by_character": [
+        {
+          "character": "LOGAN",
+          "count": 1
+        }
+      ],
+      "received_by_target_strict": [
+        {
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        }
+      ],
+      "received_by_target_inferred": [
+        {
+          "target": "CONNOR",
+          "count": 1
+        }
+      ],
+      "edges_strict": [
+        {
+          "source": "LOGAN",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        }
+      ],
+      "edges_inferred": [
+        {
+          "source": "LOGAN",
+          "target": "CONNOR",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season3/S3_E01.html",
+      "season": "Season3",
+      "episode_code": "S3_E01",
+      "speaker_cue_count": 138,
+      "total_fuck_off": 4,
+      "said_by_character": [
+        {
+          "character": "LOGAN",
+          "count": 2
+        },
+        {
+          "character": "SHIV",
+          "count": 1
+        },
+        {
+          "character": "KARL",
+          "count": 1
+        }
+      ],
+      "received_by_target_strict": [
+        {
+          "target": "_UNSPECIFIED_",
+          "count": 3
+        },
+        {
+          "target": "FRANK",
+          "count": 1
+        }
+      ],
+      "received_by_target_inferred": [
+        {
+          "target": "KARL",
+          "count": 2
+        },
+        {
+          "target": "TOM",
+          "count": 1
+        },
+        {
+          "target": "FRANK",
+          "count": 1
+        }
+      ],
+      "edges_strict": [
+        {
+          "source": "LOGAN",
+          "target": "_UNSPECIFIED_",
+          "count": 2
+        },
+        {
+          "source": "KARL",
+          "target": "FRANK",
+          "count": 1
+        },
+        {
+          "source": "SHIV",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        }
+      ],
+      "edges_inferred": [
+        {
+          "source": "LOGAN",
+          "target": "KARL",
+          "count": 2
+        },
+        {
+          "source": "KARL",
+          "target": "FRANK",
+          "count": 1
+        },
+        {
+          "source": "SHIV",
+          "target": "TOM",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season3/S3_E02.html",
+      "season": "Season3",
+      "episode_code": "S3_E02",
+      "speaker_cue_count": 0,
+      "total_fuck_off": 0,
+      "said_by_character": [],
+      "received_by_target_strict": [],
+      "received_by_target_inferred": [],
+      "edges_strict": [],
+      "edges_inferred": []
+    },
+    {
+      "episode": "Season3/S3_E03.html",
+      "season": "Season3",
+      "episode_code": "S3_E03",
+      "speaker_cue_count": 242,
+      "total_fuck_off": 4,
+      "said_by_character": [
+        {
+          "character": "KERRY",
+          "count": 2
+        },
+        {
+          "character": "SOPHIE",
+          "count": 1
+        },
+        {
+          "character": "GERRI",
+          "count": 1
+        }
+      ],
+      "received_by_target_strict": [
+        {
+          "target": "_UNSPECIFIED_",
+          "count": 4
+        }
+      ],
+      "received_by_target_inferred": [
+        {
+          "target": "HUGO",
+          "count": 1
+        },
+        {
+          "target": "LOGAN",
+          "count": 1
+        },
+        {
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "target": "SOPHIE",
+          "count": 1
+        }
+      ],
+      "edges_strict": [
+        {
+          "source": "KERRY",
+          "target": "_UNSPECIFIED_",
+          "count": 2
+        },
+        {
+          "source": "GERRI",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "source": "SOPHIE",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        }
+      ],
+      "edges_inferred": [
+        {
+          "source": "GERRI",
+          "target": "SOPHIE",
+          "count": 1
+        },
+        {
+          "source": "KERRY",
+          "target": "HUGO",
+          "count": 1
+        },
+        {
+          "source": "KERRY",
+          "target": "LOGAN",
+          "count": 1
+        },
+        {
+          "source": "SOPHIE",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season3/S3_E04.html",
+      "season": "Season3",
+      "episode_code": "S3_E04",
+      "speaker_cue_count": 132,
+      "total_fuck_off": 5,
+      "said_by_character": [
+        {
+          "character": "LOGAN",
+          "count": 2
+        },
+        {
+          "character": "ROMAN",
+          "count": 1
+        },
+        {
+          "character": "HUGO",
+          "count": 1
+        },
+        {
+          "character": "JOSH",
+          "count": 1
+        }
+      ],
+      "received_by_target_strict": [
+        {
+          "target": "_UNSPECIFIED_",
+          "count": 4
+        },
+        {
+          "target": "_YOU_",
+          "count": 1
+        }
+      ],
+      "received_by_target_inferred": [
+        {
+          "target": "KENDALL",
+          "count": 2
+        },
+        {
+          "target": "SHIV",
+          "count": 1
+        },
+        {
+          "target": "GREG",
+          "count": 1
+        },
+        {
+          "target": "ROMAN",
+          "count": 1
+        }
+      ],
+      "edges_strict": [
+        {
+          "source": "HUGO",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "source": "JOSH",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "source": "LOGAN",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "source": "LOGAN",
+          "target": "_YOU_",
+          "count": 1
+        },
+        {
+          "source": "ROMAN",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        }
+      ],
+      "edges_inferred": [
+        {
+          "source": "HUGO",
+          "target": "ROMAN",
+          "count": 1
+        },
+        {
+          "source": "JOSH",
+          "target": "KENDALL",
+          "count": 1
+        },
+        {
+          "source": "LOGAN",
+          "target": "GREG",
+          "count": 1
+        },
+        {
+          "source": "LOGAN",
+          "target": "KENDALL",
+          "count": 1
+        },
+        {
+          "source": "ROMAN",
+          "target": "SHIV",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season3/S3_E05.html",
+      "season": "Season3",
+      "episode_code": "S3_E05",
+      "speaker_cue_count": 219,
+      "total_fuck_off": 3,
+      "said_by_character": [
+        {
+          "character": "CONNOR",
+          "count": 1
+        },
+        {
+          "character": "KENDALL",
+          "count": 1
+        },
+        {
+          "character": "ROMAN",
+          "count": 1
+        }
+      ],
+      "received_by_target_strict": [
+        {
+          "target": "_UNSPECIFIED_",
+          "count": 2
+        },
+        {
+          "target": "_YOU_",
+          "count": 1
+        }
+      ],
+      "received_by_target_inferred": [
+        {
+          "target": "SHIV",
+          "count": 1
+        },
+        {
+          "target": "ROMAN",
+          "count": 1
+        },
+        {
+          "target": "FRANK",
+          "count": 1
+        }
+      ],
+      "edges_strict": [
+        {
+          "source": "CONNOR",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "source": "KENDALL",
+          "target": "_YOU_",
+          "count": 1
+        },
+        {
+          "source": "ROMAN",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        }
+      ],
+      "edges_inferred": [
+        {
+          "source": "CONNOR",
+          "target": "SHIV",
+          "count": 1
+        },
+        {
+          "source": "KENDALL",
+          "target": "ROMAN",
+          "count": 1
+        },
+        {
+          "source": "ROMAN",
+          "target": "FRANK",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season3/S3_E06.html",
+      "season": "Season3",
+      "episode_code": "S3_E06",
+      "speaker_cue_count": 93,
+      "total_fuck_off": 4,
+      "said_by_character": [
+        {
+          "character": "KENDALL",
+          "count": 1
+        },
+        {
+          "character": "LOGAN",
+          "count": 1
+        },
+        {
+          "character": "CONNOR",
+          "count": 1
+        },
+        {
+          "character": "TOM",
+          "count": 1
+        }
+      ],
+      "received_by_target_strict": [
+        {
+          "target": "_UNSPECIFIED_",
+          "count": 4
+        }
+      ],
+      "received_by_target_inferred": [
+        {
+          "target": "KENDALL",
+          "count": 2
+        },
+        {
+          "target": "COMFRY PELLITS",
+          "count": 1
+        },
+        {
+          "target": "GREG",
+          "count": 1
+        }
+      ],
+      "edges_strict": [
+        {
+          "source": "CONNOR",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "source": "KENDALL",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "source": "LOGAN",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "source": "TOM",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        }
+      ],
+      "edges_inferred": [
+        {
+          "source": "CONNOR",
+          "target": "KENDALL",
+          "count": 1
+        },
+        {
+          "source": "KENDALL",
+          "target": "COMFRY PELLITS",
+          "count": 1
+        },
+        {
+          "source": "LOGAN",
+          "target": "KENDALL",
+          "count": 1
+        },
+        {
+          "source": "TOM",
+          "target": "GREG",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season3/S3_E07.html",
+      "season": "Season3",
+      "episode_code": "S3_E07",
+      "speaker_cue_count": 227,
+      "total_fuck_off": 6,
+      "said_by_character": [
+        {
+          "character": "LOGAN",
+          "count": 4
+        },
+        {
+          "character": "COMFREY PELLITS",
+          "count": 2
+        }
+      ],
+      "received_by_target_strict": [
+        {
+          "target": "_UNSPECIFIED_",
+          "count": 6
+        }
+      ],
+      "received_by_target_inferred": [
+        {
+          "target": "SHIV",
+          "count": 2
+        },
+        {
+          "target": "KENDALL",
+          "count": 2
+        },
+        {
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "target": "ROMAN",
+          "count": 1
+        }
+      ],
+      "edges_strict": [
+        {
+          "source": "LOGAN",
+          "target": "_UNSPECIFIED_",
+          "count": 4
+        },
+        {
+          "source": "COMFREY PELLITS",
+          "target": "_UNSPECIFIED_",
+          "count": 2
+        }
+      ],
+      "edges_inferred": [
+        {
+          "source": "COMFREY PELLITS",
+          "target": "SHIV",
+          "count": 2
+        },
+        {
+          "source": "LOGAN",
+          "target": "KENDALL",
+          "count": 2
+        },
+        {
+          "source": "LOGAN",
+          "target": "ROMAN",
+          "count": 1
+        },
+        {
+          "source": "LOGAN",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season3/S3_E08.html",
+      "season": "Season3",
+      "episode_code": "S3_E08",
+      "speaker_cue_count": 227,
+      "total_fuck_off": 6,
+      "said_by_character": [
+        {
+          "character": "LOGAN",
+          "count": 4
+        },
+        {
+          "character": "COMFREY PELLITS",
+          "count": 2
+        }
+      ],
+      "received_by_target_strict": [
+        {
+          "target": "_UNSPECIFIED_",
+          "count": 6
+        }
+      ],
+      "received_by_target_inferred": [
+        {
+          "target": "SHIV",
+          "count": 2
+        },
+        {
+          "target": "KENDALL",
+          "count": 2
+        },
+        {
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "target": "ROMAN",
+          "count": 1
+        }
+      ],
+      "edges_strict": [
+        {
+          "source": "LOGAN",
+          "target": "_UNSPECIFIED_",
+          "count": 4
+        },
+        {
+          "source": "COMFREY PELLITS",
+          "target": "_UNSPECIFIED_",
+          "count": 2
+        }
+      ],
+      "edges_inferred": [
+        {
+          "source": "COMFREY PELLITS",
+          "target": "SHIV",
+          "count": 2
+        },
+        {
+          "source": "LOGAN",
+          "target": "KENDALL",
+          "count": 2
+        },
+        {
+          "source": "LOGAN",
+          "target": "ROMAN",
+          "count": 1
+        },
+        {
+          "source": "LOGAN",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season3/S3_E09.html",
+      "season": "Season3",
+      "episode_code": "S3_E09",
+      "speaker_cue_count": 220,
+      "total_fuck_off": 7,
+      "said_by_character": [
+        {
+          "character": "SHIV",
+          "count": 3
+        },
+        {
+          "character": "CONNOR",
+          "count": 1
+        },
+        {
+          "character": "KENDALL",
+          "count": 1
+        },
+        {
+          "character": "KARL",
+          "count": 1
+        },
+        {
+          "character": "LOGAN",
+          "count": 1
+        }
+      ],
+      "received_by_target_strict": [
+        {
+          "target": "_UNSPECIFIED_",
+          "count": 7
+        }
+      ],
+      "received_by_target_inferred": [
+        {
+          "target": "ROMAN",
+          "count": 5
+        },
+        {
+          "target": "PETER",
+          "count": 1
+        },
+        {
+          "target": "SHIV",
+          "count": 1
+        }
+      ],
+      "edges_strict": [
+        {
+          "source": "SHIV",
+          "target": "_UNSPECIFIED_",
+          "count": 3
+        },
+        {
+          "source": "CONNOR",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "source": "KARL",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "source": "KENDALL",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "source": "LOGAN",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        }
+      ],
+      "edges_inferred": [
+        {
+          "source": "SHIV",
+          "target": "ROMAN",
+          "count": 3
+        },
+        {
+          "source": "CONNOR",
+          "target": "ROMAN",
+          "count": 1
+        },
+        {
+          "source": "KARL",
+          "target": "SHIV",
+          "count": 1
+        },
+        {
+          "source": "KENDALL",
+          "target": "PETER",
+          "count": 1
+        },
+        {
+          "source": "LOGAN",
+          "target": "ROMAN",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season4/S4_E01.html",
+      "season": "Season4",
+      "episode_code": "S4_E01",
+      "speaker_cue_count": 0,
+      "total_fuck_off": 0,
+      "said_by_character": [],
+      "received_by_target_strict": [],
+      "received_by_target_inferred": [],
+      "edges_strict": [],
+      "edges_inferred": []
+    },
+    {
+      "episode": "Season4/S4_E02.html",
+      "season": "Season4",
+      "episode_code": "S4_E02",
+      "speaker_cue_count": 243,
+      "total_fuck_off": 3,
+      "said_by_character": [
+        {
+          "character": "SHIV",
+          "count": 1
+        },
+        {
+          "character": "GREG",
+          "count": 1
+        },
+        {
+          "character": "LOGAN",
+          "count": 1
+        }
+      ],
+      "received_by_target_strict": [
+        {
+          "target": "_UNSPECIFIED_",
+          "count": 3
+        }
+      ],
+      "received_by_target_inferred": [
+        {
+          "target": "TOM",
+          "count": 2
+        },
+        {
+          "target": "ROMAN",
+          "count": 1
+        }
+      ],
+      "edges_strict": [
+        {
+          "source": "GREG",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "source": "LOGAN",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "source": "SHIV",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        }
+      ],
+      "edges_inferred": [
+        {
+          "source": "GREG",
+          "target": "TOM",
+          "count": 1
+        },
+        {
+          "source": "LOGAN",
+          "target": "ROMAN",
+          "count": 1
+        },
+        {
+          "source": "SHIV",
+          "target": "TOM",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season4/S4_E03.html",
+      "season": "Season4",
+      "episode_code": "S4_E03",
+      "speaker_cue_count": 267,
+      "total_fuck_off": 3,
+      "said_by_character": [
+        {
+          "character": "KAROLINA",
+          "count": 1
+        },
+        {
+          "character": "KENDALL",
+          "count": 1
+        },
+        {
+          "character": "SHIV",
+          "count": 1
+        }
+      ],
+      "received_by_target_strict": [
+        {
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "target": "LOGAN",
+          "count": 1
+        },
+        {
+          "target": "_YOU_",
+          "count": 1
+        }
+      ],
+      "received_by_target_inferred": [
+        {
+          "target": "LOGAN",
+          "count": 2
+        },
+        {
+          "target": "KENDALL",
+          "count": 1
+        }
+      ],
+      "edges_strict": [
+        {
+          "source": "KAROLINA",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "source": "KENDALL",
+          "target": "LOGAN",
+          "count": 1
+        },
+        {
+          "source": "SHIV",
+          "target": "_YOU_",
+          "count": 1
+        }
+      ],
+      "edges_inferred": [
+        {
+          "source": "KAROLINA",
+          "target": "LOGAN",
+          "count": 1
+        },
+        {
+          "source": "KENDALL",
+          "target": "LOGAN",
+          "count": 1
+        },
+        {
+          "source": "SHIV",
+          "target": "KENDALL",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season4/S4_E04.html",
+      "season": "Season4",
+      "episode_code": "S4_E04",
+      "speaker_cue_count": 227,
+      "total_fuck_off": 2,
+      "said_by_character": [
+        {
+          "character": "TOM",
+          "count": 1
+        },
+        {
+          "character": "KENDALL",
+          "count": 1
+        }
+      ],
+      "received_by_target_strict": [
+        {
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "target": "FRANK",
+          "count": 1
+        }
+      ],
+      "received_by_target_inferred": [
+        {
+          "target": "ROMAN",
+          "count": 1
+        },
+        {
+          "target": "FRANK",
+          "count": 1
+        }
+      ],
+      "edges_strict": [
+        {
+          "source": "KENDALL",
+          "target": "FRANK",
+          "count": 1
+        },
+        {
+          "source": "TOM",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        }
+      ],
+      "edges_inferred": [
+        {
+          "source": "KENDALL",
+          "target": "FRANK",
+          "count": 1
+        },
+        {
+          "source": "TOM",
+          "target": "ROMAN",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season4/S4_E05.html",
+      "season": "Season4",
+      "episode_code": "S4_E05",
+      "speaker_cue_count": 255,
+      "total_fuck_off": 3,
+      "said_by_character": [
+        {
+          "character": "HUGO",
+          "count": 1
+        },
+        {
+          "character": "ROMAN",
+          "count": 1
+        },
+        {
+          "character": "LUKAS",
+          "count": 1
+        }
+      ],
+      "received_by_target_strict": [
+        {
+          "target": "_UNSPECIFIED_",
+          "count": 2
+        },
+        {
+          "target": "_YOU_",
+          "count": 1
+        }
+      ],
+      "received_by_target_inferred": [
+        {
+          "target": "KENDALL",
+          "count": 2
+        },
+        {
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        }
+      ],
+      "edges_strict": [
+        {
+          "source": "HUGO",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "source": "LUKAS",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "source": "ROMAN",
+          "target": "_YOU_",
+          "count": 1
+        }
+      ],
+      "edges_inferred": [
+        {
+          "source": "HUGO",
+          "target": "KENDALL",
+          "count": 1
+        },
+        {
+          "source": "LUKAS",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "source": "ROMAN",
+          "target": "KENDALL",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season4/S4_E06.html",
+      "season": "Season4",
+      "episode_code": "S4_E06",
+      "speaker_cue_count": 0,
+      "total_fuck_off": 0,
+      "said_by_character": [],
+      "received_by_target_strict": [],
+      "received_by_target_inferred": [],
+      "edges_strict": [],
+      "edges_inferred": []
+    },
+    {
+      "episode": "Season4/S4_E07.html",
+      "season": "Season4",
+      "episode_code": "S4_E07",
+      "speaker_cue_count": 173,
+      "total_fuck_off": 2,
+      "said_by_character": [
+        {
+          "character": "LUKAS",
+          "count": 1
+        },
+        {
+          "character": "SHIV",
+          "count": 1
+        }
+      ],
+      "received_by_target_strict": [
+        {
+          "target": "_YOU_",
+          "count": 1
+        },
+        {
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        }
+      ],
+      "received_by_target_inferred": [
+        {
+          "target": "_YOU_",
+          "count": 1
+        },
+        {
+          "target": "TOM",
+          "count": 1
+        }
+      ],
+      "edges_strict": [
+        {
+          "source": "LUKAS",
+          "target": "_YOU_",
+          "count": 1
+        },
+        {
+          "source": "SHIV",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        }
+      ],
+      "edges_inferred": [
+        {
+          "source": "LUKAS",
+          "target": "_YOU_",
+          "count": 1
+        },
+        {
+          "source": "SHIV",
+          "target": "TOM",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season4/S4_E08.html",
+      "season": "Season4",
+      "episode_code": "S4_E08",
+      "speaker_cue_count": 325,
+      "total_fuck_off": 0,
+      "said_by_character": [],
+      "received_by_target_strict": [],
+      "received_by_target_inferred": [],
+      "edges_strict": [],
+      "edges_inferred": []
+    },
+    {
+      "episode": "Season4/S4_E09.html",
+      "season": "Season4",
+      "episode_code": "S4_E09",
+      "speaker_cue_count": 214,
+      "total_fuck_off": 4,
+      "said_by_character": [
+        {
+          "character": "TOM",
+          "count": 2
+        },
+        {
+          "character": "SHIV",
+          "count": 1
+        },
+        {
+          "character": "GREG",
+          "count": 1
+        }
+      ],
+      "received_by_target_strict": [
+        {
+          "target": "_UNSPECIFIED_",
+          "count": 4
+        }
+      ],
+      "received_by_target_inferred": [
+        {
+          "target": "_UNSPECIFIED_",
+          "count": 2
+        },
+        {
+          "target": "ROMAN",
+          "count": 1
+        },
+        {
+          "target": "MENCKEN",
+          "count": 1
+        }
+      ],
+      "edges_strict": [
+        {
+          "source": "TOM",
+          "target": "_UNSPECIFIED_",
+          "count": 2
+        },
+        {
+          "source": "GREG",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "source": "SHIV",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        }
+      ],
+      "edges_inferred": [
+        {
+          "source": "TOM",
+          "target": "_UNSPECIFIED_",
+          "count": 2
+        },
+        {
+          "source": "GREG",
+          "target": "MENCKEN",
+          "count": 1
+        },
+        {
+          "source": "SHIV",
+          "target": "ROMAN",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season4/S4_E10.html",
+      "season": "Season4",
+      "episode_code": "S4_E10",
+      "speaker_cue_count": 390,
+      "total_fuck_off": 7,
+      "said_by_character": [
+        {
+          "character": "SHIV",
+          "count": 3
+        },
+        {
+          "character": "ROMAN",
+          "count": 2
+        },
+        {
+          "character": "KENDALL",
+          "count": 1
+        },
+        {
+          "character": "FRANK",
+          "count": 1
+        }
+      ],
+      "received_by_target_strict": [
+        {
+          "target": "_UNSPECIFIED_",
+          "count": 5
+        },
+        {
+          "target": "_GROUP_",
+          "count": 1
+        },
+        {
+          "target": "_YOU_",
+          "count": 1
+        }
+      ],
+      "received_by_target_inferred": [
+        {
+          "target": "KENDALL",
+          "count": 3
+        },
+        {
+          "target": "_UNSPECIFIED_",
+          "count": 2
+        },
+        {
+          "target": "ROMAN",
+          "count": 1
+        },
+        {
+          "target": "GERRI",
+          "count": 1
+        }
+      ],
+      "edges_strict": [
+        {
+          "source": "SHIV",
+          "target": "_UNSPECIFIED_",
+          "count": 2
+        },
+        {
+          "source": "FRANK",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "source": "KENDALL",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "source": "ROMAN",
+          "target": "_GROUP_",
+          "count": 1
+        },
+        {
+          "source": "ROMAN",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "source": "SHIV",
+          "target": "_YOU_",
+          "count": 1
+        }
+      ],
+      "edges_inferred": [
+        {
+          "source": "SHIV",
+          "target": "KENDALL",
+          "count": 2
+        },
+        {
+          "source": "FRANK",
+          "target": "GERRI",
+          "count": 1
+        },
+        {
+          "source": "KENDALL",
+          "target": "ROMAN",
+          "count": 1
+        },
+        {
+          "source": "ROMAN",
+          "target": "KENDALL",
+          "count": 1
+        },
+        {
+          "source": "ROMAN",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        },
+        {
+          "source": "SHIV",
+          "target": "_UNSPECIFIED_",
+          "count": 1
+        }
+      ]
+    }
+  ]
+}

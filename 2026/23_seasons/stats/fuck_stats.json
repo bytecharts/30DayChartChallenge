@@ -1,0 +1,3414 @@
+{
+  "source_root": "data",
+  "episode_count": 39,
+  "total_fucks": 2993,
+  "count_definition": "Matches fuck, fucks, fucked, fucker(s), fuckin, fucking, and motherfuck* variants (case-insensitive).",
+  "top_character": {
+    "character": "ROMAN",
+    "fucks": 445
+  },
+  "overall_variants": [
+    {
+      "variant": "fucking",
+      "count": 1353
+    },
+    {
+      "variant": "fuck",
+      "count": 1139
+    },
+    {
+      "variant": "fuckin",
+      "count": 294
+    },
+    {
+      "variant": "fucked",
+      "count": 124
+    },
+    {
+      "variant": "motherfucker",
+      "count": 22
+    },
+    {
+      "variant": "fucks",
+      "count": 21
+    },
+    {
+      "variant": "fucker",
+      "count": 17
+    },
+    {
+      "variant": "motherfuckers",
+      "count": 10
+    },
+    {
+      "variant": "fuckers",
+      "count": 9
+    },
+    {
+      "variant": "motherfucking",
+      "count": 3
+    },
+    {
+      "variant": "motherfuckin",
+      "count": 1
+    }
+  ],
+  "overall_by_character": [
+    {
+      "character": "ROMAN",
+      "fucks": 445
+    },
+    {
+      "character": "KENDALL",
+      "fucks": 396
+    },
+    {
+      "character": "SHIV",
+      "fucks": 386
+    },
+    {
+      "character": "LOGAN",
+      "fucks": 271
+    },
+    {
+      "character": "TOM",
+      "fucks": 165
+    },
+    {
+      "character": "GREG",
+      "fucks": 85
+    },
+    {
+      "character": "CONNOR",
+      "fucks": 84
+    },
+    {
+      "character": "GERRI",
+      "fucks": 78
+    },
+    {
+      "character": "KARL",
+      "fucks": 50
+    },
+    {
+      "character": "STEWY",
+      "fucks": 47
+    },
+    {
+      "character": "FRANK",
+      "fucks": 45
+    },
+    {
+      "character": "HUGO",
+      "fucks": 45
+    },
+    {
+      "character": "LUKAS",
+      "fucks": 42
+    },
+    {
+      "character": "MARCIA",
+      "fucks": 37
+    },
+    {
+      "character": "GIL",
+      "fucks": 22
+    },
+    {
+      "character": "RHEA",
+      "fucks": 18
+    },
+    {
+      "character": "NATE",
+      "fucks": 17
+    },
+    {
+      "character": "KAROLINA",
+      "fucks": 16
+    },
+    {
+      "character": "JOSH",
+      "fucks": 16
+    },
+    {
+      "character": "KERRY",
+      "fucks": 13
+    },
+    {
+      "character": "JESS",
+      "fucks": 12
+    },
+    {
+      "character": "LISA",
+      "fucks": 12
+    },
+    {
+      "character": "LAWRENCE",
+      "fucks": 10
+    },
+    {
+      "character": "PAULA",
+      "fucks": 10
+    },
+    {
+      "character": "BOTH",
+      "fucks": 9
+    },
+    {
+      "character": "WILLA",
+      "fucks": 9
+    },
+    {
+      "character": "EBBA",
+      "fucks": 9
+    },
+    {
+      "character": "BILL",
+      "fucks": 8
+    },
+    {
+      "character": "CONGREGATION",
+      "fucks": 7
+    },
+    {
+      "character": "TABITHA",
+      "fucks": 6
+    },
+    {
+      "character": "RAVA",
+      "fucks": 6
+    },
+    {
+      "character": "COMFREY PELLITS",
+      "fucks": 6
+    },
+    {
+      "character": "CAROLINE",
+      "fucks": 6
+    },
+    {
+      "character": "DOCTOR",
+      "fucks": 5
+    },
+    {
+      "character": "NAOMI",
+      "fucks": 5
+    },
+    {
+      "character": "FEMALE SENATOR",
+      "fucks": 5
+    },
+    {
+      "character": "SOPHIE",
+      "fucks": 5
+    },
+    {
+      "character": "ALESSANDRO",
+      "fucks": 4
+    },
+    {
+      "character": "BREX",
+      "fucks": 4
+    },
+    {
+      "character": "GRACE",
+      "fucks": 4
+    },
+    {
+      "character": "ARMSTRONG",
+      "fucks": 4
+    },
+    {
+      "character": "CYD",
+      "fucks": 4
+    },
+    {
+      "character": "JAMES",
+      "fucks": 4
+    },
+    {
+      "character": "COACH",
+      "fucks": 4
+    },
+    {
+      "character": "LAIRD",
+      "fucks": 4
+    },
+    {
+      "character": "REPORTER",
+      "fucks": 4
+    },
+    {
+      "character": "BERRY",
+      "fucks": 4
+    },
+    {
+      "character": "REECE",
+      "fucks": 4
+    },
+    {
+      "character": "COMFRY PELLITS",
+      "fucks": 4
+    },
+    {
+      "character": "TELLIS",
+      "fucks": 4
+    },
+    {
+      "character": "AND THIS IS MY VISION",
+      "fucks": 3
+    },
+    {
+      "character": "POLK",
+      "fucks": 3
+    },
+    {
+      "character": "JOAN",
+      "fucks": 3
+    },
+    {
+      "character": "EMCEE",
+      "fucks": 3
+    },
+    {
+      "character": "GIVENS",
+      "fucks": 3
+    },
+    {
+      "character": "TV",
+      "fucks": 3
+    },
+    {
+      "character": "ANGELA",
+      "fucks": 3
+    },
+    {
+      "character": "RHEA JERRELL",
+      "fucks": 3
+    },
+    {
+      "character": "SUSAN",
+      "fucks": 3
+    },
+    {
+      "character": "CAPTION",
+      "fucks": 2
+    },
+    {
+      "character": "MOTHER",
+      "fucks": 2
+    },
+    {
+      "character": "FATHER",
+      "fucks": 2
+    },
+    {
+      "character": "SANDY",
+      "fucks": 2
+    },
+    {
+      "character": "STEVE COX",
+      "fucks": 2
+    },
+    {
+      "character": "SCOTT",
+      "fucks": 2
+    },
+    {
+      "character": "NAN PIERCE",
+      "fucks": 2
+    },
+    {
+      "character": "ORGANIZER",
+      "fucks": 2
+    },
+    {
+      "character": "ATN",
+      "fucks": 2
+    },
+    {
+      "character": "EWAN",
+      "fucks": 2
+    },
+    {
+      "character": "CROWD",
+      "fucks": 2
+    },
+    {
+      "character": "MARK",
+      "fucks": 2
+    },
+    {
+      "character": "SANDI",
+      "fucks": 2
+    },
+    {
+      "character": "COMFRY",
+      "fucks": 2
+    },
+    {
+      "character": "MARK ROSENSTOCK",
+      "fucks": 2
+    },
+    {
+      "character": "LEVINGS",
+      "fucks": 2
+    },
+    {
+      "character": "RAVENHEAD",
+      "fucks": 2
+    },
+    {
+      "character": "COLIN",
+      "fucks": 1
+    },
+    {
+      "character": "MARIANNE",
+      "fucks": 1
+    },
+    {
+      "character": "SIMON SAYS",
+      "fucks": 1
+    },
+    {
+      "character": "THINK",
+      "fucks": 1
+    },
+    {
+      "character": "ILONA",
+      "fucks": 1
+    },
+    {
+      "character": "KARA",
+      "fucks": 1
+    },
+    {
+      "character": "COREY",
+      "fucks": 1
+    },
+    {
+      "character": "ANNE",
+      "fucks": 1
+    },
+    {
+      "character": "SIMMONS",
+      "fucks": 1
+    },
+    {
+      "character": "NAN",
+      "fucks": 1
+    },
+    {
+      "character": "NAOMI PIERCE",
+      "fucks": 1
+    },
+    {
+      "character": "JESSE ARMSTRONG",
+      "fucks": 1
+    },
+    {
+      "character": "ROY",
+      "fucks": 1
+    },
+    {
+      "character": "PHILLIPE",
+      "fucks": 1
+    },
+    {
+      "character": "JOSH AARONSON",
+      "fucks": 1
+    },
+    {
+      "character": "NURSE",
+      "fucks": 1
+    },
+    {
+      "character": "COMPLIMENTER",
+      "fucks": 1
+    },
+    {
+      "character": "OFFICIANT",
+      "fucks": 1
+    },
+    {
+      "character": "COLIN STILES",
+      "fucks": 1
+    },
+    {
+      "character": "BETH",
+      "fucks": 1
+    },
+    {
+      "character": "PETKUS",
+      "fucks": 1
+    },
+    {
+      "character": "SANDI FURNESS",
+      "fucks": 1
+    },
+    {
+      "character": "RAY KENNEDY",
+      "fucks": 1
+    },
+    {
+      "character": "RAY",
+      "fucks": 1
+    },
+    {
+      "character": "JERYD MENCKEN",
+      "fucks": 1
+    },
+    {
+      "character": "DARWIN",
+      "fucks": 1
+    },
+    {
+      "character": "SAMPINO",
+      "fucks": 1
+    },
+    {
+      "character": "PETER",
+      "fucks": 1
+    }
+  ],
+  "episodes_without_speaker_cues": [
+    "Season1/S1_E07.html",
+    "Season2/S2_E05.html",
+    "Season3/S3_E02.html",
+    "Season4/S4_E01.html",
+    "Season4/S4_E06.html"
+  ],
+  "episodes": [
+    {
+      "episode": "Season1/S1_E01.html",
+      "season": "Season1",
+      "episode_code": "S1_E01",
+      "speaker_cue_count": 79,
+      "total_fucks": 64,
+      "unattributed_or_excluded_fucks": 14,
+      "variants": [
+        {
+          "variant": "fuck",
+          "count": 29
+        },
+        {
+          "variant": "fucking",
+          "count": 21
+        },
+        {
+          "variant": "fuckin",
+          "count": 9
+        },
+        {
+          "variant": "fucked",
+          "count": 3
+        },
+        {
+          "variant": "motherfuckers",
+          "count": 1
+        },
+        {
+          "variant": "fucks",
+          "count": 1
+        }
+      ],
+      "by_character": [
+        {
+          "character": "KENDALL",
+          "fucks": 16
+        },
+        {
+          "character": "LOGAN",
+          "fucks": 12
+        },
+        {
+          "character": "ROMAN",
+          "fucks": 9
+        },
+        {
+          "character": "ALESSANDRO",
+          "fucks": 4
+        },
+        {
+          "character": "FRANK",
+          "fucks": 2
+        },
+        {
+          "character": "MARCIA",
+          "fucks": 2
+        },
+        {
+          "character": "TOM",
+          "fucks": 2
+        },
+        {
+          "character": "GREG",
+          "fucks": 1
+        },
+        {
+          "character": "COLIN",
+          "fucks": 1
+        },
+        {
+          "character": "LAWRENCE",
+          "fucks": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season1/S1_E02.html",
+      "season": "Season1",
+      "episode_code": "S1_E02",
+      "speaker_cue_count": 67,
+      "total_fucks": 64,
+      "unattributed_or_excluded_fucks": 11,
+      "variants": [
+        {
+          "variant": "fuck",
+          "count": 32
+        },
+        {
+          "variant": "fucking",
+          "count": 16
+        },
+        {
+          "variant": "fuckin",
+          "count": 11
+        },
+        {
+          "variant": "fucked",
+          "count": 3
+        },
+        {
+          "variant": "fuckers",
+          "count": 1
+        },
+        {
+          "variant": "motherfucker",
+          "count": 1
+        }
+      ],
+      "by_character": [
+        {
+          "character": "KENDALL",
+          "fucks": 15
+        },
+        {
+          "character": "ROMAN",
+          "fucks": 12
+        },
+        {
+          "character": "CONNOR",
+          "fucks": 8
+        },
+        {
+          "character": "GERRI",
+          "fucks": 7
+        },
+        {
+          "character": "MARCIA",
+          "fucks": 3
+        },
+        {
+          "character": "AND THIS IS MY VISION",
+          "fucks": 3
+        },
+        {
+          "character": "MARIANNE",
+          "fucks": 1
+        },
+        {
+          "character": "DOCTOR",
+          "fucks": 1
+        },
+        {
+          "character": "SHIV",
+          "fucks": 1
+        },
+        {
+          "character": "SIMON SAYS",
+          "fucks": 1
+        },
+        {
+          "character": "KARL",
+          "fucks": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season1/S1_E03.html",
+      "season": "Season1",
+      "episode_code": "S1_E03",
+      "speaker_cue_count": 44,
+      "total_fucks": 50,
+      "unattributed_or_excluded_fucks": 4,
+      "variants": [
+        {
+          "variant": "fuck",
+          "count": 18
+        },
+        {
+          "variant": "fucking",
+          "count": 14
+        },
+        {
+          "variant": "fuckin",
+          "count": 14
+        },
+        {
+          "variant": "fucked",
+          "count": 3
+        },
+        {
+          "variant": "motherfucker",
+          "count": 1
+        }
+      ],
+      "by_character": [
+        {
+          "character": "KENDALL",
+          "fucks": 15
+        },
+        {
+          "character": "ROMAN",
+          "fucks": 9
+        },
+        {
+          "character": "GERRI",
+          "fucks": 8
+        },
+        {
+          "character": "TOM",
+          "fucks": 5
+        },
+        {
+          "character": "BREX",
+          "fucks": 4
+        },
+        {
+          "character": "POLK",
+          "fucks": 3
+        },
+        {
+          "character": "JESS",
+          "fucks": 2
+        }
+      ]
+    },
+    {
+      "episode": "Season1/S1_E04.html",
+      "season": "Season1",
+      "episode_code": "S1_E04",
+      "speaker_cue_count": 54,
+      "total_fucks": 53,
+      "unattributed_or_excluded_fucks": 0,
+      "variants": [
+        {
+          "variant": "fuckin",
+          "count": 21
+        },
+        {
+          "variant": "fuck",
+          "count": 16
+        },
+        {
+          "variant": "fucking",
+          "count": 9
+        },
+        {
+          "variant": "fucked",
+          "count": 4
+        },
+        {
+          "variant": "fucker",
+          "count": 2
+        },
+        {
+          "variant": "fucks",
+          "count": 1
+        }
+      ],
+      "by_character": [
+        {
+          "character": "CONNOR",
+          "fucks": 11
+        },
+        {
+          "character": "KENDALL",
+          "fucks": 9
+        },
+        {
+          "character": "BILL",
+          "fucks": 8
+        },
+        {
+          "character": "TOM",
+          "fucks": 5
+        },
+        {
+          "character": "GRACE",
+          "fucks": 4
+        },
+        {
+          "character": "JOAN",
+          "fucks": 3
+        },
+        {
+          "character": "LOGAN",
+          "fucks": 3
+        },
+        {
+          "character": "EMCEE",
+          "fucks": 3
+        },
+        {
+          "character": "CAPTION",
+          "fucks": 2
+        },
+        {
+          "character": "NATE",
+          "fucks": 1
+        },
+        {
+          "character": "SHIV",
+          "fucks": 1
+        },
+        {
+          "character": "STEWY",
+          "fucks": 1
+        },
+        {
+          "character": "GERRI",
+          "fucks": 1
+        },
+        {
+          "character": "MARCIA",
+          "fucks": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season1/S1_E05.html",
+      "season": "Season1",
+      "episode_code": "S1_E05",
+      "speaker_cue_count": 110,
+      "total_fucks": 41,
+      "unattributed_or_excluded_fucks": 8,
+      "variants": [
+        {
+          "variant": "fuck",
+          "count": 21
+        },
+        {
+          "variant": "fuckin",
+          "count": 11
+        },
+        {
+          "variant": "fucked",
+          "count": 4
+        },
+        {
+          "variant": "fucking",
+          "count": 4
+        },
+        {
+          "variant": "motherfucker",
+          "count": 1
+        }
+      ],
+      "by_character": [
+        {
+          "character": "LOGAN",
+          "fucks": 11
+        },
+        {
+          "character": "GREG",
+          "fucks": 9
+        },
+        {
+          "character": "MARCIA",
+          "fucks": 8
+        },
+        {
+          "character": "ROMAN",
+          "fucks": 2
+        },
+        {
+          "character": "KENDALL",
+          "fucks": 2
+        },
+        {
+          "character": "SHIV",
+          "fucks": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season1/S1_E06.html",
+      "season": "Season1",
+      "episode_code": "S1_E06",
+      "speaker_cue_count": 66,
+      "total_fucks": 86,
+      "unattributed_or_excluded_fucks": 2,
+      "variants": [
+        {
+          "variant": "fuck",
+          "count": 31
+        },
+        {
+          "variant": "fucking",
+          "count": 28
+        },
+        {
+          "variant": "fuckin",
+          "count": 24
+        },
+        {
+          "variant": "fucked",
+          "count": 3
+        }
+      ],
+      "by_character": [
+        {
+          "character": "KENDALL",
+          "fucks": 24
+        },
+        {
+          "character": "ROMAN",
+          "fucks": 12
+        },
+        {
+          "character": "FRANK",
+          "fucks": 8
+        },
+        {
+          "character": "KARL",
+          "fucks": 7
+        },
+        {
+          "character": "LOGAN",
+          "fucks": 7
+        },
+        {
+          "character": "MARCIA",
+          "fucks": 6
+        },
+        {
+          "character": "TOM",
+          "fucks": 3
+        },
+        {
+          "character": "GIVENS",
+          "fucks": 3
+        },
+        {
+          "character": "TV",
+          "fucks": 3
+        },
+        {
+          "character": "GERRI",
+          "fucks": 3
+        },
+        {
+          "character": "LAWRENCE",
+          "fucks": 2
+        },
+        {
+          "character": "CONNOR",
+          "fucks": 2
+        },
+        {
+          "character": "THINK",
+          "fucks": 1
+        },
+        {
+          "character": "SHIV",
+          "fucks": 1
+        },
+        {
+          "character": "JESS",
+          "fucks": 1
+        },
+        {
+          "character": "ILONA",
+          "fucks": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season1/S1_E07.html",
+      "season": "Season1",
+      "episode_code": "S1_E07",
+      "speaker_cue_count": 0,
+      "total_fucks": 71,
+      "unattributed_or_excluded_fucks": 71,
+      "variants": [
+        {
+          "variant": "fuck",
+          "count": 31
+        },
+        {
+          "variant": "fuckin",
+          "count": 21
+        },
+        {
+          "variant": "fucking",
+          "count": 13
+        },
+        {
+          "variant": "fucked",
+          "count": 5
+        },
+        {
+          "variant": "motherfuckers",
+          "count": 1
+        }
+      ],
+      "by_character": []
+    },
+    {
+      "episode": "Season1/S1_E08.html",
+      "season": "Season1",
+      "episode_code": "S1_E08",
+      "speaker_cue_count": 70,
+      "total_fucks": 88,
+      "unattributed_or_excluded_fucks": 4,
+      "variants": [
+        {
+          "variant": "fuck",
+          "count": 38
+        },
+        {
+          "variant": "fuckin",
+          "count": 30
+        },
+        {
+          "variant": "fucking",
+          "count": 16
+        },
+        {
+          "variant": "motherfuckers",
+          "count": 2
+        },
+        {
+          "variant": "fucked",
+          "count": 1
+        },
+        {
+          "variant": "motherfucker",
+          "count": 1
+        }
+      ],
+      "by_character": [
+        {
+          "character": "STEWY",
+          "fucks": 16
+        },
+        {
+          "character": "ROMAN",
+          "fucks": 11
+        },
+        {
+          "character": "KENDALL",
+          "fucks": 11
+        },
+        {
+          "character": "GREG",
+          "fucks": 10
+        },
+        {
+          "character": "TOM",
+          "fucks": 9
+        },
+        {
+          "character": "SHIV",
+          "fucks": 7
+        },
+        {
+          "character": "GIL",
+          "fucks": 6
+        },
+        {
+          "character": "LOGAN",
+          "fucks": 4
+        },
+        {
+          "character": "ANGELA",
+          "fucks": 3
+        },
+        {
+          "character": "CONNOR",
+          "fucks": 3
+        },
+        {
+          "character": "FRANK",
+          "fucks": 2
+        },
+        {
+          "character": "KARA",
+          "fucks": 1
+        },
+        {
+          "character": "MARCIA",
+          "fucks": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season1/S1_E09.html",
+      "season": "Season1",
+      "episode_code": "S1_E09",
+      "speaker_cue_count": 67,
+      "total_fucks": 74,
+      "unattributed_or_excluded_fucks": 11,
+      "variants": [
+        {
+          "variant": "fuck",
+          "count": 33
+        },
+        {
+          "variant": "fuckin",
+          "count": 21
+        },
+        {
+          "variant": "fucking",
+          "count": 16
+        },
+        {
+          "variant": "motherfucker",
+          "count": 2
+        },
+        {
+          "variant": "motherfuckers",
+          "count": 1
+        },
+        {
+          "variant": "fucked",
+          "count": 1
+        }
+      ],
+      "by_character": [
+        {
+          "character": "KENDALL",
+          "fucks": 15
+        },
+        {
+          "character": "NATE",
+          "fucks": 9
+        },
+        {
+          "character": "GIL",
+          "fucks": 7
+        },
+        {
+          "character": "MARCIA",
+          "fucks": 7
+        },
+        {
+          "character": "SHIV",
+          "fucks": 5
+        },
+        {
+          "character": "TOM",
+          "fucks": 5
+        },
+        {
+          "character": "STEWY",
+          "fucks": 3
+        },
+        {
+          "character": "FRANK",
+          "fucks": 3
+        },
+        {
+          "character": "MOTHER",
+          "fucks": 2
+        },
+        {
+          "character": "FATHER",
+          "fucks": 2
+        },
+        {
+          "character": "SANDY",
+          "fucks": 2
+        },
+        {
+          "character": "LOGAN",
+          "fucks": 1
+        },
+        {
+          "character": "ROMAN",
+          "fucks": 1
+        },
+        {
+          "character": "GREG",
+          "fucks": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season1/S1_E10.html",
+      "season": "Season1",
+      "episode_code": "S1_E10",
+      "speaker_cue_count": 51,
+      "total_fucks": 79,
+      "unattributed_or_excluded_fucks": 3,
+      "variants": [
+        {
+          "variant": "fuckin",
+          "count": 32
+        },
+        {
+          "variant": "fuck",
+          "count": 27
+        },
+        {
+          "variant": "fucking",
+          "count": 18
+        },
+        {
+          "variant": "fucked",
+          "count": 1
+        },
+        {
+          "variant": "motherfuckin",
+          "count": 1
+        }
+      ],
+      "by_character": [
+        {
+          "character": "TOM",
+          "fucks": 20
+        },
+        {
+          "character": "LOGAN",
+          "fucks": 20
+        },
+        {
+          "character": "SHIV",
+          "fucks": 13
+        },
+        {
+          "character": "STEWY",
+          "fucks": 11
+        },
+        {
+          "character": "MARCIA",
+          "fucks": 8
+        },
+        {
+          "character": "CONNOR",
+          "fucks": 4
+        }
+      ]
+    },
+    {
+      "episode": "Season2/S2_E01.html",
+      "season": "Season2",
+      "episode_code": "S2_E01",
+      "speaker_cue_count": 87,
+      "total_fucks": 91,
+      "unattributed_or_excluded_fucks": 1,
+      "variants": [
+        {
+          "variant": "fucking",
+          "count": 56
+        },
+        {
+          "variant": "fuck",
+          "count": 25
+        },
+        {
+          "variant": "fuckin",
+          "count": 6
+        },
+        {
+          "variant": "fucked",
+          "count": 3
+        },
+        {
+          "variant": "motherfucker",
+          "count": 1
+        }
+      ],
+      "by_character": [
+        {
+          "character": "SHIV",
+          "fucks": 25
+        },
+        {
+          "character": "ROMAN",
+          "fucks": 19
+        },
+        {
+          "character": "KENDALL",
+          "fucks": 15
+        },
+        {
+          "character": "LOGAN",
+          "fucks": 11
+        },
+        {
+          "character": "CONNOR",
+          "fucks": 9
+        },
+        {
+          "character": "BOTH",
+          "fucks": 5
+        },
+        {
+          "character": "KAROLINA",
+          "fucks": 3
+        },
+        {
+          "character": "ARMSTRONG",
+          "fucks": 2
+        },
+        {
+          "character": "MARCIA",
+          "fucks": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season2/S2_E02.html",
+      "season": "Season2",
+      "episode_code": "S2_E02",
+      "speaker_cue_count": 144,
+      "total_fucks": 89,
+      "unattributed_or_excluded_fucks": 3,
+      "variants": [
+        {
+          "variant": "fuck",
+          "count": 34
+        },
+        {
+          "variant": "fucking",
+          "count": 27
+        },
+        {
+          "variant": "fuckin",
+          "count": 18
+        },
+        {
+          "variant": "fucked",
+          "count": 6
+        },
+        {
+          "variant": "fucker",
+          "count": 2
+        },
+        {
+          "variant": "fucks",
+          "count": 1
+        },
+        {
+          "variant": "fuckers",
+          "count": 1
+        }
+      ],
+      "by_character": [
+        {
+          "character": "ROMAN",
+          "fucks": 28
+        },
+        {
+          "character": "GREG",
+          "fucks": 9
+        },
+        {
+          "character": "GIL",
+          "fucks": 8
+        },
+        {
+          "character": "LAWRENCE",
+          "fucks": 7
+        },
+        {
+          "character": "SHIV",
+          "fucks": 6
+        },
+        {
+          "character": "LOGAN",
+          "fucks": 5
+        },
+        {
+          "character": "TOM",
+          "fucks": 4
+        },
+        {
+          "character": "GERRI",
+          "fucks": 4
+        },
+        {
+          "character": "BOTH",
+          "fucks": 4
+        },
+        {
+          "character": "KENDALL",
+          "fucks": 3
+        },
+        {
+          "character": "STEVE COX",
+          "fucks": 2
+        },
+        {
+          "character": "SCOTT",
+          "fucks": 2
+        },
+        {
+          "character": "NATE",
+          "fucks": 1
+        },
+        {
+          "character": "CONNOR",
+          "fucks": 1
+        },
+        {
+          "character": "TABITHA",
+          "fucks": 1
+        },
+        {
+          "character": "CYD",
+          "fucks": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season2/S2_E03.html",
+      "season": "Season2",
+      "episode_code": "S2_E03",
+      "speaker_cue_count": 117,
+      "total_fucks": 84,
+      "unattributed_or_excluded_fucks": 1,
+      "variants": [
+        {
+          "variant": "fucking",
+          "count": 37
+        },
+        {
+          "variant": "fuck",
+          "count": 24
+        },
+        {
+          "variant": "fuckin",
+          "count": 12
+        },
+        {
+          "variant": "fucked",
+          "count": 4
+        },
+        {
+          "variant": "fucker",
+          "count": 3
+        },
+        {
+          "variant": "fucks",
+          "count": 3
+        },
+        {
+          "variant": "fuckers",
+          "count": 1
+        }
+      ],
+      "by_character": [
+        {
+          "character": "LOGAN",
+          "fucks": 25
+        },
+        {
+          "character": "ROMAN",
+          "fucks": 20
+        },
+        {
+          "character": "KARL",
+          "fucks": 7
+        },
+        {
+          "character": "KENDALL",
+          "fucks": 7
+        },
+        {
+          "character": "SHIV",
+          "fucks": 6
+        },
+        {
+          "character": "CONNOR",
+          "fucks": 6
+        },
+        {
+          "character": "DOCTOR",
+          "fucks": 4
+        },
+        {
+          "character": "TABITHA",
+          "fucks": 3
+        },
+        {
+          "character": "GERRI",
+          "fucks": 3
+        },
+        {
+          "character": "WILLA",
+          "fucks": 1
+        },
+        {
+          "character": "GREG",
+          "fucks": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season2/S2_E04.html",
+      "season": "Season2",
+      "episode_code": "S2_E04",
+      "speaker_cue_count": 86,
+      "total_fucks": 57,
+      "unattributed_or_excluded_fucks": 8,
+      "variants": [
+        {
+          "variant": "fuck",
+          "count": 28
+        },
+        {
+          "variant": "fucking",
+          "count": 25
+        },
+        {
+          "variant": "fuckin",
+          "count": 4
+        }
+      ],
+      "by_character": [
+        {
+          "character": "TOM",
+          "fucks": 10
+        },
+        {
+          "character": "PAULA",
+          "fucks": 10
+        },
+        {
+          "character": "SHIV",
+          "fucks": 7
+        },
+        {
+          "character": "CONGREGATION",
+          "fucks": 7
+        },
+        {
+          "character": "CONNOR",
+          "fucks": 3
+        },
+        {
+          "character": "CYD",
+          "fucks": 3
+        },
+        {
+          "character": "ROMAN",
+          "fucks": 2
+        },
+        {
+          "character": "GREG",
+          "fucks": 2
+        },
+        {
+          "character": "LOGAN",
+          "fucks": 1
+        },
+        {
+          "character": "JESS",
+          "fucks": 1
+        },
+        {
+          "character": "RHEA",
+          "fucks": 1
+        },
+        {
+          "character": "COREY",
+          "fucks": 1
+        },
+        {
+          "character": "KENDALL",
+          "fucks": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season2/S2_E05.html",
+      "season": "Season2",
+      "episode_code": "S2_E05",
+      "speaker_cue_count": 0,
+      "total_fucks": 47,
+      "unattributed_or_excluded_fucks": 47,
+      "variants": [
+        {
+          "variant": "fuck",
+          "count": 22
+        },
+        {
+          "variant": "fucking",
+          "count": 21
+        },
+        {
+          "variant": "fucked",
+          "count": 4
+        }
+      ],
+      "by_character": []
+    },
+    {
+      "episode": "Season2/S2_E06.html",
+      "season": "Season2",
+      "episode_code": "S2_E06",
+      "speaker_cue_count": 153,
+      "total_fucks": 90,
+      "unattributed_or_excluded_fucks": 1,
+      "variants": [
+        {
+          "variant": "fucking",
+          "count": 37
+        },
+        {
+          "variant": "fuck",
+          "count": 36
+        },
+        {
+          "variant": "fuckin",
+          "count": 16
+        },
+        {
+          "variant": "fucked",
+          "count": 1
+        }
+      ],
+      "by_character": [
+        {
+          "character": "LOGAN",
+          "fucks": 23
+        },
+        {
+          "character": "KENDALL",
+          "fucks": 16
+        },
+        {
+          "character": "SHIV",
+          "fucks": 13
+        },
+        {
+          "character": "ROMAN",
+          "fucks": 8
+        },
+        {
+          "character": "RHEA",
+          "fucks": 5
+        },
+        {
+          "character": "GERRI",
+          "fucks": 3
+        },
+        {
+          "character": "HUGO",
+          "fucks": 3
+        },
+        {
+          "character": "NAN PIERCE",
+          "fucks": 2
+        },
+        {
+          "character": "ORGANIZER",
+          "fucks": 2
+        },
+        {
+          "character": "ATN",
+          "fucks": 2
+        },
+        {
+          "character": "JESS",
+          "fucks": 2
+        },
+        {
+          "character": "GREG",
+          "fucks": 2
+        },
+        {
+          "character": "TOM",
+          "fucks": 2
+        },
+        {
+          "character": "ARMSTRONG",
+          "fucks": 2
+        },
+        {
+          "character": "FRANK",
+          "fucks": 1
+        },
+        {
+          "character": "ANNE",
+          "fucks": 1
+        },
+        {
+          "character": "SIMMONS",
+          "fucks": 1
+        },
+        {
+          "character": "NAN",
+          "fucks": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season2/S2_E07.html",
+      "season": "Season2",
+      "episode_code": "S2_E07",
+      "speaker_cue_count": 175,
+      "total_fucks": 55,
+      "unattributed_or_excluded_fucks": 0,
+      "variants": [
+        {
+          "variant": "fucking",
+          "count": 28
+        },
+        {
+          "variant": "fuck",
+          "count": 23
+        },
+        {
+          "variant": "fucked",
+          "count": 2
+        },
+        {
+          "variant": "fucks",
+          "count": 1
+        },
+        {
+          "variant": "fucker",
+          "count": 1
+        }
+      ],
+      "by_character": [
+        {
+          "character": "LOGAN",
+          "fucks": 15
+        },
+        {
+          "character": "ROMAN",
+          "fucks": 10
+        },
+        {
+          "character": "KENDALL",
+          "fucks": 9
+        },
+        {
+          "character": "RHEA",
+          "fucks": 9
+        },
+        {
+          "character": "RHEA JERRELL",
+          "fucks": 3
+        },
+        {
+          "character": "GREG",
+          "fucks": 3
+        },
+        {
+          "character": "GERRI",
+          "fucks": 2
+        },
+        {
+          "character": "NAOMI PIERCE",
+          "fucks": 1
+        },
+        {
+          "character": "TOM",
+          "fucks": 1
+        },
+        {
+          "character": "NAOMI",
+          "fucks": 1
+        },
+        {
+          "character": "SHIV",
+          "fucks": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season2/S2_E08.html",
+      "season": "Season2",
+      "episode_code": "S2_E08",
+      "speaker_cue_count": 186,
+      "total_fucks": 62,
+      "unattributed_or_excluded_fucks": 2,
+      "variants": [
+        {
+          "variant": "fucking",
+          "count": 30
+        },
+        {
+          "variant": "fuck",
+          "count": 27
+        },
+        {
+          "variant": "fucker",
+          "count": 2
+        },
+        {
+          "variant": "motherfucking",
+          "count": 2
+        },
+        {
+          "variant": "fucked",
+          "count": 1
+        }
+      ],
+      "by_character": [
+        {
+          "character": "SHIV",
+          "fucks": 17
+        },
+        {
+          "character": "LOGAN",
+          "fucks": 17
+        },
+        {
+          "character": "ROMAN",
+          "fucks": 7
+        },
+        {
+          "character": "KENDALL",
+          "fucks": 6
+        },
+        {
+          "character": "RHEA",
+          "fucks": 3
+        },
+        {
+          "character": "TABITHA",
+          "fucks": 2
+        },
+        {
+          "character": "CROWD",
+          "fucks": 2
+        },
+        {
+          "character": "HUGO",
+          "fucks": 1
+        },
+        {
+          "character": "CONNOR",
+          "fucks": 1
+        },
+        {
+          "character": "GREG",
+          "fucks": 1
+        },
+        {
+          "character": "EWAN",
+          "fucks": 1
+        },
+        {
+          "character": "GERRI",
+          "fucks": 1
+        },
+        {
+          "character": "JESSE ARMSTRONG",
+          "fucks": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season2/S2_E09.html",
+      "season": "Season2",
+      "episode_code": "S2_E09",
+      "speaker_cue_count": 192,
+      "total_fucks": 78,
+      "unattributed_or_excluded_fucks": 5,
+      "variants": [
+        {
+          "variant": "fuck",
+          "count": 43
+        },
+        {
+          "variant": "fucking",
+          "count": 32
+        },
+        {
+          "variant": "fucked",
+          "count": 3
+        }
+      ],
+      "by_character": [
+        {
+          "character": "SHIV",
+          "fucks": 10
+        },
+        {
+          "character": "KENDALL",
+          "fucks": 7
+        },
+        {
+          "character": "TOM",
+          "fucks": 6
+        },
+        {
+          "character": "ROMAN",
+          "fucks": 6
+        },
+        {
+          "character": "GREG",
+          "fucks": 6
+        },
+        {
+          "character": "FRANK",
+          "fucks": 5
+        },
+        {
+          "character": "KARL",
+          "fucks": 5
+        },
+        {
+          "character": "FEMALE SENATOR",
+          "fucks": 5
+        },
+        {
+          "character": "JAMES",
+          "fucks": 4
+        },
+        {
+          "character": "COACH",
+          "fucks": 4
+        },
+        {
+          "character": "HUGO",
+          "fucks": 4
+        },
+        {
+          "character": "SUSAN",
+          "fucks": 3
+        },
+        {
+          "character": "GERRI",
+          "fucks": 3
+        },
+        {
+          "character": "LAIRD",
+          "fucks": 3
+        },
+        {
+          "character": "ROY",
+          "fucks": 1
+        },
+        {
+          "character": "LOGAN",
+          "fucks": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season2/S2_E10.html",
+      "season": "Season2",
+      "episode_code": "S2_E10",
+      "speaker_cue_count": 158,
+      "total_fucks": 50,
+      "unattributed_or_excluded_fucks": 0,
+      "variants": [
+        {
+          "variant": "fucking",
+          "count": 36
+        },
+        {
+          "variant": "fuck",
+          "count": 11
+        },
+        {
+          "variant": "fucked",
+          "count": 3
+        }
+      ],
+      "by_character": [
+        {
+          "character": "KENDALL",
+          "fucks": 15
+        },
+        {
+          "character": "LOGAN",
+          "fucks": 7
+        },
+        {
+          "character": "TOM",
+          "fucks": 7
+        },
+        {
+          "character": "CONNOR",
+          "fucks": 3
+        },
+        {
+          "character": "GERRI",
+          "fucks": 3
+        },
+        {
+          "character": "ROMAN",
+          "fucks": 3
+        },
+        {
+          "character": "STEWY",
+          "fucks": 3
+        },
+        {
+          "character": "REPORTER",
+          "fucks": 3
+        },
+        {
+          "character": "HUGO",
+          "fucks": 2
+        },
+        {
+          "character": "GIL",
+          "fucks": 1
+        },
+        {
+          "character": "PHILLIPE",
+          "fucks": 1
+        },
+        {
+          "character": "LAIRD",
+          "fucks": 1
+        },
+        {
+          "character": "KARL",
+          "fucks": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season3/S3_E01.html",
+      "season": "Season3",
+      "episode_code": "S3_E01",
+      "speaker_cue_count": 138,
+      "total_fucks": 73,
+      "unattributed_or_excluded_fucks": 2,
+      "variants": [
+        {
+          "variant": "fucking",
+          "count": 36
+        },
+        {
+          "variant": "fuck",
+          "count": 31
+        },
+        {
+          "variant": "fucked",
+          "count": 2
+        },
+        {
+          "variant": "motherfuckers",
+          "count": 1
+        },
+        {
+          "variant": "fuckin",
+          "count": 1
+        },
+        {
+          "variant": "motherfucker",
+          "count": 1
+        },
+        {
+          "variant": "fucker",
+          "count": 1
+        }
+      ],
+      "by_character": [
+        {
+          "character": "ROMAN",
+          "fucks": 11
+        },
+        {
+          "character": "LOGAN",
+          "fucks": 9
+        },
+        {
+          "character": "HUGO",
+          "fucks": 8
+        },
+        {
+          "character": "KENDALL",
+          "fucks": 7
+        },
+        {
+          "character": "SHIV",
+          "fucks": 7
+        },
+        {
+          "character": "LISA",
+          "fucks": 7
+        },
+        {
+          "character": "BERRY",
+          "fucks": 4
+        },
+        {
+          "character": "GREG",
+          "fucks": 3
+        },
+        {
+          "character": "JESS",
+          "fucks": 3
+        },
+        {
+          "character": "RAVA",
+          "fucks": 3
+        },
+        {
+          "character": "KAROLINA",
+          "fucks": 2
+        },
+        {
+          "character": "KARL",
+          "fucks": 2
+        },
+        {
+          "character": "GERRI",
+          "fucks": 2
+        },
+        {
+          "character": "NAOMI",
+          "fucks": 1
+        },
+        {
+          "character": "FRANK",
+          "fucks": 1
+        },
+        {
+          "character": "TOM",
+          "fucks": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season3/S3_E02.html",
+      "season": "Season3",
+      "episode_code": "S3_E02",
+      "speaker_cue_count": 0,
+      "total_fucks": 78,
+      "unattributed_or_excluded_fucks": 78,
+      "variants": [
+        {
+          "variant": "fucking",
+          "count": 48
+        },
+        {
+          "variant": "fuck",
+          "count": 28
+        },
+        {
+          "variant": "fucked",
+          "count": 1
+        },
+        {
+          "variant": "fucks",
+          "count": 1
+        }
+      ],
+      "by_character": []
+    },
+    {
+      "episode": "Season3/S3_E03.html",
+      "season": "Season3",
+      "episode_code": "S3_E03",
+      "speaker_cue_count": 242,
+      "total_fucks": 74,
+      "unattributed_or_excluded_fucks": 0,
+      "variants": [
+        {
+          "variant": "fucking",
+          "count": 39
+        },
+        {
+          "variant": "fuck",
+          "count": 33
+        },
+        {
+          "variant": "fuckers",
+          "count": 1
+        },
+        {
+          "variant": "motherfuckers",
+          "count": 1
+        }
+      ],
+      "by_character": [
+        {
+          "character": "LOGAN",
+          "fucks": 15
+        },
+        {
+          "character": "SHIV",
+          "fucks": 11
+        },
+        {
+          "character": "KENDALL",
+          "fucks": 8
+        },
+        {
+          "character": "GREG",
+          "fucks": 6
+        },
+        {
+          "character": "ROMAN",
+          "fucks": 6
+        },
+        {
+          "character": "TOM",
+          "fucks": 5
+        },
+        {
+          "character": "SOPHIE",
+          "fucks": 5
+        },
+        {
+          "character": "LISA",
+          "fucks": 5
+        },
+        {
+          "character": "HUGO",
+          "fucks": 4
+        },
+        {
+          "character": "REECE",
+          "fucks": 4
+        },
+        {
+          "character": "KERRY",
+          "fucks": 3
+        },
+        {
+          "character": "REPORTER",
+          "fucks": 1
+        },
+        {
+          "character": "GERRI",
+          "fucks": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season3/S3_E04.html",
+      "season": "Season3",
+      "episode_code": "S3_E04",
+      "speaker_cue_count": 132,
+      "total_fucks": 64,
+      "unattributed_or_excluded_fucks": 0,
+      "variants": [
+        {
+          "variant": "fucking",
+          "count": 34
+        },
+        {
+          "variant": "fuck",
+          "count": 24
+        },
+        {
+          "variant": "fucked",
+          "count": 4
+        },
+        {
+          "variant": "fucker",
+          "count": 1
+        },
+        {
+          "variant": "fuckers",
+          "count": 1
+        }
+      ],
+      "by_character": [
+        {
+          "character": "JOSH",
+          "fucks": 16
+        },
+        {
+          "character": "LOGAN",
+          "fucks": 13
+        },
+        {
+          "character": "SHIV",
+          "fucks": 9
+        },
+        {
+          "character": "KENDALL",
+          "fucks": 8
+        },
+        {
+          "character": "ROMAN",
+          "fucks": 5
+        },
+        {
+          "character": "CONNOR",
+          "fucks": 3
+        },
+        {
+          "character": "GERRI",
+          "fucks": 2
+        },
+        {
+          "character": "GREG",
+          "fucks": 2
+        },
+        {
+          "character": "MARK",
+          "fucks": 2
+        },
+        {
+          "character": "JESS",
+          "fucks": 1
+        },
+        {
+          "character": "KARL",
+          "fucks": 1
+        },
+        {
+          "character": "JOSH AARONSON",
+          "fucks": 1
+        },
+        {
+          "character": "HUGO",
+          "fucks": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season3/S3_E05.html",
+      "season": "Season3",
+      "episode_code": "S3_E05",
+      "speaker_cue_count": 219,
+      "total_fucks": 98,
+      "unattributed_or_excluded_fucks": 1,
+      "variants": [
+        {
+          "variant": "fucking",
+          "count": 51
+        },
+        {
+          "variant": "fuck",
+          "count": 45
+        },
+        {
+          "variant": "fucks",
+          "count": 1
+        },
+        {
+          "variant": "fucked",
+          "count": 1
+        }
+      ],
+      "by_character": [
+        {
+          "character": "ROMAN",
+          "fucks": 20
+        },
+        {
+          "character": "SHIV",
+          "fucks": 19
+        },
+        {
+          "character": "GERRI",
+          "fucks": 14
+        },
+        {
+          "character": "KENDALL",
+          "fucks": 7
+        },
+        {
+          "character": "FRANK",
+          "fucks": 7
+        },
+        {
+          "character": "HUGO",
+          "fucks": 7
+        },
+        {
+          "character": "KERRY",
+          "fucks": 6
+        },
+        {
+          "character": "STEWY",
+          "fucks": 5
+        },
+        {
+          "character": "JESS",
+          "fucks": 2
+        },
+        {
+          "character": "SANDI",
+          "fucks": 2
+        },
+        {
+          "character": "KARL",
+          "fucks": 2
+        },
+        {
+          "character": "LOGAN",
+          "fucks": 2
+        },
+        {
+          "character": "KAROLINA",
+          "fucks": 1
+        },
+        {
+          "character": "EWAN",
+          "fucks": 1
+        },
+        {
+          "character": "CONNOR",
+          "fucks": 1
+        },
+        {
+          "character": "TOM",
+          "fucks": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season3/S3_E06.html",
+      "season": "Season3",
+      "episode_code": "S3_E06",
+      "speaker_cue_count": 93,
+      "total_fucks": 106,
+      "unattributed_or_excluded_fucks": 5,
+      "variants": [
+        {
+          "variant": "fucking",
+          "count": 68
+        },
+        {
+          "variant": "fuck",
+          "count": 34
+        },
+        {
+          "variant": "fucked",
+          "count": 3
+        },
+        {
+          "variant": "motherfucker",
+          "count": 1
+        }
+      ],
+      "by_character": [
+        {
+          "character": "ROMAN",
+          "fucks": 34
+        },
+        {
+          "character": "KENDALL",
+          "fucks": 14
+        },
+        {
+          "character": "SHIV",
+          "fucks": 13
+        },
+        {
+          "character": "LUKAS",
+          "fucks": 11
+        },
+        {
+          "character": "LOGAN",
+          "fucks": 7
+        },
+        {
+          "character": "CONNOR",
+          "fucks": 6
+        },
+        {
+          "character": "COMFRY PELLITS",
+          "fucks": 4
+        },
+        {
+          "character": "TOM",
+          "fucks": 3
+        },
+        {
+          "character": "NAOMI",
+          "fucks": 3
+        },
+        {
+          "character": "COMFRY",
+          "fucks": 2
+        },
+        {
+          "character": "RAVA",
+          "fucks": 2
+        },
+        {
+          "character": "NURSE",
+          "fucks": 1
+        },
+        {
+          "character": "COMPLIMENTER",
+          "fucks": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season3/S3_E07.html",
+      "season": "Season3",
+      "episode_code": "S3_E07",
+      "speaker_cue_count": 227,
+      "total_fucks": 78,
+      "unattributed_or_excluded_fucks": 1,
+      "variants": [
+        {
+          "variant": "fucking",
+          "count": 40
+        },
+        {
+          "variant": "fuck",
+          "count": 31
+        },
+        {
+          "variant": "fucked",
+          "count": 2
+        },
+        {
+          "variant": "motherfucker",
+          "count": 2
+        },
+        {
+          "variant": "fuckers",
+          "count": 1
+        },
+        {
+          "variant": "fucks",
+          "count": 1
+        },
+        {
+          "variant": "fuckin",
+          "count": 1
+        }
+      ],
+      "by_character": [
+        {
+          "character": "SHIV",
+          "fucks": 22
+        },
+        {
+          "character": "LOGAN",
+          "fucks": 16
+        },
+        {
+          "character": "ROMAN",
+          "fucks": 12
+        },
+        {
+          "character": "GERRI",
+          "fucks": 8
+        },
+        {
+          "character": "KENDALL",
+          "fucks": 4
+        },
+        {
+          "character": "STEWY",
+          "fucks": 3
+        },
+        {
+          "character": "COMFREY PELLITS",
+          "fucks": 3
+        },
+        {
+          "character": "CONNOR",
+          "fucks": 2
+        },
+        {
+          "character": "KARL",
+          "fucks": 2
+        },
+        {
+          "character": "GREG",
+          "fucks": 1
+        },
+        {
+          "character": "CAROLINE",
+          "fucks": 1
+        },
+        {
+          "character": "TOM",
+          "fucks": 1
+        },
+        {
+          "character": "LUKAS",
+          "fucks": 1
+        },
+        {
+          "character": "KERRY",
+          "fucks": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season3/S3_E08.html",
+      "season": "Season3",
+      "episode_code": "S3_E08",
+      "speaker_cue_count": 227,
+      "total_fucks": 78,
+      "unattributed_or_excluded_fucks": 1,
+      "variants": [
+        {
+          "variant": "fucking",
+          "count": 40
+        },
+        {
+          "variant": "fuck",
+          "count": 31
+        },
+        {
+          "variant": "fucked",
+          "count": 2
+        },
+        {
+          "variant": "motherfucker",
+          "count": 2
+        },
+        {
+          "variant": "fuckers",
+          "count": 1
+        },
+        {
+          "variant": "fucks",
+          "count": 1
+        },
+        {
+          "variant": "fuckin",
+          "count": 1
+        }
+      ],
+      "by_character": [
+        {
+          "character": "SHIV",
+          "fucks": 22
+        },
+        {
+          "character": "LOGAN",
+          "fucks": 16
+        },
+        {
+          "character": "ROMAN",
+          "fucks": 12
+        },
+        {
+          "character": "GERRI",
+          "fucks": 8
+        },
+        {
+          "character": "KENDALL",
+          "fucks": 4
+        },
+        {
+          "character": "STEWY",
+          "fucks": 3
+        },
+        {
+          "character": "COMFREY PELLITS",
+          "fucks": 3
+        },
+        {
+          "character": "CONNOR",
+          "fucks": 2
+        },
+        {
+          "character": "KARL",
+          "fucks": 2
+        },
+        {
+          "character": "GREG",
+          "fucks": 1
+        },
+        {
+          "character": "CAROLINE",
+          "fucks": 1
+        },
+        {
+          "character": "TOM",
+          "fucks": 1
+        },
+        {
+          "character": "LUKAS",
+          "fucks": 1
+        },
+        {
+          "character": "KERRY",
+          "fucks": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season3/S3_E09.html",
+      "season": "Season3",
+      "episode_code": "S3_E09",
+      "speaker_cue_count": 220,
+      "total_fucks": 118,
+      "unattributed_or_excluded_fucks": 0,
+      "variants": [
+        {
+          "variant": "fucking",
+          "count": 56
+        },
+        {
+          "variant": "fuck",
+          "count": 45
+        },
+        {
+          "variant": "fucked",
+          "count": 12
+        },
+        {
+          "variant": "fucks",
+          "count": 3
+        },
+        {
+          "variant": "motherfucker",
+          "count": 1
+        },
+        {
+          "variant": "fucker",
+          "count": 1
+        }
+      ],
+      "by_character": [
+        {
+          "character": "SHIV",
+          "fucks": 29
+        },
+        {
+          "character": "ROMAN",
+          "fucks": 24
+        },
+        {
+          "character": "LOGAN",
+          "fucks": 20
+        },
+        {
+          "character": "CONNOR",
+          "fucks": 10
+        },
+        {
+          "character": "KARL",
+          "fucks": 10
+        },
+        {
+          "character": "WILLA",
+          "fucks": 6
+        },
+        {
+          "character": "LUKAS",
+          "fucks": 4
+        },
+        {
+          "character": "KENDALL",
+          "fucks": 4
+        },
+        {
+          "character": "GREG",
+          "fucks": 3
+        },
+        {
+          "character": "TOM",
+          "fucks": 2
+        },
+        {
+          "character": "KERRY",
+          "fucks": 2
+        },
+        {
+          "character": "CAROLINE",
+          "fucks": 2
+        },
+        {
+          "character": "OFFICIANT",
+          "fucks": 1
+        },
+        {
+          "character": "COLIN STILES",
+          "fucks": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season4/S4_E01.html",
+      "season": "Season4",
+      "episode_code": "S4_E01",
+      "speaker_cue_count": 0,
+      "total_fucks": 78,
+      "unattributed_or_excluded_fucks": 78,
+      "variants": [
+        {
+          "variant": "fucking",
+          "count": 46
+        },
+        {
+          "variant": "fuck",
+          "count": 26
+        },
+        {
+          "variant": "fucked",
+          "count": 2
+        },
+        {
+          "variant": "fucks",
+          "count": 1
+        },
+        {
+          "variant": "fucker",
+          "count": 1
+        },
+        {
+          "variant": "fuckin",
+          "count": 1
+        },
+        {
+          "variant": "motherfucking",
+          "count": 1
+        }
+      ],
+      "by_character": []
+    },
+    {
+      "episode": "Season4/S4_E02.html",
+      "season": "Season4",
+      "episode_code": "S4_E02",
+      "speaker_cue_count": 243,
+      "total_fucks": 83,
+      "unattributed_or_excluded_fucks": 2,
+      "variants": [
+        {
+          "variant": "fucking",
+          "count": 47
+        },
+        {
+          "variant": "fuck",
+          "count": 27
+        },
+        {
+          "variant": "fucked",
+          "count": 4
+        },
+        {
+          "variant": "fuckin",
+          "count": 2
+        },
+        {
+          "variant": "fucks",
+          "count": 1
+        },
+        {
+          "variant": "motherfucker",
+          "count": 1
+        },
+        {
+          "variant": "motherfuckers",
+          "count": 1
+        }
+      ],
+      "by_character": [
+        {
+          "character": "SHIV",
+          "fucks": 23
+        },
+        {
+          "character": "ROMAN",
+          "fucks": 18
+        },
+        {
+          "character": "KENDALL",
+          "fucks": 13
+        },
+        {
+          "character": "LOGAN",
+          "fucks": 10
+        },
+        {
+          "character": "TOM",
+          "fucks": 7
+        },
+        {
+          "character": "CONNOR",
+          "fucks": 4
+        },
+        {
+          "character": "GREG",
+          "fucks": 3
+        },
+        {
+          "character": "KAROLINA",
+          "fucks": 1
+        },
+        {
+          "character": "STEWY",
+          "fucks": 1
+        },
+        {
+          "character": "LUKAS",
+          "fucks": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season4/S4_E03.html",
+      "season": "Season4",
+      "episode_code": "S4_E03",
+      "speaker_cue_count": 267,
+      "total_fucks": 72,
+      "unattributed_or_excluded_fucks": 1,
+      "variants": [
+        {
+          "variant": "fucking",
+          "count": 41
+        },
+        {
+          "variant": "fuck",
+          "count": 26
+        },
+        {
+          "variant": "fucked",
+          "count": 5
+        }
+      ],
+      "by_character": [
+        {
+          "character": "SHIV",
+          "fucks": 14
+        },
+        {
+          "character": "ROMAN",
+          "fucks": 12
+        },
+        {
+          "character": "KENDALL",
+          "fucks": 10
+        },
+        {
+          "character": "KAROLINA",
+          "fucks": 9
+        },
+        {
+          "character": "TOM",
+          "fucks": 9
+        },
+        {
+          "character": "FRANK",
+          "fucks": 6
+        },
+        {
+          "character": "HUGO",
+          "fucks": 4
+        },
+        {
+          "character": "GERRI",
+          "fucks": 3
+        },
+        {
+          "character": "CONNOR",
+          "fucks": 2
+        },
+        {
+          "character": "BETH",
+          "fucks": 1
+        },
+        {
+          "character": "GREG",
+          "fucks": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season4/S4_E04.html",
+      "season": "Season4",
+      "episode_code": "S4_E04",
+      "speaker_cue_count": 227,
+      "total_fucks": 47,
+      "unattributed_or_excluded_fucks": 0,
+      "variants": [
+        {
+          "variant": "fucking",
+          "count": 24
+        },
+        {
+          "variant": "fuck",
+          "count": 16
+        },
+        {
+          "variant": "fucked",
+          "count": 5
+        },
+        {
+          "variant": "fucker",
+          "count": 1
+        },
+        {
+          "variant": "fucks",
+          "count": 1
+        }
+      ],
+      "by_character": [
+        {
+          "character": "ROMAN",
+          "fucks": 12
+        },
+        {
+          "character": "SHIV",
+          "fucks": 12
+        },
+        {
+          "character": "KENDALL",
+          "fucks": 9
+        },
+        {
+          "character": "HUGO",
+          "fucks": 3
+        },
+        {
+          "character": "CONNOR",
+          "fucks": 3
+        },
+        {
+          "character": "KARL",
+          "fucks": 2
+        },
+        {
+          "character": "FRANK",
+          "fucks": 2
+        },
+        {
+          "character": "PETKUS",
+          "fucks": 1
+        },
+        {
+          "character": "SANDI FURNESS",
+          "fucks": 1
+        },
+        {
+          "character": "TOM",
+          "fucks": 1
+        },
+        {
+          "character": "GREG",
+          "fucks": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season4/S4_E05.html",
+      "season": "Season4",
+      "episode_code": "S4_E05",
+      "speaker_cue_count": 255,
+      "total_fucks": 89,
+      "unattributed_or_excluded_fucks": 0,
+      "variants": [
+        {
+          "variant": "fucking",
+          "count": 59
+        },
+        {
+          "variant": "fuck",
+          "count": 24
+        },
+        {
+          "variant": "fucked",
+          "count": 4
+        },
+        {
+          "variant": "motherfuckers",
+          "count": 1
+        },
+        {
+          "variant": "motherfucker",
+          "count": 1
+        }
+      ],
+      "by_character": [
+        {
+          "character": "ROMAN",
+          "fucks": 30
+        },
+        {
+          "character": "KENDALL",
+          "fucks": 14
+        },
+        {
+          "character": "SHIV",
+          "fucks": 8
+        },
+        {
+          "character": "LUKAS",
+          "fucks": 8
+        },
+        {
+          "character": "EBBA",
+          "fucks": 7
+        },
+        {
+          "character": "TOM",
+          "fucks": 6
+        },
+        {
+          "character": "HUGO",
+          "fucks": 5
+        },
+        {
+          "character": "GREG",
+          "fucks": 4
+        },
+        {
+          "character": "MARK ROSENSTOCK",
+          "fucks": 2
+        },
+        {
+          "character": "GERRI",
+          "fucks": 2
+        },
+        {
+          "character": "RAY KENNEDY",
+          "fucks": 1
+        },
+        {
+          "character": "RAY",
+          "fucks": 1
+        },
+        {
+          "character": "FRANK",
+          "fucks": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season4/S4_E06.html",
+      "season": "Season4",
+      "episode_code": "S4_E06",
+      "speaker_cue_count": 0,
+      "total_fucks": 68,
+      "unattributed_or_excluded_fucks": 68,
+      "variants": [
+        {
+          "variant": "fucking",
+          "count": 32
+        },
+        {
+          "variant": "fuck",
+          "count": 26
+        },
+        {
+          "variant": "fuckin",
+          "count": 7
+        },
+        {
+          "variant": "motherfucker",
+          "count": 2
+        },
+        {
+          "variant": "fucked",
+          "count": 1
+        }
+      ],
+      "by_character": []
+    },
+    {
+      "episode": "Season4/S4_E07.html",
+      "season": "Season4",
+      "episode_code": "S4_E07",
+      "speaker_cue_count": 173,
+      "total_fucks": 71,
+      "unattributed_or_excluded_fucks": 0,
+      "variants": [
+        {
+          "variant": "fucking",
+          "count": 33
+        },
+        {
+          "variant": "fuck",
+          "count": 27
+        },
+        {
+          "variant": "fuckin",
+          "count": 8
+        },
+        {
+          "variant": "fucker",
+          "count": 2
+        },
+        {
+          "variant": "fucks",
+          "count": 1
+        }
+      ],
+      "by_character": [
+        {
+          "character": "SHIV",
+          "fucks": 22
+        },
+        {
+          "character": "TOM",
+          "fucks": 16
+        },
+        {
+          "character": "KENDALL",
+          "fucks": 15
+        },
+        {
+          "character": "ROMAN",
+          "fucks": 9
+        },
+        {
+          "character": "LUKAS",
+          "fucks": 5
+        },
+        {
+          "character": "NATE",
+          "fucks": 2
+        },
+        {
+          "character": "WILLA",
+          "fucks": 2
+        }
+      ]
+    },
+    {
+      "episode": "Season4/S4_E08.html",
+      "season": "Season4",
+      "episode_code": "S4_E08",
+      "speaker_cue_count": 325,
+      "total_fucks": 95,
+      "unattributed_or_excluded_fucks": 11,
+      "variants": [
+        {
+          "variant": "fucking",
+          "count": 55
+        },
+        {
+          "variant": "fuck",
+          "count": 32
+        },
+        {
+          "variant": "fucked",
+          "count": 4
+        },
+        {
+          "variant": "fucks",
+          "count": 2
+        },
+        {
+          "variant": "fuckin",
+          "count": 2
+        }
+      ],
+      "by_character": [
+        {
+          "character": "ROMAN",
+          "fucks": 25
+        },
+        {
+          "character": "KENDALL",
+          "fucks": 18
+        },
+        {
+          "character": "SHIV",
+          "fucks": 14
+        },
+        {
+          "character": "GREG",
+          "fucks": 8
+        },
+        {
+          "character": "TOM",
+          "fucks": 6
+        },
+        {
+          "character": "NATE",
+          "fucks": 4
+        },
+        {
+          "character": "LEVINGS",
+          "fucks": 2
+        },
+        {
+          "character": "RAVENHEAD",
+          "fucks": 2
+        },
+        {
+          "character": "JERYD MENCKEN",
+          "fucks": 1
+        },
+        {
+          "character": "RAVA",
+          "fucks": 1
+        },
+        {
+          "character": "LUKAS",
+          "fucks": 1
+        },
+        {
+          "character": "DARWIN",
+          "fucks": 1
+        },
+        {
+          "character": "SAMPINO",
+          "fucks": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season4/S4_E09.html",
+      "season": "Season4",
+      "episode_code": "S4_E09",
+      "speaker_cue_count": 214,
+      "total_fucks": 69,
+      "unattributed_or_excluded_fucks": 0,
+      "variants": [
+        {
+          "variant": "fuck",
+          "count": 33
+        },
+        {
+          "variant": "fucking",
+          "count": 17
+        },
+        {
+          "variant": "fuckin",
+          "count": 12
+        },
+        {
+          "variant": "fucked",
+          "count": 4
+        },
+        {
+          "variant": "fuckers",
+          "count": 2
+        },
+        {
+          "variant": "motherfuckers",
+          "count": 1
+        }
+      ],
+      "by_character": [
+        {
+          "character": "ROMAN",
+          "fucks": 25
+        },
+        {
+          "character": "KENDALL",
+          "fucks": 19
+        },
+        {
+          "character": "SHIV",
+          "fucks": 8
+        },
+        {
+          "character": "KARL",
+          "fucks": 7
+        },
+        {
+          "character": "HUGO",
+          "fucks": 3
+        },
+        {
+          "character": "GREG",
+          "fucks": 3
+        },
+        {
+          "character": "TOM",
+          "fucks": 2
+        },
+        {
+          "character": "LUKAS",
+          "fucks": 1
+        },
+        {
+          "character": "PETER",
+          "fucks": 1
+        }
+      ]
+    },
+    {
+      "episode": "Season4/S4_E10.html",
+      "season": "Season4",
+      "episode_code": "S4_E10",
+      "speaker_cue_count": 390,
+      "total_fucks": 181,
+      "unattributed_or_excluded_fucks": 0,
+      "variants": [
+        {
+          "variant": "fucking",
+          "count": 103
+        },
+        {
+          "variant": "fuck",
+          "count": 51
+        },
+        {
+          "variant": "fucked",
+          "count": 13
+        },
+        {
+          "variant": "fuckin",
+          "count": 9
+        },
+        {
+          "variant": "motherfucker",
+          "count": 4
+        },
+        {
+          "variant": "fucks",
+          "count": 1
+        }
+      ],
+      "by_character": [
+        {
+          "character": "KENDALL",
+          "fucks": 56
+        },
+        {
+          "character": "SHIV",
+          "fucks": 39
+        },
+        {
+          "character": "ROMAN",
+          "fucks": 31
+        },
+        {
+          "character": "TOM",
+          "fucks": 25
+        },
+        {
+          "character": "LUKAS",
+          "fucks": 9
+        },
+        {
+          "character": "FRANK",
+          "fucks": 7
+        },
+        {
+          "character": "GREG",
+          "fucks": 4
+        },
+        {
+          "character": "TELLIS",
+          "fucks": 4
+        },
+        {
+          "character": "CAROLINE",
+          "fucks": 2
+        },
+        {
+          "character": "EBBA",
+          "fucks": 2
+        },
+        {
+          "character": "STEWY",
+          "fucks": 1
+        },
+        {
+          "character": "KARL",
+          "fucks": 1
+        }
+      ]
+    }
+  ]
+}

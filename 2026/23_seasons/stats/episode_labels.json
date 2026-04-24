@@ -1,0 +1,47 @@
+{
+  "source": "Web summaries from Wikipedia episode pages",
+  "episodes": [
+    {
+      "episode_code": "S4_E10",
+      "label": "Shiv flips the vote; Tom is named CEO.",
+      "source": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/With_Open_Eyes"
+    },
+    {
+      "episode_code": "S3_E09",
+      "label": "Tom tips Logan off and the siblings' coup collapses.",
+      "source": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/All_the_Bells_Say"
+    },
+    {
+      "episode_code": "S3_E06",
+      "label": "At Argestes, the cruise scandal blows up the Pierce deal.",
+      "source": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/What_It_Takes_(Succession)"
+    },
+    {
+      "episode_code": "S3_E05",
+      "label": "Logan's illness and the shareholder vote stall the deal.",
+      "source": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Retired_Janitors_of_Idaho"
+    },
+    {
+      "episode_code": "S4_E08",
+      "label": "Election night at ATN turns into a Mencken power play.",
+      "source": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/America_Decides"
+    },
+    {
+      "episode_code": "S2_E01",
+      "label": "Kendall tries to make amends after the failed takeover.",
+      "source": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/The_Summer_Palace_(Succession)"
+    },
+    {
+      "episode_code": "S2_E06",
+      "label": "The cruises expos\u00e9 detonates and the Pierce deal dies.",
+      "source": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Argestes_(Succession)"
+    }
+  ]
+}

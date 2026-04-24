@@ -1,0 +1,1301 @@
+{
+  "source_file": "season1_ep1.html",
+  "character_count": 21,
+  "characters": [
+    {
+      "character": "ROMAN",
+      "words": 1064,
+      "common_words": [
+        {
+          "word": "i'm",
+          "count": 17
+        },
+        {
+          "word": "yeah",
+          "count": 12
+        },
+        {
+          "word": "it's",
+          "count": 12
+        },
+        {
+          "word": "dad",
+          "count": 12
+        },
+        {
+          "word": "don't",
+          "count": 11
+        },
+        {
+          "word": "okay",
+          "count": 9
+        },
+        {
+          "word": "know",
+          "count": 9
+        },
+        {
+          "word": "that's",
+          "count": 9
+        },
+        {
+          "word": "you're",
+          "count": 8
+        },
+        {
+          "word": "good",
+          "count": 7
+        },
+        {
+          "word": "right",
+          "count": 7
+        },
+        {
+          "word": "would",
+          "count": 6
+        },
+        {
+          "word": "what's",
+          "count": 6
+        },
+        {
+          "word": "want",
+          "count": 6
+        },
+        {
+          "word": "oh",
+          "count": 6
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "character": "KENDALL",
+      "words": 795,
+      "common_words": [
+        {
+          "word": "yeah",
+          "count": 15
+        },
+        {
+          "word": "i'm",
+          "count": 13
+        },
+        {
+          "word": "it's",
+          "count": 12
+        },
+        {
+          "word": "uh",
+          "count": 8
+        },
+        {
+          "word": "hey",
+          "count": 8
+        },
+        {
+          "word": "good",
+          "count": 7
+        },
+        {
+          "word": "don't",
+          "count": 7
+        },
+        {
+          "word": "mm",
+          "count": 7
+        },
+        {
+          "word": "fuck",
+          "count": 7
+        },
+        {
+          "word": "okay",
+          "count": 6
+        },
+        {
+          "word": "dad",
+          "count": 6
+        },
+        {
+          "word": "right",
+          "count": 6
+        },
+        {
+          "word": "oh",
+          "count": 6
+        },
+        {
+          "word": "you're",
+          "count": 5
+        },
+        {
+          "word": "fine",
+          "count": 5
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "character": "WOMAN",
+      "words": 790,
+      "common_words": [
+        {
+          "word": "okay",
+          "count": 11
+        },
+        {
+          "word": "yeah",
+          "count": 9
+        },
+        {
+          "word": "wanna",
+          "count": 9
+        },
+        {
+          "word": "dad",
+          "count": 9
+        },
+        {
+          "word": "i'm",
+          "count": 8
+        },
+        {
+          "word": "look",
+          "count": 7
+        },
+        {
+          "word": "like",
+          "count": 7
+        },
+        {
+          "word": "i'll",
+          "count": 7
+        },
+        {
+          "word": "fuck",
+          "count": 6
+        },
+        {
+          "word": "hey",
+          "count": 6
+        },
+        {
+          "word": "call",
+          "count": 6
+        },
+        {
+          "word": "it's",
+          "count": 5
+        },
+        {
+          "word": "sorry",
+          "count": 5
+        },
+        {
+          "word": "come",
+          "count": 5
+        },
+        {
+          "word": "get",
+          "count": 5
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "character": "LOGAN",
+      "words": 754,
+      "common_words": [
+        {
+          "word": "yeah",
+          "count": 10
+        },
+        {
+          "word": "it's",
+          "count": 8
+        },
+        {
+          "word": "know",
+          "count": 8
+        },
+        {
+          "word": "go",
+          "count": 6
+        },
+        {
+          "word": "gonna",
+          "count": 6
+        },
+        {
+          "word": "fucking",
+          "count": 6
+        },
+        {
+          "word": "i'm",
+          "count": 5
+        },
+        {
+          "word": "dad",
+          "count": 5
+        },
+        {
+          "word": "okay",
+          "count": 5
+        },
+        {
+          "word": "great",
+          "count": 5
+        },
+        {
+          "word": "you're",
+          "count": 4
+        },
+        {
+          "word": "one",
+          "count": 4
+        },
+        {
+          "word": "feel",
+          "count": 4
+        },
+        {
+          "word": "good",
+          "count": 4
+        },
+        {
+          "word": "oh",
+          "count": 4
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "character": "GREG",
+      "words": 598,
+      "common_words": [
+        {
+          "word": "like",
+          "count": 8
+        },
+        {
+          "word": "get",
+          "count": 6
+        },
+        {
+          "word": "you're",
+          "count": 6
+        },
+        {
+          "word": "gonna",
+          "count": 6
+        },
+        {
+          "word": "it's",
+          "count": 6
+        },
+        {
+          "word": "greg",
+          "count": 5
+        },
+        {
+          "word": "birthday",
+          "count": 5
+        },
+        {
+          "word": "he's",
+          "count": 5
+        },
+        {
+          "word": "back",
+          "count": 5
+        },
+        {
+          "word": "come",
+          "count": 5
+        },
+        {
+          "word": "oh",
+          "count": 5
+        },
+        {
+          "word": "yeah",
+          "count": 5
+        },
+        {
+          "word": "okay",
+          "count": 4
+        },
+        {
+          "word": "kid",
+          "count": 4
+        },
+        {
+          "word": "got",
+          "count": 4
+        }
+      ],
+      "rank": 5
+    },
+    {
+      "character": "ALESSANDRO",
+      "words": 501,
+      "common_words": [
+        {
+          "word": "it's",
+          "count": 15
+        },
+        {
+          "word": "yeah",
+          "count": 9
+        },
+        {
+          "word": "okay",
+          "count": 9
+        },
+        {
+          "word": "oh",
+          "count": 8
+        },
+        {
+          "word": "hey",
+          "count": 7
+        },
+        {
+          "word": "i'm",
+          "count": 6
+        },
+        {
+          "word": "might",
+          "count": 5
+        },
+        {
+          "word": "make",
+          "count": 4
+        },
+        {
+          "word": "great",
+          "count": 4
+        },
+        {
+          "word": "that's",
+          "count": 4
+        },
+        {
+          "word": "know",
+          "count": 4
+        },
+        {
+          "word": "good",
+          "count": 4
+        },
+        {
+          "word": "got",
+          "count": 3
+        },
+        {
+          "word": "call",
+          "count": 3
+        },
+        {
+          "word": "idea",
+          "count": 3
+        }
+      ],
+      "rank": 6
+    },
+    {
+      "character": "MARCIA",
+      "words": 340,
+      "common_words": [
+        {
+          "word": "yeah",
+          "count": 5
+        },
+        {
+          "word": "logan",
+          "count": 4
+        },
+        {
+          "word": "two",
+          "count": 3
+        },
+        {
+          "word": "give",
+          "count": 3
+        },
+        {
+          "word": "sir",
+          "count": 3
+        },
+        {
+          "word": "i'm",
+          "count": 3
+        },
+        {
+          "word": "thank",
+          "count": 3
+        },
+        {
+          "word": "years",
+          "count": 3
+        },
+        {
+          "word": "he's",
+          "count": 3
+        },
+        {
+          "word": "lunch",
+          "count": 2
+        },
+        {
+          "word": "minutes",
+          "count": 2
+        },
+        {
+          "word": "sitting",
+          "count": 2
+        },
+        {
+          "word": "got",
+          "count": 2
+        },
+        {
+          "word": "uncle",
+          "count": 2
+        },
+        {
+          "word": "sorry",
+          "count": 2
+        }
+      ],
+      "rank": 7
+    },
+    {
+      "character": "FRANK",
+      "words": 327,
+      "common_words": [
+        {
+          "word": "right",
+          "count": 6
+        },
+        {
+          "word": "stupid",
+          "count": 5
+        },
+        {
+          "word": "good",
+          "count": 5
+        },
+        {
+          "word": "hey",
+          "count": 5
+        },
+        {
+          "word": "hi",
+          "count": 5
+        },
+        {
+          "word": "know",
+          "count": 4
+        },
+        {
+          "word": "gonna",
+          "count": 4
+        },
+        {
+          "word": "don't",
+          "count": 4
+        },
+        {
+          "word": "yeah",
+          "count": 4
+        },
+        {
+          "word": "thanks",
+          "count": 4
+        },
+        {
+          "word": "number",
+          "count": 3
+        },
+        {
+          "word": "now",
+          "count": 3
+        },
+        {
+          "word": "well",
+          "count": 3
+        },
+        {
+          "word": "oh",
+          "count": 3
+        },
+        {
+          "word": "that's",
+          "count": 3
+        }
+      ],
+      "rank": 8
+    },
+    {
+      "character": "SIOBHAN",
+      "words": 227,
+      "common_words": [
+        {
+          "word": "boo",
+          "count": 4
+        },
+        {
+          "word": "dad",
+          "count": 3
+        },
+        {
+          "word": "i'm",
+          "count": 3
+        },
+        {
+          "word": "sorry",
+          "count": 3
+        },
+        {
+          "word": "big",
+          "count": 2
+        },
+        {
+          "word": "congratulations",
+          "count": 2
+        },
+        {
+          "word": "good",
+          "count": 2
+        },
+        {
+          "word": "hey",
+          "count": 2
+        },
+        {
+          "word": "kendall",
+          "count": 2
+        },
+        {
+          "word": "you're",
+          "count": 2
+        },
+        {
+          "word": "it's",
+          "count": 2
+        },
+        {
+          "word": "pending",
+          "count": 2
+        },
+        {
+          "word": "events",
+          "count": 2
+        },
+        {
+          "word": "okay",
+          "count": 2
+        },
+        {
+          "word": "hang",
+          "count": 2
+        }
+      ],
+      "rank": 9
+    },
+    {
+      "character": "COLIN",
+      "words": 156,
+      "common_words": [
+        {
+          "word": "whoa",
+          "count": 6
+        },
+        {
+          "word": "back",
+          "count": 4
+        },
+        {
+          "word": "right",
+          "count": 4
+        },
+        {
+          "word": "i'm",
+          "count": 4
+        },
+        {
+          "word": "greg",
+          "count": 3
+        },
+        {
+          "word": "guy",
+          "count": 3
+        },
+        {
+          "word": "happy",
+          "count": 3
+        },
+        {
+          "word": "say",
+          "count": 2
+        },
+        {
+          "word": "guys",
+          "count": 2
+        },
+        {
+          "word": "logan",
+          "count": 2
+        },
+        {
+          "word": "hello",
+          "count": 2
+        },
+        {
+          "word": "yeah",
+          "count": 2
+        },
+        {
+          "word": "actually",
+          "count": 2
+        },
+        {
+          "word": "know",
+          "count": 2
+        },
+        {
+          "word": "sorry",
+          "count": 2
+        }
+      ],
+      "rank": 10
+    },
+    {
+      "character": "TOM",
+      "words": 154,
+      "common_words": [
+        {
+          "word": "yeah",
+          "count": 6
+        },
+        {
+          "word": "i'm",
+          "count": 6
+        },
+        {
+          "word": "you're",
+          "count": 3
+        },
+        {
+          "word": "got",
+          "count": 3
+        },
+        {
+          "word": "know",
+          "count": 3
+        },
+        {
+          "word": "really",
+          "count": 3
+        },
+        {
+          "word": "would",
+          "count": 3
+        },
+        {
+          "word": "kiss",
+          "count": 3
+        },
+        {
+          "word": "man",
+          "count": 2
+        },
+        {
+          "word": "kinda",
+          "count": 2
+        },
+        {
+          "word": "hear",
+          "count": 2
+        },
+        {
+          "word": "well",
+          "count": 2
+        },
+        {
+          "word": "help",
+          "count": 2
+        },
+        {
+          "word": "don't",
+          "count": 2
+        },
+        {
+          "word": "okay",
+          "count": 2
+        }
+      ],
+      "rank": 11
+    },
+    {
+      "character": "ALL",
+      "words": 145,
+      "common_words": [
+        {
+          "word": "oh",
+          "count": 6
+        },
+        {
+          "word": "surprise",
+          "count": 4
+        },
+        {
+          "word": "it's",
+          "count": 4
+        },
+        {
+          "word": "go",
+          "count": 3
+        },
+        {
+          "word": "give",
+          "count": 3
+        },
+        {
+          "word": "thank",
+          "count": 3
+        },
+        {
+          "word": "birthday",
+          "count": 3
+        },
+        {
+          "word": "craig",
+          "count": 3
+        },
+        {
+          "word": "game",
+          "count": 3
+        },
+        {
+          "word": "excellent",
+          "count": 2
+        },
+        {
+          "word": "ahead",
+          "count": 2
+        },
+        {
+          "word": "hi",
+          "count": 2
+        },
+        {
+          "word": "room",
+          "count": 2
+        },
+        {
+          "word": "elevator",
+          "count": 2
+        },
+        {
+          "word": "look",
+          "count": 2
+        }
+      ],
+      "rank": 12
+    },
+    {
+      "character": "LAWRENCE",
+      "words": 105,
+      "common_words": [
+        {
+          "word": "yeah",
+          "count": 3
+        },
+        {
+          "word": "it's",
+          "count": 3
+        },
+        {
+          "word": "news",
+          "count": 2
+        },
+        {
+          "word": "deal",
+          "count": 2
+        },
+        {
+          "word": "oh",
+          "count": 2
+        },
+        {
+          "word": "think",
+          "count": 2
+        },
+        {
+          "word": "talking",
+          "count": 2
+        },
+        {
+          "word": "cool",
+          "count": 2
+        },
+        {
+          "word": "i'm",
+          "count": 2
+        },
+        {
+          "word": "one",
+          "count": 2
+        },
+        {
+          "word": "kendall",
+          "count": 1
+        },
+        {
+          "word": "heard",
+          "count": 1
+        },
+        {
+          "word": "exciting",
+          "count": 1
+        },
+        {
+          "word": "can't",
+          "count": 1
+        },
+        {
+          "word": "wait",
+          "count": 1
+        }
+      ],
+      "rank": 13
+    },
+    {
+      "character": "MAN",
+      "words": 102,
+      "common_words": [
+        {
+          "word": "go",
+          "count": 3
+        },
+        {
+          "word": "yeah",
+          "count": 3
+        },
+        {
+          "word": "that's",
+          "count": 3
+        },
+        {
+          "word": "know",
+          "count": 2
+        },
+        {
+          "word": "it's",
+          "count": 2
+        },
+        {
+          "word": "patek",
+          "count": 2
+        },
+        {
+          "word": "philippe",
+          "count": 2
+        },
+        {
+          "word": "okay",
+          "count": 2
+        },
+        {
+          "word": "boys",
+          "count": 1
+        },
+        {
+          "word": "right",
+          "count": 1
+        },
+        {
+          "word": "way",
+          "count": 1
+        },
+        {
+          "word": "hey",
+          "count": 1
+        },
+        {
+          "word": "wanted",
+          "count": 1
+        },
+        {
+          "word": "give",
+          "count": 1
+        },
+        {
+          "word": "person",
+          "count": 1
+        }
+      ],
+      "rank": 14
+    },
+    {
+      "character": "GIRL",
+      "words": 54,
+      "common_words": [
+        {
+          "word": "woo",
+          "count": 5
+        },
+        {
+          "word": "whoa",
+          "count": 5
+        },
+        {
+          "word": "doderick",
+          "count": 4
+        },
+        {
+          "word": "hi",
+          "count": 2
+        },
+        {
+          "word": "whoo",
+          "count": 2
+        },
+        {
+          "word": "ooh",
+          "count": 2
+        },
+        {
+          "word": "it's",
+          "count": 2
+        },
+        {
+          "word": "hey",
+          "count": 2
+        },
+        {
+          "word": "don't",
+          "count": 2
+        },
+        {
+          "word": "get",
+          "count": 2
+        },
+        {
+          "word": "fuck",
+          "count": 2
+        },
+        {
+          "word": "good",
+          "count": 1
+        },
+        {
+          "word": "morning",
+          "count": 1
+        },
+        {
+          "word": "happy",
+          "count": 1
+        },
+        {
+          "word": "birthday",
+          "count": 1
+        }
+      ],
+      "rank": 15
+    },
+    {
+      "character": "WE SAY",
+      "words": 35,
+      "common_words": [
+        {
+          "word": "three",
+          "count": 2
+        },
+        {
+          "word": "stability",
+          "count": 1
+        },
+        {
+          "word": "stick",
+          "count": 1
+        },
+        {
+          "word": "plan",
+          "count": 1
+        },
+        {
+          "word": "take",
+          "count": 1
+        },
+        {
+          "word": "two",
+          "count": 1
+        },
+        {
+          "word": "co",
+          "count": 1
+        },
+        {
+          "word": "presidents",
+          "count": 1
+        },
+        {
+          "word": "uh",
+          "count": 1
+        },
+        {
+          "word": "huh",
+          "count": 1
+        },
+        {
+          "word": "know",
+          "count": 1
+        },
+        {
+          "word": "power",
+          "count": 1
+        },
+        {
+          "word": "interesting",
+          "count": 1
+        },
+        {
+          "word": "think",
+          "count": 1
+        }
+      ],
+      "rank": 16
+    },
+    {
+      "character": "SO",
+      "words": 25,
+      "common_words": [
+        {
+          "word": "good",
+          "count": 1
+        },
+        {
+          "word": "oh",
+          "count": 1
+        },
+        {
+          "word": "also",
+          "count": 1
+        },
+        {
+          "word": "already",
+          "count": 1
+        },
+        {
+          "word": "mentioned",
+          "count": 1
+        },
+        {
+          "word": "kendall",
+          "count": 1
+        },
+        {
+          "word": "despite",
+          "count": 1
+        },
+        {
+          "word": "chatter",
+          "count": 1
+        },
+        {
+          "word": "things",
+          "count": 1
+        },
+        {
+          "word": "considered",
+          "count": 1
+        },
+        {
+          "word": "i'm",
+          "count": 1
+        },
+        {
+          "word": "going",
+          "count": 1
+        },
+        {
+          "word": "give",
+          "count": 1
+        },
+        {
+          "word": "couple",
+          "count": 1
+        },
+        {
+          "word": "years",
+          "count": 1
+        }
+      ],
+      "rank": 17
+    },
+    {
+      "character": "ANCHOR",
+      "words": 24,
+      "common_words": [
+        {
+          "word": "degree",
+          "count": 1
+        },
+        {
+          "word": "stock",
+          "count": 1
+        },
+        {
+          "word": "market",
+          "count": 1
+        },
+        {
+          "word": "volatility",
+          "count": 1
+        },
+        {
+          "word": "waystar",
+          "count": 1
+        },
+        {
+          "word": "royco's",
+          "count": 1
+        },
+        {
+          "word": "chairman",
+          "count": 1
+        },
+        {
+          "word": "reported",
+          "count": 1
+        },
+        {
+          "word": "critical",
+          "count": 1
+        },
+        {
+          "word": "condition",
+          "count": 1
+        },
+        {
+          "word": "following",
+          "count": 1
+        },
+        {
+          "word": "major",
+          "count": 1
+        },
+        {
+          "word": "medical",
+          "count": 1
+        },
+        {
+          "word": "incident",
+          "count": 1
+        }
+      ],
+      "rank": 18
+    },
+    {
+      "character": "SHIV",
+      "words": 19,
+      "common_words": [
+        {
+          "word": "dad",
+          "count": 2
+        },
+        {
+          "word": "mean",
+          "count": 1
+        },
+        {
+          "word": "looks",
+          "count": 1
+        },
+        {
+          "word": "i'm",
+          "count": 1
+        },
+        {
+          "word": "gonna",
+          "count": 1
+        },
+        {
+          "word": "talk",
+          "count": 1
+        },
+        {
+          "word": "lawyers",
+          "count": 1
+        },
+        {
+          "word": "implications",
+          "count": 1
+        }
+      ],
+      "rank": 19
+    },
+    {
+      "character": "BOY",
+      "words": 17,
+      "common_words": [
+        {
+          "word": "way",
+          "count": 2
+        },
+        {
+          "word": "ew",
+          "count": 1
+        },
+        {
+          "word": "he's",
+          "count": 1
+        },
+        {
+          "word": "puking",
+          "count": 1
+        },
+        {
+          "word": "eyes",
+          "count": 1
+        },
+        {
+          "word": "protein",
+          "count": 1
+        },
+        {
+          "word": "spill",
+          "count": 1
+        },
+        {
+          "word": "okay",
+          "count": 1
+        },
+        {
+          "word": "come",
+          "count": 1
+        },
+        {
+          "word": "greg",
+          "count": 1
+        }
+      ],
+      "rank": 20
+    },
+    {
+      "character": "RICHARD",
+      "words": 2,
+      "common_words": [
+        {
+          "word": "course",
+          "count": 1
+        }
+      ],
+      "rank": 21
+    }
+  ]
+}
