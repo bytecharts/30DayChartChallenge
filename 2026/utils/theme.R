@@ -36,6 +36,7 @@ night_owlish_light <- list(
 
 night_owlish_cat <- c(
   "#2E86AB", # blue
+  "#4A6984",
   "#F07178", # red
   "#FFB454", # orange
   "#7FDBCA", # aqua/green
@@ -56,7 +57,7 @@ theme_bg <- night_owlish_light$bg_soft
 theme_fg <- base_colors$primary
 theme_muted <- "gray20"
 theme_title_family <- "SpaceGrotesk"
-theme_caption_family <- "FiraSans"
+theme_caption_family <- "FiraSansRegular"
 
 # ---- Plot Theme ----
 theme_base <- function(base_size = 12, base_family = "FiraSans") {
@@ -67,13 +68,14 @@ theme_base <- function(base_size = 12, base_family = "FiraSans") {
       plot.title = element_markdown(
         family = theme_title_family,
         face = "bold",
-        size = 24,
+        size = 32,
         color = theme_fg,
         hjust = 0,
         margin = margin(b = 6)
       ),
       plot.subtitle = element_markdown(
-        size = 14,
+        size = 18,
+        family = "FiraSans",
         hjust = 0,
         color = theme_muted,
         margin = margin(b = 25),
@@ -85,12 +87,12 @@ theme_base <- function(base_size = 12, base_family = "FiraSans") {
         margin = margin(t = 10)
       ),
       axis.title.y = element_blank(),
-      axis.text.x = element_text(size = 10, color = theme_fg),
-      axis.text.y = element_text(size = 10, color = theme_fg),
+      axis.text.x = element_text(size = 11, color = theme_fg),
+      axis.text.y = element_text(size = 11, color = theme_fg),
       panel.grid.minor = element_blank(),
       panel.grid.major.y = element_blank(),
       plot.caption = element_markdown(
-        size = 8,
+        size = 9,
         color = theme_muted,
         hjust = 0,
         family = theme_caption_family,
@@ -99,12 +101,12 @@ theme_base <- function(base_size = 12, base_family = "FiraSans") {
       ),
       plot.margin = margin(30, 10, 30, 10),
       legend.title = element_text(
-        size = 10,
+        size = 12,
         color = theme_muted,
         margin = margin(r = 10)
       ),
       legend.text = element_text(
-        size = 8,
+        size = 10,
         color = theme_muted,
         margin = margin(r = 10)
       )
