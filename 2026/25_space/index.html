@@ -1,0 +1,581 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Earth in your hands</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <style>
+    :root {
+      --bg:        #F7F8FA;
+      --bg-panel:  #FFFFFF;
+      --border:    rgba(42,47,58,0.1);
+      --fg:        #1C2130;
+      --fg-soft:   #5A6278;
+      --fg-dim:    #9AA3B8;
+
+      /* night_owlish — toned for light bg */
+      --c-blue:    #2076A0;
+      --c-red:     #D45F66;
+      --c-orange:  #D4893A;
+      --c-aqua:    #3BAF97;
+      --c-purple:  #5E4FD4;
+      --c-gray:    #7A8499;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      min-height: 100vh;
+      font-family: "Fira Sans", sans-serif;
+      color: var(--fg);
+      background: var(--bg);
+      background-image:
+        radial-gradient(ellipse 55% 35% at 10% 0%,  rgba(32,118,160,0.07)  0%, transparent 65%),
+        radial-gradient(ellipse 45% 30% at 90% 5%,  rgba(59,175,151,0.07)  0%, transparent 60%),
+        radial-gradient(ellipse 40% 40% at 50% 100%,rgba(94,79,212,0.05)   0%, transparent 70%);
+      padding: 28px 24px 36px;
+      display: grid;
+      place-items: start center;
+    }
+
+    .frame { width: min(1380px, 100%); background:"#ddf0f6"; padding: 2rem; }
+
+    /* ── Header ── */
+    .header { margin-bottom: 22px; }
+
+    .eyebrow {
+      font-family: "Fira Sans", sans-serif;
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--c-aqua);
+      margin-bottom: 8px;
+    }
+
+    h1 {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: clamp(1.8rem, 3vw, 2.75rem);
+      font-weight: 700;
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      color: var(--fg);
+      margin-bottom: 10px;
+    }
+    h1 .accent { color: var(--c-blue); }
+
+    .subtitle {
+      font-family: "Fira Sans", sans-serif;
+      font-size: clamp(0.88rem, 1.3vw, 1rem);
+      color: var(--fg-soft);
+      line-height: 1.6;
+      max-width: 74ch;
+      margin-bottom: 18px;
+    }
+    .subtitle strong { color: var(--c-orange); font-weight: 600; }
+
+    /* ── Legend ── */
+    .legends {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 18px;
+      align-items: center;
+    }
+    .legend-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      align-items: center;
+    }
+    .legend-label {
+      font-family: "Fira Sans", sans-serif;
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--fg-dim);
+      margin-right: 2px;
+    }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 3px 11px 3px 7px;
+      border-radius: 999px;
+      font-family: "Fira Sans", sans-serif;
+      font-size: 0.78rem;
+      color: var(--fg-soft);
+      background: rgba(28,33,48,0.05);
+      border: 1px solid rgba(28,33,48,0.12);
+    }
+    .pill .dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    /* ── Chart wrapper ── */
+    .chart-wrap {
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background: #f0fbff;
+      box-shadow: 0 4px 24px rgba(28,33,48,0.06);
+
+    }
+    #chart { display: block; width: 100%; height: auto; }
+
+    .panel-title {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    .feature-label {
+      font-family: "Fira Sans", sans-serif;
+      font-weight: 600;
+      font-size: 1.02rem;
+      paint-order: stroke;
+      stroke-width: 4px;
+      stroke-linejoin: round;
+    }
+    .feature-value {
+      font-family: "Fira Sans", sans-serif;
+      font-size: 0.63rem;
+      fill: var(--fg-dim);
+    }
+    .axis-title-text {
+      font-family: "Fira Sans", sans-serif;
+      font-size: 0.66rem;
+      font-weight: 500;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      fill: var(--fg-dim);
+    }
+    .surface-label {
+      font-family: "Fira Sans", sans-serif;
+      font-size: 0.6rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+    }
+
+    /* ── Tooltip ── */
+    .tooltip {
+      position: fixed;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 100ms ease;
+      min-width: 205px;
+      max-width: 270px;
+      background: #FFFFFF;
+      border: 1px solid rgba(28,33,48,0.14);
+      border-radius: 10px;
+      box-shadow: 0 8px 28px rgba(28,33,48,0.13);
+      padding: 10px 13px;
+      z-index: 20;
+    }
+    .tooltip.visible { opacity: 1; }
+    .tt-head {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--fg);
+      margin-bottom: 2px;
+    }
+    .tt-cat {
+      font-family: "Fira Sans", sans-serif;
+      font-size: 0.63rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 7px;
+    }
+    .tt-row {
+      font-family: "Fira Sans", sans-serif;
+      font-size: 0.8rem;
+      color: var(--fg-soft);
+      line-height: 1.5;
+    }
+    .tt-row strong { color: var(--fg); font-weight: 600; }
+    .tt-note {
+      margin-top: 6px;
+      font-family: "Fira Sans", sans-serif;
+      font-size: 0.71rem;
+      font-style: italic;
+      color: var(--fg-dim);
+      line-height: 1.4;
+    }
+
+    /* ── Footer ── */
+    .footer {
+      margin-top: 14px;
+      color: var(--fg-dim);
+      font-family: "Fira Sans", sans-serif;
+      font-size: 0.74rem;
+      line-height: 1.5;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+    .footer strong { color: var(--fg-soft); font-weight: 600; }
+    .footer .tag   { color: var(--c-aqua); }
+  </style>
+</head>
+<body>
+  <main class="frame">
+    <div class="header">
+      <div class="eyebrow">#30DayChartChallenge 2026 · Day 25 · Space</div>
+      <h1>⚽ | Earth in <span class="accent">your hands</span></h1>
+      <p class="subtitle">
+        On a soccer ball-sized Earth, the atmosphere is <strong>1.7 mm thick</strong>.
+        The ISS orbits just <strong>7 mm</strong> above the surface.
+      </p>
+      <div class="legends">
+        <span class="legend-label">Category</span>
+        <div class="legend-group" id="cat-legend"></div>
+        <span class="legend-label" style="margin-left:10px;">Reference</span>
+        <div class="legend-group">
+          <span class="pill"><span class="dot" style="background:#D45F66;"></span>Kármán line</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="chart-wrap" id="chart-wrap">
+      <svg id="chart" aria-label="Scaled Earth distances diagram"></svg>
+    </div>
+
+    <div class="tooltip" id="tooltip"></div>
+
+    <div class="footer">
+      <span>Scale: Earth ø 12,742 km = soccer ball ø 220 mm · 1 mm ≈ 58 km · <strong>Sources:</strong> NASA, NOAA, IAU, UCS Satellite Database</span>
+      <span class="tag">#30DayChartChallenge</span>
+    </div>
+  </main>
+
+  <script>
+  (() => {
+    const CAT_COLOR = {
+      "Surface":    "#D4893A",
+      "Atmosphere": "#3BAF97",
+      "Orbit":      "#2076A0",
+      "Deep Space": "#5E4FD4",
+    };
+    const KARMAN_COLOR       = "#D45F66";
+    const KARMAN_FALLBACK_MM = 1.727;
+    const MICRO_SPLIT_MM     = 0.2;
+
+    const PANEL_TINT = {
+      0: "rgba(212,137,58,0.04)",
+      1: "rgba(59,175,151,0.04)",
+      2: "rgba(32,118,160,0.04)",
+      3: "rgba(94,79,212,0.04)",
+    };
+    const PANEL_ACCENT = {
+      0: "#D4893A",
+      1: "#3BAF97",
+      2: "#2076A0",
+      3: "#5E4FD4",
+    };
+
+    const RAW = [
+      { feature:"Typical land elevation", category:"Surface",    real_km:0.84,      scaled_mm:0.0145,  notes:"Median land height" },
+      { feature:"Mount Everest",          category:"Surface",    real_km:8.85,      scaled_mm:0.153,   notes:"Highest point above sea level" },
+      { feature:"Airliner cruise",        category:"Atmosphere", real_km:11.0,      scaled_mm:0.190,   notes:"Boeing/Airbus typical cruise" },
+      { feature:"Ozone layer peak",       category:"Atmosphere", real_km:25.0,      scaled_mm:0.432,   notes:"Max ozone concentration ~25 km" },
+      { feature:"Stratosphere top",       category:"Atmosphere", real_km:50.0,      scaled_mm:0.864,   notes:"Top of stratosphere ~50 km" },
+      { feature:"Kármán line",            category:"Atmosphere", real_km:100.0,     scaled_mm:1.727,   notes:"Common definition of space boundary" },
+      { feature:"Aurora (typical)",       category:"Atmosphere", real_km:120.0,     scaled_mm:2.073,   notes:"Visible aurora altitudes" },
+      { feature:"ISS / Tiangong",         category:"Orbit",      real_km:400.0,     scaled_mm:6.910,   notes:"Low Earth orbit ~400 km" },
+      { feature:"Hubble / Starlink",      category:"Orbit",      real_km:545.0,     scaled_mm:9.413,   notes:"Upper LEO band" },
+      { feature:"Iridium / Weather LEO",  category:"Orbit",      real_km:815.0,     scaled_mm:14.076,  notes:"Communication & weather satellites" },
+      { feature:"GPS / GLONASS",          category:"Orbit",      real_km:19650.0,   scaled_mm:339.4,   notes:"Medium Earth orbit" },
+      { feature:"Galileo",                category:"Orbit",      real_km:23200.0,   scaled_mm:400.7,   notes:"EU navigation constellation" },
+      { feature:"Geostationary (GEO)",    category:"Orbit",      real_km:35786.0,   scaled_mm:617.9,   notes:"TV and weather satellites" },
+      { feature:"Moon",                   category:"Deep Space",  real_km:384400.0,  scaled_mm:6637.0,  notes:"Average Earth–Moon distance" },
+      { feature:"Mars (closest)",         category:"Deep Space",  real_km:54600000,  scaled_mm:942900,  notes:"2003 record closest approach" },
+    ];
+
+    function isKarman(f) { return /k[aá]rm[aá]n/i.test(f || ""); }
+
+    function fmtMM(mm) {
+      if (mm >= 1e6)  return `${(mm/1e6).toFixed(2)} km`;
+      if (mm >= 1000) return `${(mm/1000).toFixed(1)} m`;
+      if (mm >= 100)  return `${mm.toFixed(0)} mm`;
+      if (mm >= 1)    return `${mm.toFixed(1)} mm`;
+      return `${mm.toFixed(3)} mm`;
+    }
+    function fmtKM(km) {
+      if (km >= 1e6)  return `${(km/1e6).toFixed(1)}M km`;
+      if (km >= 1000) return `${km.toLocaleString()} km`;
+      return `${km} km`;
+    }
+
+    // Build category legend
+    const catLegend = document.getElementById("cat-legend");
+    Object.entries(CAT_COLOR).forEach(([cat, col]) => {
+      const pill = document.createElement("span");
+      pill.className = "pill";
+      pill.innerHTML = `<span class="dot" style="background:${col};"></span>${cat}`;
+      catLegend.appendChild(pill);
+    });
+
+    // Facets
+    const facets = [
+      { title:"< 0.2 mm",    min:0,              max:MICRO_SPLIT_MM },
+      { title:"0.2 – 2 mm",  min:MICRO_SPLIT_MM, max:2 },
+      { title:"2 – 15 mm",   min:2,              max:15 },
+      { title:"15 mm – 1 m", min:15,             max:1000 },
+    ];
+    facets.forEach((f, i) => {
+      f.values = i === 0
+        ? RAW.filter(d => d.scaled_mm <= f.max)
+        : RAW.filter(d => d.scaled_mm > f.min && d.scaled_mm <= f.max);
+    });
+
+    // Tooltip
+    const tooltip = document.getElementById("tooltip");
+    function showTT(event, d) {
+      const col = isKarman(d.feature) ? KARMAN_COLOR : (CAT_COLOR[d.category] || "#7A8499");
+      tooltip.innerHTML = `
+        <div class="tt-head">${d.feature}</div>
+        <div class="tt-cat" style="color:${col};">${d.category}</div>
+        <div class="tt-row"><strong>Real distance:</strong> ${fmtKM(d.real_km)}</div>
+        <div class="tt-row"><strong>Football scale:</strong> ${fmtMM(d.scaled_mm)}</div>
+        <div class="tt-note">${d.notes}</div>
+      `;
+      let x = event.clientX + 16, y = event.clientY + 12;
+      if (x + 240 > window.innerWidth  - 8) x = event.clientX - 250;
+      if (y + 140 > window.innerHeight - 8) y = event.clientY - 148;
+      tooltip.style.left = `${x}px`;
+      tooltip.style.top  = `${y}px`;
+      tooltip.classList.add("visible");
+    }
+    function hideTT() { tooltip.classList.remove("visible"); }
+
+    // Render
+    const svg       = d3.select("#chart");
+    const chartWrap = document.getElementById("chart-wrap");
+
+    function render() {
+      const totalW = Math.max(900, chartWrap.clientWidth);
+      const cols = 2, rows = 2;
+      const mTop = 20, mRight = 20, mBottom = 24, mLeft = 52;
+      const gapX = 28, gapY = 36;
+      const pW   = (totalW - mLeft - mRight - gapX * (cols - 1)) / cols;
+      const pH   = 380;
+      const totalH = mTop + rows * pH + (rows - 1) * gapY + mBottom;
+
+      svg.selectAll("*").remove();
+      svg.attr("viewBox", `0 0 ${totalW} ${totalH}`);
+
+      svg.append("text")
+        .attr("class","axis-title-text")
+        .attr("transform", `translate(14,${mTop + (totalH - mTop - mBottom) / 2}) rotate(-90)`)
+        .attr("text-anchor","middle")
+        .text("Distance above surface (football scale)");
+
+      facets.forEach((facet, fi) => {
+        const col = fi % cols;
+        const row = Math.floor(fi / cols);
+        const px0 = mLeft + col * (pW + gapX);
+        const py0 = mTop  + row * (pH + gapY);
+        const px1 = px0 + pW;
+        const py1 = py0 + pH;
+
+        const axX         = px0 + 72;
+        const lblX        = axX + 18;
+        const rX          = px1 - 10;
+        const innerTop    = py0 + 36;
+        const innerBottom = py1 - 10;
+        const accentCol   = PANEL_ACCENT[fi];
+        const karmanMm    = RAW.find(d => isKarman(d.feature))?.scaled_mm ?? KARMAN_FALLBACK_MM;
+
+        const y = d3.scaleLinear()
+          .domain([facet.min, facet.max])
+          .range([innerBottom, innerTop]);
+
+        let ticks;
+        if      (facet.max <= MICRO_SPLIT_MM) ticks = d3.range(0, MICRO_SPLIT_MM + 0.001, 0.04).map(v => +v.toFixed(2));
+        else if (facet.max <= 2)              ticks = d3.range(facet.min, facet.max + 0.001, 0.25).map(v => +v.toFixed(2));
+        else if (facet.max <= 15)             ticks = d3.range(facet.min, facet.max + 0.001, 2).map(v => +v.toFixed(0));
+        else                                  ticks = y.ticks(7).filter(v => v >= facet.min && v <= facet.max);
+
+        const fmtTick = v => {
+          if (facet.max <= 2)  return `${v.toFixed(2)} mm`;
+          if (facet.max <= 15) return `${v.toFixed(0)} mm`;
+          if (v >= 1000)       return `${(v/1000).toFixed(1)} m`;
+          return `${v.toFixed(0)} mm`;
+        };
+
+        // Panel bg
+        svg.append("rect")
+          .attr("x", px0).attr("y", py0)
+          .attr("width", pW).attr("height", pH)
+          .attr("rx", 12)
+          .attr("fill", PANEL_TINT[fi])
+          .attr("stroke","rgba(28,33,48,0.08)");
+
+        // Left accent bar
+        svg.append("rect")
+          .attr("x", px0 + 2).attr("y", py0 + 12)
+          .attr("width", 3).attr("height", pH - 24)
+          .attr("rx", 2).attr("fill", accentCol).attr("opacity", 0.55);
+
+        // Panel title (Space Grotesk via CSS class)
+        svg.append("text")
+          .attr("class","panel-title")
+          .attr("x", px0 + 14).attr("y", py0 + 20)
+          .attr("fill", accentCol).attr("opacity", 0.85)
+          .text(facet.title);
+
+        // Grid
+        svg.append("g")
+          .selectAll("line")
+          .data(ticks)
+          .join("line")
+          .attr("x1", axX).attr("x2", rX)
+          .attr("y1", d => y(d)).attr("y2", d => y(d))
+          .attr("stroke","rgba(28,33,48,0.07)")
+          .attr("stroke-width", 1);
+
+        // Axis
+        const axG = svg.append("g").attr("transform", `translate(${axX},0)`);
+        axG.call(
+          d3.axisLeft(y)
+            .tickValues(ticks)
+            .tickFormat(fmtTick)
+            .tickSize(-(rX - axX))
+        );
+        axG.select(".domain").attr("stroke","rgba(28,33,48,0.1)");
+        axG.selectAll(".tick line")
+          .attr("stroke","rgba(28,33,48,0.06)")
+          .attr("stroke-dasharray","2 3");
+        axG.selectAll(".tick text")
+          .attr("fill","#9AA3B8")
+          .attr("font-family","Fira Sans, sans-serif")
+          .attr("font-size","0.63rem")
+          .attr("x","-6");
+
+        // Baseline
+        const baseY = y(facet.min);
+        svg.append("line")
+          .attr("x1", axX - 20).attr("x2", rX)
+          .attr("y1", baseY).attr("y2", baseY)
+          .attr("stroke", fi === 0 ? "#D4893A" : accentCol)
+          .attr("stroke-width", fi === 0 ? 1.5 : 1)
+          .attr("stroke-dasharray", fi === 0 ? "none" : "3 4")
+          .attr("opacity", fi === 0 ? 0.65 : 0.35);
+
+        svg.append("text")
+          .attr("class","surface-label")
+          .attr("x", axX - 22).attr("y", baseY - 5)
+          .attr("text-anchor","end")
+          .attr("fill", fi === 0 ? "#D4893A" : "#9AA3B8")
+          .attr("opacity", fi === 0 ? 0.85 : 0.55)
+          .text(fi === 0 ? "Surface" : `from ${fmtTick(facet.min)}`);
+
+        // Kármán line
+        if (karmanMm > facet.min && karmanMm <= facet.max) {
+          const ky = y(karmanMm);
+          svg.append("line")
+            .attr("x1", axX).attr("x2", rX)
+            .attr("y1", ky).attr("y2", ky)
+            .attr("stroke", KARMAN_COLOR)
+            .attr("stroke-width", 1.2)
+            .attr("stroke-dasharray","4 3")
+            .attr("opacity", 0.75);
+          svg.append("text")
+            .attr("font-family","Fira Sans, sans-serif")
+            .attr("font-size","0.6rem")
+            .attr("font-weight","600")
+            .attr("x", rX - 3).attr("y", ky - 4)
+            .attr("text-anchor","end")
+            .attr("fill", KARMAN_COLOR)
+            .attr("opacity", 0.85)
+            .text("Kármán line");
+        }
+
+        // Force-simulate nodes
+        const nodes = facet.values.map(d => ({
+          ...d,
+          targetY: y(d.scaled_mm),
+          dotX: axX,
+          y: y(d.scaled_mm),
+        }));
+
+        d3.forceSimulation(nodes)
+          .force("y",       d3.forceY(d => d.targetY).strength(1))
+          .force("collide", d3.forceCollide(8))
+          .stop().tick(300);
+
+        nodes.forEach(d => {
+          d.labelY = Math.max(innerTop + 6, Math.min(innerBottom - 6, d.y));
+        });
+
+        // Connectors
+        svg.append("g")
+          .selectAll("path")
+          .data(nodes)
+          .join("path")
+          .attr("fill","none")
+          .attr("stroke", d => isKarman(d.feature) ? KARMAN_COLOR : (CAT_COLOR[d.category] || "#7A8499"))
+          .attr("stroke-width", 0.8)
+          .attr("opacity", 0.4)
+          .attr("d", d => `M${axX},${d.targetY} H${axX+10} V${d.labelY} H${lblX-2}`)
+          .on("mousemove", (ev, d) => showTT(ev, d))
+          .on("mouseleave", hideTT);
+
+        // Dots
+        svg.append("g")
+          .selectAll("circle")
+          .data(nodes)
+          .join("circle")
+          .attr("cx", d => d.dotX)
+          .attr("cy", d => d.targetY)
+          .attr("r",  d => d.category === "Deep Space" ? 6.5 : 4.5)
+          .attr("fill", d => isKarman(d.feature) ? KARMAN_COLOR : (CAT_COLOR[d.category] || "#7A8499"))
+          .attr("stroke","#FFFFFF")
+          .attr("stroke-width", 1.5)
+          .style("cursor","pointer")
+          .on("mousemove", (ev, d) => showTT(ev, d))
+          .on("mouseleave", hideTT);
+
+        // Labels
+        const labelG = svg.append("g")
+          .selectAll("g")
+          .data(nodes)
+          .join("g")
+          .attr("transform", d => `translate(${lblX},${d.labelY})`)
+          .style("cursor","pointer")
+          .on("mousemove", (ev, d) => showTT(ev, d))
+          .on("mouseleave", hideTT);
+
+        labelG.append("text")
+          .attr("class","feature-label")
+          .attr("dominant-baseline","middle")
+          .attr("stroke","#FFFFFF")
+          .attr("fill", d => isKarman(d.feature) ? KARMAN_COLOR : (CAT_COLOR[d.category] || "#7A8499"))
+          .text(d => d.feature);
+
+        labelG.append("text")
+          .attr("class","feature-value")
+          .attr("y", 10)
+          .attr("dominant-baseline","hanging")
+          .text(d => fmtMM(d.scaled_mm));
+      });
+    }
+
+    render();
+    window.addEventListener("resize", render);
+  })();
+  </script>
+</body>
+</html>
