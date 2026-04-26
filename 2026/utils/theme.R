@@ -40,8 +40,10 @@ night_owlish_cat <- c(
   "#F07178", # red
   "#FFB454", # orange
   "#7FDBCA", # aqua/green
-  "#6C5CE7", # purple (keep only one blue-adjacent)
-  "#8A93A6"  # neutral gray (replacement for extra blue)
+  "#6C5CE7", # purple
+  "#8A93A6", # neutral gray
+  "#5CBFA8", # lighter aqua (derived from #5)
+  "#8B7CF0"  # lighter purple (derived from #6)
 )
 
 base_colors <- list(
