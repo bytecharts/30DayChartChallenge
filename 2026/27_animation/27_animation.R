@@ -17,6 +17,21 @@ state_files <- tibble::tribble(
   "Texas", "930-data-export-Texas.csv"
 )
 
+# NOTE:
+# Timestamps in the source data are in each state's LOCAL time (e.g., PDT, CDT, EDT).
+# We intentionally strip timezone information and parse only the clock time.
+#
+# Why:
+# This analysis compares *daily demand rhythms* (hour-of-day patterns),
+# not absolute moments in time across states.
+#
+# As a result:
+# - "5 AM" in California, Texas, and New York are all treated as hour = 5
+# - These are NOT aligned in real-world (UTC) time, by design
+#
+# Do NOT convert to UTC or adjust timezones here, or the hourly patterns
+# will be distorted for cross-state comparison.
+parse_hour_ending <- function(x) {
 parse_hour_ending <- function(x) {
   cleaned <- x
   cleaned <- gsub(" (EDT|EST|CDT|CST)$", "", cleaned)
