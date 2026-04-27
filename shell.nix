@@ -12,6 +12,7 @@ pkgs.mkShell {
     pkgs.rPackages.effectsize
     pkgs.rPackages.emojifont
     pkgs.rPackages.ggalluvial
+    pkgs.rPackages.gganimate
     pkgs.rPackages.ggdist
     pkgs.rPackages.ggimage
     pkgs.rPackages.ggnewscale
