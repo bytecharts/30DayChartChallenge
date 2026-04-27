@@ -128,26 +128,28 @@ for (i in seq_along(date_window)) {
     mutate(demand_frame = if_else(date <= current_date, demand_mwh, NA_real_))
 
   subtitle_text <- paste0(
-    "Real hourly demand across last ", length(date_window), " full days. Each ring = one day, each segment = one hour.",
+    "Real hourly demand across last ", length(date_window), " full days.",
     "<br>Inner ring oldest ", format(start_date, "%d %b %Y"),
     " | Outer ring latest ", format(common_end, "%d %b %Y"),
     " | Animated to: ", format(current_date, "%d %b %Y")
   )
 
-  p <- ggplot(frame_df, aes(x = hour + 0.5, y = day_index, fill = demand_frame)) +
+  p <- ggplot(frame_df, aes(x = hour, y = day_index, fill = demand_frame)) +
     geom_tile(width = 1, height = 0.95) +
     facet_wrap(~state, ncol = 2) +
-    coord_polar(theta = "x", start = 0, clip = "off") +
+    coord_polar(theta = "x", start = -pi / 24, clip = "off") +
     scale_x_continuous(
-      limits = c(0, 24),
-      breaks = c(0.5, 6.5, 12.5, 18.5),
-      labels = c("00", "06", "12", "18"),
+      limits = c(-0.5, 23.5),
+      breaks = NULL,
+      labels = NULL,
+      minor_breaks = NULL,
       expand = c(0, 0)
     ) +
     scale_y_continuous(
       limits = c(0.5, n_days + 0.5),
-      breaks = y_breaks,
-      labels = y_labels,
+      breaks = NULL,
+      labels = NULL,
+      minor_breaks = NULL,
       expand = c(0, 0)
     ) +
     scale_fill_gradientn(
@@ -166,6 +168,8 @@ for (i in seq_along(date_window)) {
     labs(
       title = "State Electricity Demand Rhythms in 30-Day Polar Rings",
       subtitle = subtitle_text,
+      x = NULL,
+      y = NULL,
       caption = plot_caption
     ) +
     theme_base() +
@@ -183,8 +187,10 @@ for (i in seq_along(date_window)) {
         color = night_owlish_light$fg
       ),
       axis.title = element_blank(),
-      axis.text.y = element_text(size = 7.2, color = alpha(night_owlish_light$fg_soft, 0.9)),
-      axis.text.x = element_text(size = 7, color = alpha(night_owlish_light$fg_soft, 0.86)),
+      axis.title.x = element_blank(),
+      axis.title.y = element_blank(),
+      axis.text.y = element_blank(),
+      axis.text.x = element_blank(),
       axis.ticks = element_blank(),
       panel.grid.major.y = element_line(color = alpha(night_owlish_light$gray, 0.18), linewidth = 0.18),
       panel.grid.major.x = element_line(color = alpha(night_owlish_light$gray, 0.14), linewidth = 0.16),
@@ -192,7 +198,7 @@ for (i in seq_along(date_window)) {
       legend.position = "right",
       legend.direction = "horizontal",
       legend.background = element_rect(fill = alpha("#FFFFFF", 0.84), color = NA),
-      legend.title = element_text(size = 10, color = night_owlish_light$fg, hjust = 0.5),
+      legend.title = element_text(size = 10, color = night_owlish_light$fg, hjust = 0.5, vjust = 1),
       legend.text = element_text(size = 8, color = night_owlish_light$fg_soft, hjust = 0.5),
       panel.spacing = grid::unit(12, "pt"),
 plot.margin = margin(15, 40, 15, 40)
