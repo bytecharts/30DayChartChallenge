@@ -1,0 +1,235 @@
+
+<h2 class="sr-only">Line chart showing Japan's actual real GDP index 1980–2025 against optimistic and baseline projections, with China's 2025 GDP marked as a reference, illustrating that sustained 4–5% growth would have made Japan comparable to China today.</h2>
+
+<div style="display:flex;gap:14px;flex-wrap:wrap;margin-bottom:.75rem;align-items:center;">
+  <span style="display:flex;align-items:center;gap:6px;font-size:12px;color:var(--color-text-secondary);">
+    <span style="width:24px;height:3px;background:#185FA5;display:inline-block;border-radius:2px;"></span>Actual Japan GDP
+  </span>
+  <span style="display:flex;align-items:center;gap:6px;font-size:12px;color:var(--color-text-secondary);">
+    <svg width="26" height="10"><line x1="0" y1="5" x2="26" y2="5" stroke="#3B6D11" stroke-width="2.5" stroke-dasharray="7,3"/></svg>Optimistic scenario (4.5%/yr)
+  </span>
+  <span style="display:flex;align-items:center;gap:6px;font-size:12px;color:var(--color-text-secondary);">
+    <svg width="26" height="10"><line x1="0" y1="5" x2="26" y2="5" stroke="#888780" stroke-width="2" stroke-dasharray="4,4"/></svg>Baseline scenario (3.3%/yr)
+  </span>
+  <span style="display:flex;align-items:center;gap:6px;font-size:12px;color:var(--color-text-secondary);">
+    <span style="width:24px;height:3px;background:#D85A30;display:inline-block;border-radius:2px;"></span>China 2025 reference level
+  </span>
+</div>
+
+<div style="position:relative;width:100%;height:460px;">
+  <canvas id="compChart" role="img" aria-label="Line chart 1980 to 2025. Japan actual GDP index reaches ~185. Optimistic 4.5% scenario reaches ~530, roughly matching China's GDP relative to Japan's 1980 base. China's 2025 GDP is marked as a horizontal reference near 530.">Japan actual index ~185 by 2025. Optimistic scenario ~530. China 2025 reference ~530. Baseline scenario ~390.</canvas>
+</div>
+
+<div style="margin-top:1rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px;">
+  <div style="background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:10px 12px;">
+    <div style="font-size:11px;color:var(--color-text-tertiary);margin-bottom:2px;">Japan actual GDP · 2025</div>
+    <div style="font-size:18px;font-weight:500;">~$4.3T</div>
+    <div style="font-size:11px;color:var(--color-text-secondary);">4th largest economy</div>
+  </div>
+  <div style="background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:10px 12px;">
+    <div style="font-size:11px;color:var(--color-text-tertiary);margin-bottom:2px;">China GDP · 2025</div>
+    <div style="font-size:18px;font-weight:500;">~$19.6T</div>
+    <div style="font-size:11px;color:var(--color-text-secondary);">2nd largest economy</div>
+  </div>
+  <div style="background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:10px 12px;">
+    <div style="font-size:11px;color:var(--color-text-tertiary);margin-bottom:2px;">Japan at 4.5%/yr · 2025</div>
+    <div style="font-size:18px;font-weight:500;">~$17–19T</div>
+    <div style="font-size:11px;color:var(--color-text-secondary);">Comparable to China today</div>
+  </div>
+  <div style="background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:10px 12px;">
+    <div style="font-size:11px;color:var(--color-text-tertiary);margin-bottom:2px;">Lost growth (gap)</div>
+    <div style="font-size:18px;font-weight:500;">~$13–15T</div>
+    <div style="font-size:11px;color:var(--color-text-secondary);">Cumulative output foregone</div>
+  </div>
+</div>
+
+<p style="font-size:12px;color:var(--color-text-tertiary);margin-top:.75rem;">Index anchored at 1980=100. China reference line scaled to Japan's 1980 GDP base (~$1.1T nominal) × index factor (~530 ≈ $19T real-equivalent). Nominal GDP estimates: IMF 2025. Real growth data: World Bank / OECD / Cabinet Office Japan.</p>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/3.0.1/chartjs-plugin-annotation.min.js"></script>
+<script>
+const years = [];
+for (let y = 1980; y <= 2025; y++) years.push(y);
+
+const ratesMap = {
+  1980:2.82,1981:4.21,1982:3.31,1983:3.52,1984:4.50,
+  1985:5.23,1986:3.33,1987:4.73,1988:6.79,1989:4.86,
+  1990:4.89,1991:3.42,1992:0.85,1993:-0.52,1994:0.99,
+  1995:2.63,1996:3.13,1997:0.98,1998:-1.27,1999:-0.33,
+  2000:2.76,2001:0.39,2002:0.04,2003:1.54,2004:2.19,
+  2005:1.80,2006:1.37,2007:1.48,2008:-1.22,2009:-5.69,
+  2010:4.10,2011:0.02,2012:1.37,2013:2.01,2014:0.30,
+  2015:1.56,2016:0.75,2017:1.68,2018:0.56,2019:0.27,
+  2020:-4.59,2021:2.56,2022:0.95,2023:1.90,2024:0.10,2025:0.10
+};
+
+const actualIndex = [];
+let val = 100;
+for (let y = 1980; y <= 2025; y++) {
+  if (y === 1980) { actualIndex.push(100); }
+  else { val = val * (1 + ratesMap[y] / 100); actualIndex.push(parseFloat(val.toFixed(2))); }
+}
+
+const optimistic45 = years.map((_, i) => parseFloat((100 * Math.pow(1.045, i)).toFixed(2)));
+const baseline33   = years.map((_, i) => parseFloat((100 * Math.pow(1.033, i)).toFixed(2)));
+
+const chinaLevel = 530;
+const chinaLine  = years.map(() => chinaLevel);
+
+new Chart(document.getElementById('compChart'), {
+  type: 'line',
+  data: {
+    labels: years,
+    datasets: [
+      {
+        label: 'Actual Japan GDP (index)',
+        data: actualIndex,
+        borderColor: '#185FA5',
+        backgroundColor: 'rgba(24,95,165,0.06)',
+        borderWidth: 2.5,
+        pointRadius: (ctx) => [1985,1989,1991,2009,2020].includes(years[ctx.dataIndex]) ? 5 : 2,
+        pointBackgroundColor: '#185FA5',
+        fill: false, tension: 0.3, order: 1
+      },
+      {
+        label: 'Optimistic scenario (4.5%/yr)',
+        data: optimistic45,
+        borderColor: '#3B6D11',
+        borderWidth: 2.5,
+        borderDash: [7,4],
+        pointRadius: 0,
+        fill: false, tension: 0, order: 2
+      },
+      {
+        label: 'Baseline scenario (3.3%/yr)',
+        data: baseline33,
+        borderColor: '#888780',
+        borderWidth: 2,
+        borderDash: [4,4],
+        pointRadius: 0,
+        fill: false, tension: 0, order: 3
+      },
+      {
+        label: 'China 2025 GDP reference',
+        data: chinaLine,
+        borderColor: '#D85A30',
+        borderWidth: 2,
+        borderDash: [2,2],
+        pointRadius: 0,
+        fill: false, tension: 0, order: 4
+      }
+    ]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    interaction: { mode: 'index', intersect: false },
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        callbacks: {
+          label: ctx => ctx.parsed.y !== null ? ctx.dataset.label + ': ' + ctx.parsed.y.toFixed(1) : null
+        }
+      },
+      annotation: {
+        annotations: {
+          plazaLine: {
+            type:'line', xMin:1985, xMax:1985,
+            borderColor:'#BA7517', borderWidth:1.5, borderDash:[4,3],
+            label:{ display:true, content:'Plaza Accord', position:'start',
+              yAdjust:8, backgroundColor:'#FAEEDA', color:'#633806',
+              font:{size:10,weight:'500'}, padding:{x:4,y:3}, borderRadius:3 }
+          },
+          bubbleLine: {
+            type:'line', xMin:1989, xMax:1989,
+            borderColor:'#D85A30', borderWidth:1.5, borderDash:[4,3],
+            label:{ display:true, content:'Bubble peak', position:'start',
+              yAdjust:32, backgroundColor:'#FAECE7', color:'#712B13',
+              font:{size:10,weight:'500'}, padding:{x:4,y:3}, borderRadius:3 }
+          },
+          burstLine: {
+            type:'line', xMin:1991, xMax:1991,
+            borderColor:'#A32D2D', borderWidth:1.5, borderDash:[4,3],
+            label:{ display:true, content:'Bubble burst', position:'start',
+              yAdjust:58, backgroundColor:'#FCEBEB', color:'#791F1F',
+              font:{size:10,weight:'500'}, padding:{x:4,y:3}, borderRadius:3 }
+          },
+          gfcLine: {
+            type:'line', xMin:2008, xMax:2008,
+            borderColor:'#534AB7', borderWidth:1.5, borderDash:[4,3],
+            label:{ display:true, content:'GFC', position:'start',
+              yAdjust:8, backgroundColor:'#EEEDFE', color:'#3C3489',
+              font:{size:10,weight:'500'}, padding:{x:4,y:3}, borderRadius:3 }
+          },
+          covidLine: {
+            type:'line', xMin:2020, xMax:2020,
+            borderColor:'#993C1D', borderWidth:1.5, borderDash:[4,3],
+            label:{ display:true, content:'COVID-19', position:'start',
+              yAdjust:32, backgroundColor:'#FAECE7', color:'#712B13',
+              font:{size:10,weight:'500'}, padding:{x:4,y:3}, borderRadius:3 }
+          },
+          chinaLabel: {
+            type:'label',
+            xValue: 2004,
+            yValue: chinaLevel + 18,
+            content: ['China 2025 GDP (~$19.6T)'],
+            color: '#993C1D',
+            font: { size: 11, weight: '500' },
+            backgroundColor: 'rgba(0,0,0,0)'
+          },
+          gapBox: {
+            type:'box',
+            xMin:2025, xMax:2025,
+            yMin: actualIndex[actualIndex.length-1],
+            yMax: chinaLevel,
+            backgroundColor:'rgba(226,75,74,0.0)',
+            borderColor:'rgba(0,0,0,0)',
+          },
+          actualLabel: {
+            type:'label',
+            xValue: 2023,
+            yValue: actualIndex[actualIndex.length-1] - 20,
+            content:['Japan actual (~$4.3T)'],
+            color:'#185FA5',
+            font:{size:11,weight:'500'},
+            backgroundColor:'rgba(0,0,0,0)'
+          },
+          optimisticLabel: {
+            type:'label',
+            xValue: 2020,
+            yValue: optimistic45[optimistic45.length-1] + 20,
+            content:['4.5% scenario (~$17–19T)'],
+            color:'#3B6D11',
+            font:{size:11,weight:'500'},
+            backgroundColor:'rgba(0,0,0,0)'
+          },
+          lostDecadeBox: {
+            type:'box', xMin:1991, xMax:2003,
+            yMin:0, yMax:175,
+            backgroundColor:'rgba(226,75,74,0.04)',
+            borderColor:'rgba(226,75,74,0.15)', borderWidth:1,
+            label:{ display:true, content:'Lost Decades',
+              position:{x:'center',y:'end'}, yAdjust:-8,
+              color:'#A32D2D', font:{size:11,weight:'500'} }
+          }
+        }
+      }
+    },
+    scales: {
+      x: {
+        ticks: {
+          callback:(v,i) => years[i] % 5 === 0 ? years[i] : '',
+          maxRotation:0, font:{size:11}, color:'#888'
+        },
+        grid:{ color:'rgba(128,128,128,0.08)' }
+      },
+      y: {
+        min:80, max:620,
+        ticks:{ stepSize:100, font:{size:11}, color:'#888' },
+        title:{ display:true, text:'GDP index (1980 = 100)', font:{size:12}, color:'#888' },
+        grid:{ color:'rgba(128,128,128,0.08)' }
+      }
+    }
+  }
+});
+</script>

@@ -11,6 +11,10 @@ Submissions to the [#30DayChartChallenge](https://github.com/30DayChartChallenge
         <td><img src="01_part-to-whole/01_part-to-whole.webp"></td>
         <td><img src="02_pictogram/02_pictogram.webp"></td>
     </tr>
+     <tr>
+    <td style="text-align:center;"><em>Day #1 - Part-to-Whole Chart</em></td>
+    <td style="text-align:center;"><em>Day #2 - Pictogram Chart</em></td>
+    </tr>
     <tr>
         <td><img src="03_mosaic/03_mosaic.webp"></td>
         <td><img src="04_slope/04_slope.webp"></td>
