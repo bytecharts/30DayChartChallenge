@@ -237,9 +237,7 @@ frames_for_gif <- c(
 
 
 gifski::gifski(
-  png_files = frames_for_gif,
-  gif_file = gif_path,
-  width = 1920,
+  png_files = frames_for_gif, gif_file = gif_path, width = 1920,
   height = 1080,
   delay = 0.2,
   loop = TRUE

@@ -7,8 +7,14 @@ suppressPackageStartupMessages({
   library(ggimage)
 })
 
-steel_raw <- fromJSON("../data/steel-production-china-vs-world.json", flatten = TRUE)$data$data
-cement_raw <- fromJSON("../data/cement-production-china-vs-world.json", flatten = TRUE)$data$data
+steel_raw <- fromJSON(
+  "../data/steel-production-china-vs-world.json",
+  flatten = TRUE
+)$data$data
+cement_raw <- fromJSON(
+  "../data/cement-production-china-vs-world.json",
+  flatten = TRUE
+)$data$data
 
 steel_df <- as.data.frame(steel_raw) %>%
   mutate(year = as.integer(date), commodity = "Steel") %>%
@@ -25,7 +31,11 @@ plot_data <- bind_rows(steel_df, cement_df) %>%
     values_to = "value"
   ) %>%
   mutate(
-    region = recode(region, china = "China", world_minus_china = "Rest of world"),
+    region = recode(
+      region,
+      china = "China",
+      world_minus_china = "Rest of world"
+    ),
     commodity = factor(commodity, levels = c("Steel", "Cement")),
     region = factor(region, levels = c("China", "Rest of world")),
   ) %>%
@@ -63,13 +73,22 @@ end_labels <- plot_data %>%
         "<span style='color:#F8AA8F;'><b>Steel</b></span>",
         "<span style='color:#72CAC1;'><b>Cement</b></span>"
       ),
-      "<br>China ", percent(china_share, accuracy = 0.1),
-      "<br>", comma(total), " Mt"
+      "<br>China ",
+      percent(china_share, accuracy = 0.1),
+      "<br>",
+      comma(total),
+      " Mt"
     )
   )
 
-bridge_raw <- fromJSON("../data/bridge-construction-china-vs-world.json", flatten = TRUE)$data$data
-railway_raw <- fromJSON("../data/railway-length-china-vs-world.json", flatten = TRUE)$data$data
+bridge_raw <- fromJSON(
+  "../data/bridge-construction-china-vs-world.json",
+  flatten = TRUE
+)$data$data
+railway_raw <- fromJSON(
+  "../data/railway-length-china-vs-world.json",
+  flatten = TRUE
+)$data$data
 
 cement_2000_china <- plot_data %>%
   filter(year == 2000, commodity == "Cement", region == "China") %>%
@@ -135,7 +154,10 @@ fill_colors <- c(
   "Cement - Rest of world" = "#C8ECE8"
 )
 
-urban_raw <- fromJSON("../data/china-urbanization-history.json", flatten = TRUE)$data$data
+urban_raw <- fromJSON(
+  "../data/china-urbanization-history.json",
+  flatten = TRUE
+)$data$data
 
 urban_df <- as.data.frame(urban_raw) %>%
   mutate(year = as.integer(date)) %>%
@@ -161,7 +183,9 @@ urban_plot <- ggplot(urban_df, aes(year, 0, size = value, color = fill_key)) +
     limits = c(1993, 2028),
     expand = expansion(mult = c(0.01, 0.01))
   ) +
-  scale_color_manual(values = c("Earlier years" = "#8A93A6", "Last year" = accent_color)) +
+  scale_color_manual(
+    values = c("Earlier years" = "#8A93A6", "Last year" = accent_color)
+  ) +
   scale_size_continuous(range = c(10, 28)) +
   labs(
     title = "Urbanization",
@@ -169,17 +193,29 @@ urban_plot <- ggplot(urban_df, aes(year, 0, size = value, color = fill_key)) +
   ) +
   theme_minimal(base_size = 6) +
   theme(
-    plot.background = element_rect(fill = alpha(theme_bg, 0.0), color = alpha(title_color, 0.15), linewidth = 0.3),
+    plot.background = element_rect(
+      fill = alpha(theme_bg, 0.0),
+      color = alpha(title_color, 0.15),
+      linewidth = 0.3
+    ),
     panel.background = element_rect(fill = alpha(theme_bg, 0.0), color = NA),
     panel.grid.major = element_blank(),
     panel.grid.minor = element_blank(),
     axis.title = element_blank(),
     axis.text.y = element_blank(),
-    axis.text.x = element_text( size=9 ),
+    axis.text.x = element_text(size = 9),
     axis.ticks.y = element_blank(),
-    axis.text = element_text(family = "FiraSans", color = title_color, size = 5),
+    axis.text = element_text(
+      family = "FiraSans",
+      color = title_color,
+      size = 5
+    ),
     legend.position = "none",
-    plot.subtitle = element_markdown( family = "FiraSansRegular", size = 10, margin = margin(t=3)),
+    plot.subtitle = element_markdown(
+      family = "FiraSansRegular",
+      size = 10,
+      margin = margin(t = 3)
+    ),
     plot.title = element_markdown(
       family = theme_title_family,
       face = "bold",
@@ -192,14 +228,20 @@ urban_plot <- ggplot(urban_df, aes(year, 0, size = value, color = fill_key)) +
 
 urban_grob <- ggplotGrob(urban_plot)
 
-expressway_raw <- fromJSON("../data/china-expressway-length.json", flatten = TRUE)$data$data
+expressway_raw <- fromJSON(
+  "../data/china-expressway-length.json",
+  flatten = TRUE
+)$data$data
 
 expressway_df <- as.data.frame(expressway_raw) %>%
   mutate(year = as.integer(date)) %>%
   filter(year %in% c(2000, 2005, 2010, 2015, 2020, 2024)) %>%
   mutate(fill_key = if_else(year == max(year), "Last year", "Earlier years"))
 
-expressway_plot <- ggplot(expressway_df, aes(x = value, y = factor(year), fill = fill_key)) +
+expressway_plot <- ggplot(
+  expressway_df,
+  aes(x = value, y = factor(year), fill = fill_key)
+) +
   geom_col(width = 0.72) +
   geom_text(
     aes(label = comma(value)),
@@ -208,7 +250,13 @@ expressway_plot <- ggplot(expressway_df, aes(x = value, y = factor(year), fill =
     size = 3,
     color = title_color
   ) +
-  scale_fill_manual(values = c("Earlier years" = alpha(title_color, 0.25), "Last year" = "#DB5E49"), guide = "none") +
+  scale_fill_manual(
+    values = c(
+      "Earlier years" = alpha(title_color, 0.25),
+      "Last year" = "#DB5E49"
+    ),
+    guide = "none"
+  ) +
   scale_x_continuous(labels = comma, expand = expansion(mult = c(0.02, 0.14))) +
   labs(
     title = "Expressway",
@@ -216,12 +264,20 @@ expressway_plot <- ggplot(expressway_df, aes(x = value, y = factor(year), fill =
   ) +
   theme_minimal(base_size = 6) +
   theme(
-    plot.background = element_rect(fill = alpha(theme_bg, 0), color = alpha(title_color, 0.0), linewidth = 0),
+    plot.background = element_rect(
+      fill = alpha(theme_bg, 0),
+      color = alpha(title_color, 0.0),
+      linewidth = 0
+    ),
     panel.background = element_rect(fill = alpha(theme_bg, 0), color = NA),
     panel.grid.major = element_blank(),
     panel.grid.minor = element_blank(),
     axis.title = element_blank(),
-    axis.text.y = element_text(family = "FiraSans", color = title_color, size = 9),
+    axis.text.y = element_text(
+      family = "FiraSans",
+      color = title_color,
+      size = 9
+    ),
     axis.text.x = element_blank(),
     axis.ticks = element_blank(),
     plot.title = element_markdown(
@@ -234,7 +290,7 @@ expressway_plot <- ggplot(expressway_df, aes(x = value, y = factor(year), fill =
     plot.subtitle = element_text(
       color = title_color,
       size = 8,
-      margin = margin(b = 1, t=2)
+      margin = margin(b = 1, t = 2)
     ),
     plot.margin = margin(2, 2, 2, 2)
   )
@@ -326,7 +382,7 @@ china_plot <- ggplot() +
   ) +
   geom_label(
     data = filter(event_labels, type == "bridge"),
-    aes(x = year + 0.2, y = y_label+2000, label = label),
+    aes(x = year + 0.2, y = y_label + 2000, label = label),
     inherit.aes = FALSE,
     vjust = 0.5,
     hjust = 0.5,
@@ -338,13 +394,17 @@ china_plot <- ggplot() +
   ) +
   geom_image(
     data = filter(event_labels, type == "bridge"),
-    aes(x = year - 0.05, y = y_label+2500, image = icon_file),
+    aes(x = year - 0.05, y = y_label + 2500, image = icon_file),
     inherit.aes = FALSE,
     size = 0.032
   ) +
   geom_text(
     data = filter(event_labels, type == "bridge"),
-    aes(x = year, y = y_label +1750, label = " of global bridge construction takes place in China."),
+    aes(
+      x = year,
+      y = y_label + 1750,
+      label = " of global bridge construction takes place in China."
+    ),
     inherit.aes = FALSE,
     size = 3.25,
     color = title_color,
@@ -366,7 +426,7 @@ china_plot <- ggplot() +
   ) +
   geom_label(
     data = filter(event_labels, type == "railway"),
-    aes(x = year, y = y_label+600, label = label),
+    aes(x = year, y = y_label + 600, label = label),
     inherit.aes = FALSE,
     vjust = 0,
     size = 7,
@@ -378,7 +438,7 @@ china_plot <- ggplot() +
   ) +
   geom_image(
     data = filter(event_labels, type == "railway"),
-    aes(x = year , y = y_label, image = icon_file),
+    aes(x = year, y = y_label, image = icon_file),
     inherit.aes = FALSE,
     size = 0.032
   ) +
@@ -402,13 +462,20 @@ china_plot <- ggplot() +
     hjust = 0.5
   ) +
   scale_fill_manual(values = fill_colors) +
-  scale_x_continuous(breaks = seq(1990, 2025, 5), expand = expansion(mult = c(0.01, 0.02))) +
+  scale_x_continuous(
+    breaks = seq(1990, 2025, 5),
+    expand = expansion(mult = c(0.01, 0.02))
+  ) +
   scale_y_continuous(
     breaks = y_breaks,
     labels = function(x) comma(abs(x)),
     expand = expansion(mult = c(0.02, 0.08))
   ) +
-  coord_cartesian(xlim = c(1990, 2027.5), ylim = c(-max_y * 1.34, max_y * 1.24), clip = "off") +
+  coord_cartesian(
+    xlim = c(1990, 2027.5),
+    ylim = c(-max_y * 1.34, max_y * 1.24),
+    clip = "off"
+  ) +
   labs(
     title = plot_title,
     subtitle = plot_subtitle,
@@ -422,7 +489,10 @@ china_plot <- ggplot() +
     plot.background = element_rect(fill = "#fff", color = NA),
     panel.background = element_rect(fill = "#fff", color = NA),
     panel.grid.major.x = element_blank(),
-    panel.grid.major.y = element_line(color = alpha("#D7E3E8", 0.85), linewidth = 0.3),
+    panel.grid.major.y = element_line(
+      color = alpha("#D7E3E8", 0.85),
+      linewidth = 0.3
+    ),
     panel.grid.minor = element_blank(),
     panel.border = element_blank(),
     axis.line.y = element_line(color = title_color, linewidth = 0.45),
@@ -459,4 +529,10 @@ china_plot <- ggplot() +
     plot.margin = margin(20, 30, 16, 30)
   )
 
-ggsave("24_china_cement_steel_production.png", china_plot, width = 14, height = 12, dpi = 330 )
+ggsave(
+  "24_china_cement_steel_production.png",
+  china_plot,
+  width = 14,
+  height = 12,
+  dpi = 330
+)
