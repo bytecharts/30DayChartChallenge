@@ -1,7 +1,7 @@
 # 30DayChartChallenge
 
-<!-- badges: start –->
-<!-- badges: end –->
+<!-- badges: start -->
+<!-- badges: end -->
 
 Submissions to the [#30DayChartChallenge](https://github.com/30DayChartChallenge/Edition2026)
 
@@ -111,12 +111,21 @@ Submissions to the [#30DayChartChallenge](https://github.com/30DayChartChallenge
 <td style="text-align:center;">Day #25 – Uncertainties | Space</td>
 <td style="text-align:center;">Day #26 – Uncertainties | Trend</td>
 </tr>
+
 <tr>
 <td><img src="27_animation/27_animation.gif"></td>
-<td><img src=""></td>
+<td><img src="28_modeling/28_modeling.png"></td>
 </tr>
 <tr>
 <td style="text-align:center;">Day #27 – Uncertainties | Animation</td>
 <td style="text-align:center;">Day #28 – Uncertainties | Modeling</td>
+</tr>
+<tr>
+<td><img src="29_monochrome/29_monochrome.png"></td>
+<td><img src="30_ghde/30_ghde_falls_western_europe_dumbbell.png"></td>
+</tr>
+<tr>
+<td style="text-align:center;">Day #29 – Uncertainties | Monochrome</td>
+<td style="text-align:center;">Day #30 – Uncertainties | Data Day: Global Health Data Exchange</td>
 </tr>
 </table>
