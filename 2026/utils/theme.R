@@ -33,7 +33,7 @@ night_owlish_light <- list(
   gray = "#8A93A6"
 )
 
-
+# https://paletty.dev/
 night_owlish_cat <- c(
   "#2E86AB", # blue
   "#4A6984",
