@@ -140,7 +140,7 @@ pattern_config <- data.frame(
   character = factor(target_chars, levels = target_chars),
   pattern_filename = unname(image_map[target_chars]),
   pattern_type = rep("none", length(target_chars)),
-  pattern_scale = c(1.5, 5, 4.5, 3, 2),
+  pattern_scale = c(1.5, 5, 4.5, 3.8, 2),
   pattern_gravity = c("north", "center", "north", "north", "north"),
   pattern_xoffset = c(0, 0, 0, 0, 0),
   pattern_yoffset = c(0, 0, 0, 0, 0),
@@ -158,8 +158,8 @@ if (any(is.na(pattern_data$pattern_filename))) {
 
 base_area_data <- season_character_totals
 
-plot_title <- "Who started using the \"f-word\" more?"
-plot_subtitle <- "Area shows totals in Seasons 1 and 4 for the Roy siblings plus Logan."
+plot_title <- "Succession Seasons 1 to 4, the Roys Swear more"
+plot_subtitle <- "F-word counts in Season 1 vs Season 4, by character. <span style='color:#8B7CF0;'>Shiv</span> shows the biggest rise."
 
 plot_caption <- caption_general( "springfieldspringfield.co.uk (excluding S1E07, S2E05, S3E02, S4E01, S4E06).")
 
@@ -260,7 +260,7 @@ area_plot <- ggplot(season_character_totals, aes(x = season_num, y = fucks)) +
     panel.grid.minor = element_blank(),
     axis.text.x = element_text(size = 10, color = theme_fg),
     axis.text.y = element_text(size = 9, color = night_owlish_light$fg_soft),
-    axis.title.y = element_text(size = 11, color = theme_fg, margin = margin(r = 10)),
+    axis.title.y = element_text(size = 18, color = theme_fg, margin = margin(r = 10), angle =90),
     axis.ticks.x = element_blank(),
     legend.position = "none",
     strip.placement = "outside",
