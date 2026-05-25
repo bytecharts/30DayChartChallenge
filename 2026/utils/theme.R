@@ -141,8 +141,8 @@ caption_global_dark <- function(source, day, topic) {
 
 caption_general <- function(source) {
   paste(
-        "<span style='font-family: FiraCodeMedium;'>Viz</span>: Byte Charts | ", source,
-        paste0( "<img src='", "../utils/bluesky.png", "' width='7' style='vertical-align:bottom;'/>  byte-charts&nbsp;&nbsp;",
+        "<span style='font-family: FiraCodeMedium;'>Viz</span>: Byte Charts | <span style='font-family: FiraSans;'>Source</span> : ", source,
+        paste0( "<br>", "<img src='", "../utils/bluesky.png", "' width='7' style='vertical-align:bottom;'/>  byte-charts&nbsp;&nbsp;",
                "   <img src='", "../utils/github.png", "' width='7'  style='vertical-align:bottom;'/>  byte-charts&nbsp;&nbsp;"
                ),
         sep = "\n"
