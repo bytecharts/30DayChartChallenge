@@ -277,3 +277,29 @@
           bottom: 16px;
         }
       }
+
+      .plot-only main {
+        max-width: none;
+        width: 100vw;
+        height: 100vh;
+        padding: 0;
+      }
+
+      .plot-only #chart {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      .plot-only .chart-stage {
+        width: 100vw;
+        height: 100vh;
+        min-height: 100vh;
+      }
+
+      .portrait .caption {
+        right: 24px;
+        bottom: 24px;
+      }
